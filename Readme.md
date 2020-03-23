@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Черенков](https://up.htmlacademy.ru/adaptive/19/user/1322377).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
 
 ---
 

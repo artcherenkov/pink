@@ -37,49 +37,100 @@
     <section class="contest">
       <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
+
         <fieldset class="about__person">
-          <label class="about__person-label input__text-label" for="surname">Фамилия:</label>
-          <input class="about__person-input input__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
-          <label class="about__person-label input__text-label" for="name">Имя:</label>
-          <input class="about__person-input input__text" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-          <label class="about__person-label input__text-label" for="third-name">Отчество:</label>
-          <input class="about__person-input input__text" type="text" id="third-name" placeholder="Ну и отчество тоже" name="third-name">
+          <ul class="about__person-list">
+            <li class="about__person-list__item input">
+              <label class="about__person-label input__text-label" for="surname">Фамилия:</label>
+              <input class="about__person-input input__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="about__person-list__item input">
+              <label class="about__person-label input__text-label" for="name">Имя:</label>
+              <input class="about__person-input input__text" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="about__person-list__item input">
+              <label class="about__person-label input__text-label" for="third-name">Отчество:</label>
+              <input class="about__person-input input__text" type="text" id="third-name" placeholder="Ну и отчество тоже" name="third-name">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="about__trip">
           <legend class="about__trip-header">Ваши безбашенные достижения в путешествии</legend>
-          <label class="about__trip-label input__check-label" for="selfie"><input class="about__trip-input input__check" id="selfie" name="selfie" type="checkbox" checked>Сделал селфи с акулой</label>
-          <label class="about__trip-label input__check-label" for="beach"><input class="about__trip-input input__check" id="beach" name="beach" type="checkbox" checked>Обгорел на пляже</label>
-          <label class="about__trip-label input__check-label" for="Chuck"><input class="about__trip-input input__check" id="Chuck" name="Chuck" type="checkbox">Видел Чака Норриса</label>
-          <label class="about__trip-label input__check-label" for="souvenir"><input class="about__trip-input input__check" id="souvenir" name="souvenir" type="checkbox">Накупил сувениров</label>
-          <label class="about__trip-label input__check-label" for="tower"><input class="about__trip-input input__check" id="tower" name="tower" type="checkbox" checked>Удержал башню</label>
-          <label class="about__trip-label input__check-label" for="hotel"><input class="about__trip-input input__check" id="hotel" name="hotel" type="checkbox">Разгромил отель</label>
+          <ul class="about__trip-list">
+            <li class="about__trip-list__item input">
+              <label class="about__trip-label input__check-label" for="selfie">
+                <input class="about__trip-input input__check" id="selfie" name="selfie" type="checkbox" checked>Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="about__trip-list__item input">
+              <label class="about__trip-label input__check-label" for="beach">
+                <input class="about__trip-input input__check" id="beach" name="beach" type="checkbox" checked>Обгорел на пляже
+              </label>
+            </li>
+            <li class="about__trip-list__item input">
+              <label class="about__trip-label input__check-label" for="Chuck">
+                <input class="about__trip-input input__check" id="Chuck" name="Chuck" type="checkbox">Видел Чака Норриса
+              </label>
+            </li>
+            <li class="about__trip-list__item input">
+              <label class="about__trip-label input__check-label" for="souvenir">
+                <input class="about__trip-input input__check" id="souvenir" name="souvenir" type="checkbox">Накупил сувениров
+              </label>
+            </li>
+            <li class="about__trip-list__item input">
+              <label class="about__trip-label input__check-label" for="tower">
+                <input class="about__trip-input input__check" id="tower" name="tower" type="checkbox" checked>Удержал башню
+              </label>
+            </li>
+            <li class="about__trip-list__item input">
+              <label class="about__trip-label input__check-label" for="hotel">
+                <input class="about__trip-input input__check" id="hotel" name="hotel" type="checkbox">Разгромил отель
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="about__contacts">
-          <label class="about__contacts-label input__text-label" for="tel">Номер телефона</label>
-          <input class="about__contacts-input input__text" type="text" id="tel" name="tel" placeholder="Номер, пожалуйста">
-          <label class="about__contacts-label input__text-label" for="email">Адрес почты</label>
-          <input class="about__contacts-input input__text" type="text" id="email" name="email" placeholder="Введите почту *" required>
+          <ul class="about__contacts-list">
+            <li class="about__contacts-list__item input">
+              <label class="about__contacts-label input__text-label" for="tel">Номер телефона</label>
+              <input class="about__contacts-input input__text" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="about__contacts-list__item input">
+              <label class="about__contacts-label input__text-label" for="email">Адрес почты</label>
+              <input class="about__contacts-input input__text" type="email" id="email" name="email" placeholder="Введите почту *" required>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="about__app">
           <legend class="about__app-header">С каким приложением путешествовали?</legend>
-          <label class="about__app-label input__radio-label" for="iOS">
-            <input class="about__app-input input__radio" name="which-app" type="radio" value="iOS" id="iOS">Pink для iOS
-          </label>
-          <label class="about__app-label input__radio-label" for="Android">
-            <input class="about__app-input input__radio" name="which-app" type="radio" value="Android" id="Android">Pink на Android
-          </label>
-          <label class="about__app-label input__radio-label" for="Windows Phone">
-            <input class="about__app-input input__radio" name="which-app" type="radio" value="Windows Phone" id="Windows Phone">Windows Phone
-          </label>
+          <ul class="about__app-list">
+            <li class="about__app-list__item input">
+              <label class="about__app-label input__radio-label" for="ios">
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios">Pink для iOS
+              </label>
+            </li>
+            <li class="about__app-list__item input">
+              <label class="about__app-label input__radio-label" for="android">
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="android" id="android">Pink на Android
+              </label>
+            </li>
+            <li class="about__app-list__item input">
+              <label class="about__app-label input__radio-label" for="windows phone">
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="windows phone" id="windows phone">Windows Phone
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="about__impression">
-          <label class="about__impression-label" for="impression">
-            Опишите свои эмоции<input class="about__impression-input input__textarea" type="textarea" id="impression" name="impression" placeholder="Можно прям в красках, не стесняясь в выражениях">
-          </label>
+          <div class="about__impression-block input">
+            <label class="about__impression-label" for="impression"> Опишите свои эмоции
+              <textarea class="about__impression-input input__textarea" name="impression" id="impression" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </label>
+          </div>
         </fieldset>
         <button class="contest__submit" type="submit">Отправить форму</button>
       </form>

@@ -164,24 +164,30 @@
       <div class="add-photo__wrapper">
         <div class="add-photo__editor">
           <img class="add-photo-image" src="#" alt="Фото на выгрузку">
-          <ul class="add-photo__tools-list tools">
-            <li class="tools__item tool">
-              <img class="tool__item-image tool-cut" src="#" alt="Обрезать">
+          <ul class="add-photo__tools-list tools-list">
+            <li class="tools-list__item tool">
+              <button class="tool__button">
+                <img class="tool__button-image tool-cut" src="#" alt="Обрезать">
+              </button>
             </li>
-            <li class="tools__item tool">
-              <img class="tool__item-image tool-filter" src="#" alt="Фильтр">
+            <li class="tools__item">
+              <button class="tools__button tool">
+                <img class="tools__button-image tool-filter" src="#" alt="Фильтр">
+              </button>
             </li>
-            <li class="tools__item tool">
-              <img class="tool__item-image tool-contrast" src="#" alt="Контрастность">
+            <li class="tools__item">
+              <button class="tools__button tool">
+                <img class="tools__button-image tool-contrast" src="#" alt="Контрастность">
+              </button>
             </li>
           </ul>
         </div>
-        <div class="add-photo__control tool-cut__control">
-          <input class="tool-cut__control--range" type="range">
-          <fieldset class="add-photo__buttons">
-            <button class="add-photo__buttons-post" type="submit">Запостить</button>
-            <button class="add-photo__buttons-cancel" type="reset">Отмена</button>
-          </fieldset>
+        <div class="add-photo__control add-photo__control--cut cut">
+          <input class="cut__cut-area" type="range">
+          <div class="cut__buttons">
+            <button class="cut__buttons-post" type="submit">Запостить</button>
+            <button class="cut__buttons-cancel" type="reset">Отмена</button>
+          </div>
         </div>
       </div>
 
@@ -204,7 +210,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__site-by">Разработано</p>
-        <a class="copyright__link" href="https:\\htmlacademy.ru">
+        <a class="copyright__link" href="https://htmlacademy.ru">
           <img class="copyright__image" src="#" alt="HTML Academy">
         </a>
       </div>

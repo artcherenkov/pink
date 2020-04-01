@@ -36,7 +36,7 @@
       <h2 class="app__slogan">Взгляните на жизнь иначе!</h2>
       <img class="app__image" src="#" alt="Рука с телефоном">
       <a class="app__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
-      <ul app__platforms-list>
+      <ul class="app__platforms-list">
         <li class="app__platforms-list__item platform">
           <a class="platform__link" href="https://apps.apple.com/ru/genre/ios/id36">
             <img class="platform__image" src="#" alt="Apple">
@@ -73,9 +73,146 @@
       </ul>
       <img class="description__helloworld" src="#" alt="'Pink' - Всем привет!">
     </section>
+
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о Pink</h2>
+      <div class="reviews__wrapper slider">
+        <ul class="reviews__list slider__list">
+          <li class="slider__list__item review">
+            <h3 class="review__name">Николай Петров</h3>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="slider__list__item review">
+            <h3 class="review__name">Имя Фамилия</h3>
+            <p class="review__text">Текст отзыва</p>
+          </li>
+          <li class="slider__list__item review">
+            <h3 class="review__name">Имя Фамилия</h3>
+            <p class="review__text">Текст отзыва</p>
+          </li>
+        </ul>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="tariff-plans">
+      <h2 class="visually-hidden">Тарифные планы</h2>
+      <div class="tariff-plans__wrapper slider">
+        <ul class="tariff-plans__list">
+          <li class="tariff-plans__list-item tariff">
+            <table class="tariff__options">
+              <caption class="tariff__caption">
+                <h3 class="tariff__name">Стандарт</h3>
+                <p class="tariff__cost">3,99 USD</p>
+              </caption>
+              <tr>
+                <td class="tariff__option">Розовый фильтр</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="да">
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__option">Смайлики</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="да">
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__option">Комментарии</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="нет">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="tariff-plans__list-item tariff">
+            <table class="tariff__options">
+              <caption class="tariff__caption">
+                <h3 class="tariff__name">Название</h3>
+                <p class="tariff__cost">Цена</p>
+              </caption>
+              <tr>
+                <td class="tariff__option">Опции</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="да">
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__option">Опции</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="да">
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__option">Опции</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="нет">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="tariff-plans__list-item tariff">
+            <table class="tariff__options">
+              <caption class="tariff__caption">
+                <h3 class="tariff__name">Название</h3>
+                <p class="tariff__cost">Цена</p>
+              </caption>
+              <tr>
+                <td class="tariff__option">Опции</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="да">
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__option">Опции</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="да">
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__option">Опции</td>
+                <td class="tariff__option-value">
+                  <img class="tariff__option-value-image" src="#" alt="нет">
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <p class="tariff-plans__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="questions__wrapper">
+        <h2 class="questions__intro">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <ul class="question__contact-list">
+          <li class="question__contact-list__item contact">
+            <h3 class="contact-type">Звоните:</h3>
+            <a class="contact-value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="question__contact-list__item contact">
+            <h3 class="contact-type">Пишите:</h3>
+            <a class="contact-value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="question__contact-list__item contact">
+            <h3 class="contact-type">Приезжайте в гости:</h3>
+            <p class="contact-value">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <iframe class="question__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6415055bc0d677bbb6171c1049e8b8b84a19c1dae106631262aa528918c71af&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+      </div>
+    </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--hidden">
     <div class="page-footer__wrapper">
       <img class="page-footer__logo" src="#" alt="'Pink' - логотип">
       <div class="page-footer__social social">

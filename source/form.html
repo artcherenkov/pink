@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,8 +44,8 @@
       <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="about__person">
-          <ul class="about__person-list">
+        <fieldset class="about__person about__wrapper">
+          <ul class="about__person-list about__list">
             <li class="about__person-list__item input">
               <label class="about__person-label input__text-label" for="surname">Фамилия:</label>
               <input class="about__person-input input__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
@@ -60,9 +61,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="about__trip">
+        <fieldset class="about__trip about__wrapper">
           <legend class="about__trip-header">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="about__trip-list">
+          <ul class="about__trip-list about__list">
             <li class="about__trip-list__item input">
               <label class="about__trip-label input__check-label" for="selfie">
                 <input class="about__trip-input input__check" id="selfie" name="selfie" type="checkbox" checked>Сделал селфи с акулой
@@ -96,8 +97,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="about__contacts">
-          <ul class="about__contacts-list">
+        <fieldset class="about__contacts about__wrapper">
+          <ul class="about__contacts-list about__list">
             <li class="about__contacts-list__item input">
               <label class="about__contacts-label input__text-label" for="tel">Номер телефона</label>
               <input class="about__contacts-input input__text" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -109,9 +110,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="about__app">
+        <fieldset class="about__app about__wrapper">
           <legend class="about__app-header">С каким приложением путешествовали?</legend>
-          <ul class="about__app-list">
+          <ul class="about__app-list about__list">
             <li class="about__app-list__item input">
               <label class="about__app-label input__radio-label" for="ios">
                 <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios">Pink для iOS
@@ -130,13 +131,14 @@
           </ul>
         </fieldset>
 
-        <fieldset class="about__impression">
+        <fieldset class="about__impression about__wrapper">
           <div class="about__impression-block input">
             <label class="about__impression-label" for="impression"> Опишите свои эмоции
               <textarea class="about__impression-input input__textarea" name="impression" id="impression" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
           </div>
         </fieldset>
+
         <button class="contest__submit" type="submit">Отправить форму</button>
       </form>
       <p class="contest__note"><span class="contest__note-redstar">*</span> — обязательные поля</p>

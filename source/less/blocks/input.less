@@ -1,35 +1,26 @@
-.input {
-  &__text-label {
-    font: 400 14px "Open Sans", sans-serif;
-    text-transform: uppercase;
-    color: @pink-color;
-  }
+.input__text-label {
+  .setFont(@pink, 14px, @regular);
+  text-transform: uppercase;
+}
 
-  &__text {
-    width: 276px;
-    height: 59px;
-    border: 2px solid @grey-color;
-    font: 400 18px "Open Sans", sans-serif;
-    color: @menu-color;
-  }
+.input__text {
+  width: 276px;
+  border: 2px solid @grey;
+  .setFont(@dark-blue, 18px, @regular);
+}
 
-  &__check-label,
-  &__radio-label {
-    font: 400 18px "Open Sans", sans-serif;
-    color: @menu-color;
-  }
+.input__check-label,
+.input__radio-label {
+  .setFont(@dark-blue, 18px, @regular);
+}
 
-  &__textarea {
-    width: 272px;
-    height: 197px;
-    border: 2px solid @grey-color;
-    font: 400 18px "Open Sans", sans-serif;
-    color: @menu-color;
-  }
+.input__textarea {
+  width: 272px;
+  border: 2px solid @grey;
+  .setFont(@dark-blue, 18px, @regular);
+}
 
-  &__text::placeholder,
-  &__textarea::placeholder {
-    font: 400 18px "Open Sans", sans-serif;
-    color: @menu-color;
-  }
+.input__text::placeholder,
+.input__textarea::placeholder {
+  .setFont(@dark-blue, 18px, @regular);
 }

@@ -1,0 +1,36 @@
+.page-footer {
+  &__copyright {
+    display: flex;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social__item {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 3px solid rgba(40, 54, 69, 10%);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+  }
+
+  &__social__item-image {
+    position: absolute;
+    fill: @pink-color;
+  }
+
+  &__copyright__image {
+    fill: @pink-color;
+  }
+
+  &__copyright__site-by {
+    color: @menu-color;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 34px;
+  }
+}

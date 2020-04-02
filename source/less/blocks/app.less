@@ -1,0 +1,51 @@
+.app {
+  background-color: @dark-blue;
+  width: 320px;
+}
+
+.app__hand {
+  padding: 0;
+  width: 320px;
+  background: url("../../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
+}
+
+.app__slogan {
+  margin: 0;
+  padding: 20px 45px 0 45px;
+  text-align: center;
+  .setFont(white, 24px, @light);
+}
+
+.app__image {
+  margin-top: 25px;
+}
+
+.app__button {
+  display: block;
+  width: 275px;
+  margin: 28px auto;
+  text-align: center;
+  text-decoration: none;
+  .setFont(white, 18px, @bold);
+  border: 3px solid white;
+  border-radius: 30px;
+  line-height: 49px;
+}
+
+.app__platforms {
+  width: 235px;
+  margin: 16px auto;
+  padding-bottom: 28px;
+  .setFont(white, 14px, @light);
+  line-height: 1.71;
+  text-align: center;
+}
+
+.app__platforms-list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 58px 0 57px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}

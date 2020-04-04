@@ -1,23 +1,34 @@
 .input__text-label {
   .setFont(@pink, 14px, @regular);
   text-transform: uppercase;
+  line-height: 30px;
+  padding-left: 20px;
 }
 
 .input__text {
   width: 276px;
   border: 2px solid @grey;
+  padding: 15px 15px;
+  margin-bottom: 20px;
   .setFont(@dark-blue, 18px, @regular);
 }
 
 .input__check-label,
 .input__radio-label {
   .setFont(@dark-blue, 18px, @regular);
+  padding-left: 10px;
 }
 
 .input__textarea {
-  width: 272px;
+  width: 276px;
   border: 2px solid @grey;
+  margin-bottom: 30px;
+  padding: 20px;
   .setFont(@dark-blue, 18px, @regular);
+}
+
+.input__textarea-label {
+  margin-left: 48px;
 }
 
 .input__text::placeholder,

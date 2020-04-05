@@ -1,4 +1,46 @@
 .add-photo {
-  outline: 1px solid red;
-  height: 910px;
+  margin-bottom: 40px;
+}
+
+.add-photo__wrapper {
+  background-color: @light-grey;
+  padding: 20px 20px;
+}
+
+.add-photo__slogan {
+  margin: 0;
+  .setFont(@dark-blue, 14px, @regular);
+  line-height: 30px;
+  padding: 20px 25px 32px 25px;
+  text-align: center;
+}
+
+.add-photo__tools-list {
+  .resetList();
+  display: flex;
+  padding: 42px 44px 20px 36px;
+}
+
+.add-photo__buttons {
+  padding-top: 30px;
+}
+
+.add-photo__buttons-post,
+.add-photo__buttons-cancel {
+  width: 280px;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  line-height: 50px;
+}
+
+.add-photo__buttons-post {
+  .setFont(@pink, 18px, @bold);
+  border: 3px solid @pink;
+  background-color: inherit;
+}
+
+.add-photo__buttons-cancel {
+  .setFont(@dark-blue, 18px, @bold);
+  border: 3px solid @dark-blue;
+  opacity: 10%;
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,9 +12,13 @@
 <body>
   <header class="page-header">
     <div class="page-header__head page-header__head--close">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo page-header__logo--mobile" href="#">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
       </a>
+      <a class="page-header__logo page-header__logo--tablet" href="#">
+        <img class="page-header__logo-image" src="img/logo-pink-white-tablet.svg" alt="Приложение 'Pink'" width="147" height="40">
+      </a>
+
       <button class="page-header__toggle" type="button">
         <img class="page-header__toggle-image" src="img/icon-menu-cross.svg" alt="Приложение 'Pink'" width="24" height="23">
       </button>
@@ -39,49 +44,59 @@
   <main class="page-main">
     <h1 class="visually-hidden">"Pink"</h1>
     <section class="app">
-      <div class="app__hand">
+      <div class="app__wrapper">
         <h2 class="app__slogan">Взгляните на жизнь иначе!</h2>
-        <img class="app__image" src="img/iphone-hand-mobile@1x.png" alt="Рука с телефоном">
+        <a class="app__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
+        <ul class="app__platforms-list">
+          <li class="app__platforms-list__item platform">
+            <a class="platform__link" href="https://apps.apple.com/ru/genre/ios/id36">
+              <img class="platform__image" src="img/logo-apple.svg" alt="Apple">
+            </a>
+          </li>
+          <li class="app__platforms-list__item platform">
+            <a class="platform__link" href="https://play.google.com/store/apps?hl=ru">
+              <img class="platform__image" src="img/logo-android.svg" alt="Android">
+            </a>
+          </li>
+          <li class="app__platforms-list__item platform">
+            <a class="platform__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+              <img class="platform__image" src="img/logo-microsoft.svg" alt="Windows">
+            </a>
+          </li>
+        </ul>
+        <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <a class="app__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
-      <ul class="app__platforms-list">
-        <li class="app__platforms-list__item platform">
-          <a class="platform__link" href="https://apps.apple.com/ru/genre/ios/id36">
-            <img class="platform__image" src="img/logo-apple.svg" alt="Apple">
-          </a>
-        </li>
-        <li class="app__platforms-list__item platform">
-          <a class="platform__link" href="https://play.google.com/store/apps?hl=ru">
-            <img class="platform__image" src="img/logo-android.svg" alt="Android">
-          </a>
-        </li>
-        <li class="app__platforms-list__item platform">
-          <a class="platform__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-            <img class="platform__image" src="img/logo-microsoft.svg" alt="Windows">
-          </a>
-        </li>
-      </ul>
-      <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
     </section>
     <section class="description">
       <h2 class="description__header">Устали от серости мегаполиса?</h2>
-      <h2 class="description__header">Нам есть, что вам предложить!</h2>
+      <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
       <div class="description__wrapper">
         <ul class="description__list">
-        <li class="description__list__item">
-          <h3 class="description__list__item-header">Поднимает настроение</h3>
-          <p class="description__list__item-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="description__list__item">
-          <h3 class="description__list__item-header">Меняет мир вокруг</h3>
-          <p class="description__list__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="description__list__item">
-          <h3 class="description__list__item-header">Заводит новых друзей</h3>
-          <p class="description__list__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img class="description__helloworld" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="'Pink' - Всем привет!">
+          <li class="description__list__item">
+            <h3 class="description__list__item-header">Поднимает настроение</h3>
+            <p class="description__list__item-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="description__list__item">
+            <h3 class="description__list__item-header">Меняет мир вокруг</h3>
+            <p class="description__list__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="description__list__item">
+            <h3 class="description__list__item-header">Заводит новых друзей</h3>
+            <p class="description__list__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="description__helloworld"></div>
+        <!--        <img class="description__helloworld" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="'Pink' - Всем привет!">-->
+      </div>
+      <div class="description__effect">
+        <img class="description__timer" src="img/icon-timer.png" width="238" height="276" alt="">
+        <div class="description__britain">
+          <h3 class="description__britain-header">Эффект на 24 часа!</h3>
+          <p class="description__britain-content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="description__britain-link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
 
     </section>

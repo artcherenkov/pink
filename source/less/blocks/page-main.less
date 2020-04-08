@@ -1,13 +1,17 @@
 .page-main__slogan {
-  width: 320px;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
+  min-width: 320px;
+  height: 165px;
+  background: url("../img/bg-back-mobile@1x.jpg") 0 30% no-repeat;
+  background-size: cover;
 }
 
 .page-main__slogan-text {
-  width: 300px;
   margin: 0;
+  width: 230px;
   padding-top: 30px;
   padding-bottom: 80px;
+  padding-left: auto;
+  margin: 0 auto;
   .setFont(white, 24px, @light);
   text-align: center;
   line-height: auto;
@@ -17,16 +21,16 @@
   .page-main__slogan {
     margin: 0;
     padding: 0;
-    width: 660px;
+    height: 350px;
+    min-width: 660px;
     background: url("../img/bg-back-tablet@1x.jpg") -275px -110px no-repeat;
   }
   .page-main__slogan-text {
-    margin: 0;
-    padding: 0;
+    width: 600px;
     .setFont(white, 50px, @light);
     line-height: auto;
     text-align: center;
-    padding-top: 81px;
+    padding-top: 65px;
     padding-bottom: 150px;
   }
 }

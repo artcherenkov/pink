@@ -1,15 +1,12 @@
 .input__text-label {
   .setFont(@pink, 14px, @regular);
   text-transform: uppercase;
-  line-height: 30px;
   padding-left: 20px;
 }
 
 .input__text {
-  width: 276px;
   border: 2px solid @grey;
   padding: 15px 15px;
-  margin-bottom: 20px;
   .setFont(@dark-blue, 18px, @regular);
 }
 
@@ -20,18 +17,35 @@
 }
 
 .input__textarea {
-  width: 276px;
+  flex-basis: 276px;
   border: 2px solid @grey;
-  margin-bottom: 30px;
   padding: 20px;
   .setFont(@dark-blue, 18px, @regular);
-}
-
-.input__textarea-label {
-  margin-left: 48px;
 }
 
 .input__text::placeholder,
 .input__textarea::placeholder {
   .setFont(@dark-blue, 18px, @regular);
+}
+
+
+@media (min-width: 660px) {
+  .input__text-label {
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1em;
+    height: 1em;
+    padding: 0;
+    padding-right: 20px;
+  }
+
+  .input__text {
+    margin: 0;
+    min-width: 276px;
+  }
+
+  .input__textarea {
+    flex-grow: 1;
+    margin: 0;
+  }
 }

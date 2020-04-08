@@ -6,12 +6,18 @@
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
   text-align: center;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .contest__form {
-  width: 320px;
+  min-width: 320px;
   padding: 0;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .contest__submit {
@@ -26,11 +32,49 @@
 }
 
 .contest__note {
-  margin: 20px 0 40px 68px;
+  margin: auto;
+  height: 1em;
   .setFont(@dark-blue, 14px, @regular);
   text-transform: uppercase;
 }
 
 .contest__note-redstar {
   color: @pink;
+}
+
+.contest__footer {
+  order: 6;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 660px) {
+  .contest__intro {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 490px;
+    .setFont(@dark-blue, 14px, @regular);
+    line-height: 30px;
+    text-align: center;
+
+    &--tablet {
+      display: block;
+      font-size: 18px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .contest__form {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 }

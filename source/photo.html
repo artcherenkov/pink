@@ -26,10 +26,15 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="index.html">Главная</a>
+          <a href="photo.html">
+            <img src="img/logo-pink-white-desktop.svg" alt="">
+          </a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a>Фотографии</a>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Конкурс</a>
@@ -48,11 +53,12 @@
     <section class="posts">
       <p class="posts__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <ul class="posts__list">
-        <li class="posts__item">
+        <li class="posts__item posts__item--pano">
           <p class="posts__photo posts__photo--pano">
-            <img class="posts__photo-image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Анна">
+            <img class="posts__photo-image posts__photo-image--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Анна">
+            <img class="posts__photo-image posts__photo-image--tablet" src="img/panorama-tablet@1x.jpg" width="660" height="510" alt="Анна">
           </p>
-          <div class="posts__content">
+          <div class="posts__content posts__content--pano">
             <p class="posts__author">
               <strong class="posts__author-name">Анна</strong><span class="posts__author-time"> (5 минут назад)</span>
             </p>

@@ -1,5 +1,5 @@
 .description {
-  width: 320px;
+  min-width: 320px;
   padding-top: 40px;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
 
 .description__list__item {
   text-align: center;
-  width: 280px;
+  min-width: 280px;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@
 
 @media (min-width: 660px) {
   .description {
-    width: 660px;
+    min-width: 660px;
   }
 
   .description__wrapper {
@@ -126,7 +126,48 @@
 
 }
 
+@media (min-width: 1200px) {
+  .description__list {
+    flex-direction: row;
+    padding-bottom: 400px;
+  }
 
+  .description__list__item {
+    flex-basis: 240px;
+    text-align: center;
+  }
+  .description__header {
+    margin: 0 auto;
+  }
+
+  .description__effect {
+    margin: 0;
+    padding: 80px;
+    padding-top: 0;
+    background-color: @light-grey;
+  }
+
+  .description__timer {
+    width: 300px;
+    height: auto;
+  }
+
+  .description__britain {
+    width: 500px;
+    padding-right: 90px;
+  }
+
+  .description__britain-header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .description__britain-content {
+    padding-bottom: 20px;
+  }
+
+
+}
 
 
 

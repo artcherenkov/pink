@@ -1,14 +1,5 @@
-.page-footer {
-  &--hidden {
-    display: none;
-  }
-}
-
-.page-footer__logo {}
-
 .page-footer__social {
   display: flex;
-  padding-bottom: 0;
   padding: 30px;
 }
 
@@ -44,7 +35,6 @@
   align-items: center;
 }
 
-
 .page-footer__copyright__image {
   fill: @pink;
   text-align: center;
@@ -66,5 +56,13 @@
 @media (min-width: 1200px) {
   .page-footer {
     display: block;
+  }
+}
+
+.page-footer {
+  display: block;
+
+  &--hidden {
+    display: none;
   }
 }

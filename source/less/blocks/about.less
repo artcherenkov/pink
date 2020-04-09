@@ -3,7 +3,6 @@
   border: none;
   margin: 0;
   padding: 0;
-
 }
 
 .about__list {
@@ -26,6 +25,11 @@
 }
 
 .about__impression-header {
+  .setFont(@pink, 14px, @regular);
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
   &--mobile {
     margin: auto;
   }
@@ -46,12 +50,13 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 40px;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
 
 .about__person-input,
 .about__contact-input {
-  flex-basis: 450px;
-  flex-grow: 1;
+  flex-basis: 276px;
 }
 
 .about__person-label,
@@ -59,11 +64,9 @@
   padding-right: 100px;
 }
 
-
 .about__trip,
 .about__app {
   background-color: @light-grey;
-  margin-bottom: 20px;
   margin: 0;
   padding: 30px;
 }
@@ -75,20 +78,18 @@
   text-align: left;
 }
 
-.about__impression-header {
-  .setFont(@pink, 14px, @regular);
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-}
 
 .about__impression-block {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+}
+
+.about__impression-textarea {
+  width: 197px;
 }
 
 @media (min-width: 660px) {
-
   .about__app-header,
   .about__trip-header,
   .about__contact-header,
@@ -111,7 +112,6 @@
   }
 
   .about__person-list {
-    flex-direction: row;
     flex-direction: column;
     padding: 0;
   }
@@ -126,7 +126,7 @@
   }
 
   .about__person-input {
-    flex-basis: 521px;
+    flex-basis: 500px;
     margin-left: 10px;
     flex-grow: 1;
   }
@@ -173,6 +173,151 @@
     border: 2px solid @grey;
     background-color: white;
     margin-bottom: 30px;
+  }
+
+  .about__wrapper:nth-child(5) {
+    order: 5;
+    padding: 50px;
+    border: 2px solid @grey;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 130px;
+  }
+
+  .about__wrapper {
+    margin: 0;
+    width: 936px;
+    height: auto;
+  }
+
+  .about__app-header,
+  .about__trip-header,
+  .about__contact-header,
+  .about__impression-header {
+    &--tablet {
+      display: block;
+      background-color: white;
+      padding: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .about__list__item {
+    padding: 0;
+  }
+
+  .about__person-list {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about__person-list__item {
+    padding: 0;
+  }
+
+  .about__person-label {
+    padding: 0;
+  }
+
+  .about__person-input {
+    flex-basis: 330px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  .about__contact-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about__contact-input {
+    order: 1;
+    flex-basis: 371px;
+    flex-grow: 0;
+  }
+
+  .about__contact-label {
+    order: 2;
+    padding: 20px;
+  }
+
+  .about__trip-list {
+    padding: 30px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .about__trip-list__item {
+    //    flex-grow: 1;
+  }
+
+  .about__trip-label {
+    font-size: 18px;
+    line-height: 60px;
+  }
+
+  .about__app {
+    padding: 30px;
+  }
+
+  .about__app-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 70px;
+  }
+
+  .about__impression-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__wrapper:nth-child(1) {
+    order: 1;
+    width: 431px;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .about__wrapper:nth-child(2) {
+    order: 4;
+    background-color: white;
+    border: 2px solid @grey;
+    margin-bottom: 30px;
+  }
+
+  .about__wrapper:nth-child(3) {
+    order: 3;
+    border: 2px solid @grey;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .about__wrapper:nth-child(4) {
+    order: 2;
+    height: 290px;
+    padding: 30px;
+    border: 2px solid @grey;
+    background-color: white;
+    margin-bottom: 30px;
+    width: 431px;
   }
 
   .about__wrapper:nth-child(5) {

@@ -7,7 +7,6 @@
 }
 
 .posts__list {
-  min-width: inherit;
   list-style: none;
   padding: 0;
   display: flex;
@@ -17,28 +16,56 @@
   flex-grow: 1;
 }
 
+.posts__genlist {
+  .resetList();
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .posts__item {
+  width: 280px;
   position: relative;
-  margin-bottom: 20.3px;
-  flex-basis: 280px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 
   &--pano {
-    flex-basis: 320px;
+    flex-basis: 100%;
+    margin: 0;
   }
 }
 
 .posts__photo {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
 
   &--pano {
     margin: 0;
   }
 }
 
+.posts__photo-image {
+  width: 100%;
+  height: auto;
+}
+
 .posts__content {
   background-color: @light-grey;
   padding-bottom: 20px;
+  flex-grow: 1;
+  max-width: 940px;
+
+  &--pano {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .posts__author {
@@ -88,11 +115,6 @@
   letter-spacing: 0.15px;
 }
 
-.posts__content--pano {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .posts__photo--pano__label {
   width: 140px;
   margin: 0;
@@ -107,93 +129,133 @@
   text-align: center;
 }
 
-.posts__photo-image {
-  &--tablet {
-    display: none;
+
+@media (min-width: 620px) {
+  .posts__genlist {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  &--mobile {
-    display: block;
-  }
-
-  &--desktop {
-    display: none;
+  .posts__item:nth-of-type(2n) {
+    margin-left: 20px;
   }
 }
 
 @media (min-width: 660px) {
-  .posts__photo-image {
-    &--tablet {
-      display: block;
-    }
-
-    &--mobile {
-      display: none;
-    }
-
-    &--desktop {
-      display: none;
-    }
-  }
-
-  .posts__item--pano {
-    flex-basis: 660px;
-  }
-
   .posts__list {
     min-width: inherit;
+    max-width: 1200px;
     list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-grow: 1;
+    margin: 0 auto;
   }
 
   .posts__item {
-    flex-basis: 280px;
+    flex-basis: 300px;
     background-color: @light-grey;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin-right: 0;
+
+    &--pano {
+      background-color: white;
+      min-width: 100%;
+    }
+  }
+
+  .posts__photo {
+    height: 300px;
+
+    &--pano {
+      min-height: 509px;
+    }
+  }
+
+  .posts__photo-image {
+    width: 100%;
+    height: 300px;
+
+    &--pano {
+      height: 100%;
+    }
   }
 }
 
-@media (min-width: 1200px) {
-  .posts__photo-image {
-    &--tablet {
-      display: none;
-    }
-
-    &--mobile {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-
-  .posts__item--pano {
-    flex-basis: 660px;
-  }
-
-  .posts__list {
-    min-width: inherit;
-    list-style: none;
+@media (min-width: 960px) {
+  .posts__genlist {
+    width: 940px;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin: 0 130px;
+    justify-content: space-between;
   }
 
-  .posts__item {
-    flex-basis: 280px;
-    background-color: @light-grey;
-    display: flex;
-    flex-direction: column;
+  .posts__content--pano {
+    width: 940px;
+    align-self: center;
+    margin: 0;
+  }
+
+  .posts__item:nth-of-type(2n) {
+    margin-left: 0;
+  }
+
+
+  @media (min-width: 1200px) {
+    .posts__list {
+      min-width: 1200px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .posts__genlist {
+      max-width: 940px;
+      padding: 0;
+    }
+
+    .posts__item {
+      flex-basis: 300px;
+      background-color: @light-grey;
+      display: flex;
+      flex-direction: column;
+
+      &--pano {
+        background-color: white;
+        width: 1200px;
+      }
+    }
+
+    .posts__photo {
+      height: 400px;
+
+      &--pano {
+        height: auto;
+      }
+    }
+
+    .posts__photo-image {
+      width: 100%;
+      height: 400px;
+
+      &--pano {
+        height: auto;
+      }
+    }
+
+    .posts__content {
+      &--pano {
+        width: 940px;
+        margin: 0 auto;
+      }
+    }
   }
 }

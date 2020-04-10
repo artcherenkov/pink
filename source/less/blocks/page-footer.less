@@ -8,10 +8,8 @@
   padding-bottom: 40px;
   flex-basis: 280px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .page-footer__social__item {
@@ -47,22 +45,29 @@
   padding-left: 10px;
 }
 
+.page-footer {
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 660px) {
   .page-footer {
     display: block;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 1200px) {
   .page-footer {
     display: block;
-  }
-}
-
-.page-footer {
-  display: block;
-
-  &--hidden {
-    display: none;
   }
 }

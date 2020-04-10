@@ -30,7 +30,22 @@
 }
 
 @media (min-width: 1200px) {
+  .page-header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+  }
+
   .page-header__head {
+    padding-left: 130px;
+    padding-right: 173px;
+    border: none;
+    line-height: auto;
+    min-width: 100px;
+    background: @opacity-menu-color;
+  }
+
+  .page-header__toggle {
     display: none;
   }
 }

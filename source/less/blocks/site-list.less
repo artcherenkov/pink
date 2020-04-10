@@ -9,9 +9,6 @@
   display: none;
 }
 
-.site-list__item:first-of-type {
-  display: none;
-}
 
 .site-list__item a {
   display: block;
@@ -33,17 +30,13 @@
 
 @media (min-width: 1200px) {
   .site-list {
-    min-width: 1200px;
     height: 110px;
-    position: absolute;
     background: @opacity-menu-color;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-  }
-
-  .site-list__item:first-of-type {
-    display: block;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-right: 20%;
   }
 
   .site-list__item a {

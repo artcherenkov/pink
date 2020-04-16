@@ -1,8 +1,6 @@
 .contest__intro {
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 280px;
+  padding: 30px 20px;
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
   text-align: center;
@@ -13,14 +11,41 @@
 }
 
 .contest__form {
-  min-width: 320px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
+.contest__block {
+  padding: 0 20px;
+  padding-bottom: 42px;
+}
+
+.contest__trip {
+  padding-top: 42px;
+  background-color: @light-grey;
+}
+
+.contest__app {
+  padding-top: 42px;
+  background-color: @light-grey;
+}
+
+.contest__impression {
+  padding-top: 42px;
+}
+
+.contest__controls {
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
 .contest__submit {
-  margin-left: 20px;
+  margin: 0;
   padding: 15px 0;
   width: 276px;
   background-color: @green;
@@ -28,96 +53,141 @@
   .setFont(white, 18px, @bold);
   text-transform: uppercase;
   border-radius: 4px;
+  margin-bottom: 44px;
 }
 
 .contest__note {
-  margin: auto;
+  margin: 0;
   height: 1em;
   .setFont(@dark-blue, 14px, @regular);
   text-transform: uppercase;
+
+  &--extra {
+    display: none;
+  }
 }
 
 .contest__note-redstar {
   color: @pink;
 }
 
-.contest__footer {
-  order: 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
 @media (min-width: 660px) {
   .contest__intro {
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 0;
-    width: 490px;
-    .setFont(@dark-blue, 18px, @regular);
-    line-height: 30px;
-    text-align: center;
+    font-size: 18px;
+    padding: 100px 80px 75px 80px;
 
     &--extra {
-      padding-top: 0;
-      padding-bottom: 50px;
-      display: block;
-      font-size: 18px;
+      display: inline;
     }
   }
 
-  .contest__form {
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  .contest__block {
+    background-color: white;
+    padding-top: 0;
   }
 
-  .contest__footer {
+  .contest__block:nth-child(1) {
+    order: 1;
+  }
+
+  .contest__block:nth-child(2) {
+    order: 4;
+  }
+
+  .contest__block:nth-child(3) {
+    order: 3;
+  }
+
+  .contest__block:nth-child(4) {
+    order: 2;
+  }
+
+  .contest__block:nth-child(5) {
+    order: 5;
+    padding-bottom: 0;
+  }
+
+  .contest__controls {
+    order: 6;
+    padding-top: 67px;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contest__submit {
+    margin: 0;
+    padding: 15px 0;
+    width: 276px;
+    background-color: @green;
+    border: 2px solid @green;
+    .setFont(white, 18px, @bold);
+    text-transform: uppercase;
+    border-radius: 4px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .contest__intro {
-    display: block;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 780px;
-    .setFont(@dark-blue, 18px, @regular);
-    line-height: 30px;
-    text-align: center;
+    font-size: 18px;
+    padding: 100px 80px 75px 80px;
 
     &--extra {
-      padding-top: 0;
       display: inline;
-      font-size: 18px;
+      padding: 0;
     }
   }
 
   .contest__form {
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 960px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contest__block:nth-child(1) {
+    order: 1;
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+
+  .contest__block:nth-child(2) {
+    order: 4;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contest__block:nth-child(3) {
+    order: 3;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contest__block:nth-child(4) {
+    order: 2;
+    padding-right: 10px;
+  }
+
+  .contest__block:nth-child(5) {
+    order: 5;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+
+  .contest__controls {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 65px;
   }
 
   .contest__note {
-    margin: 0;
-  }
-
-  .contest__footer {
-    width: 100%;
-    order: 6;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    &--extra {
+      display: inline;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .site-list {
-  flex-basis: 320px;
+  flex-basis: 280px;
   .resetList();
   display: flex;
   flex-direction: column;
@@ -24,22 +24,21 @@
 
 @media (min-width: 660px) {
   .site-list {
-    min-width: 660px;
+    flex-basis: 660px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .site-list {
-    height: 110px;
-    background: @opacity-menu-color;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-grow: 1;
-    padding-right: 20%;
   }
 
   .site-list__item a {
+    height: auto;
+    line-height: normal;
+    min-width: none;
     background-color: transparent;
     .setFont(white, 18px, @regular);
     text-align: center;

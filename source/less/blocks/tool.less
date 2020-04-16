@@ -1,10 +1,8 @@
-.tool {
-  margin: auto;
-}
-
 .tool__button {
   border: none;
   background: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .tool__button-image {
@@ -18,13 +16,14 @@
 }
 
 .tool__control {
-  &--cut__cut-area {
-    width: 240px;
-    margin-left: 48px;
-    margin-bottom: 20px;
-  }
+  display: block;
+  height: 15px;
+  background-color: white;
+}
 
-  width: 320px;
-  margin-left: -20px;
-  border-bottom: 2px solid rgba(@dark-blue-rgb, 10%);
+@media (min-width: 660px) {
+  .tool__button-image {
+    fill: @pink;
+    opacity: 100%;
+  }
 }

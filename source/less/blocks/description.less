@@ -1,7 +1,11 @@
 .description {
   min-width: 320px;
-  padding-top: 40px;
   overflow: hidden;
+}
+
+.description__head {
+  padding-top: 51px;
+  position: relative;
 }
 
 .description__header {
@@ -9,21 +13,36 @@
   .setFont(@dark-blue, 24px, @light);
   text-align: center;
   background-color: white;
-  margin: 0 auto 29px;
+  margin: 0;
   line-height: auto;
+  padding: 0 0 45px 0;
+}
+
+.description__header:last-of-type {
+  padding-bottom: 65px;
 }
 
 .description__wrapper {
+  position: relative;
+  width: 100%;
   background-color: @light-grey;
 }
 
 .description__triangle {
   transform: rotate(180deg);
+  margin-bottom: -3px;
+  width: 100%;
+  height: auto;
+  position: static;
 }
 
 .description__list {
-  list-style: none;
-  padding: 0;
+  .resetList();
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .description__list__item {
@@ -46,8 +65,17 @@
 }
 
 .description__helloworld {
-  height: 280px;
-  background: url("../img/iphone-screen-mobile@1x.png") 50% 0 no-repeat;
+  height: auto;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: -40px;
+}
+
+.description__helloworld__item--hidden {
+  display: none;
 }
 
 .description__effect {
@@ -55,71 +83,130 @@
 }
 
 @media (min-width: 660px) {
-  .description {
-    min-width: 660px;
+  .description__head {
+    position: relative;
   }
 
-  .description__wrapper {
-    margin-top: 125px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+  .description__triangle {
+    margin-bottom: -3px;
+    width: 100%;
+    height: auto;
+    position: static;
   }
 
   .description__header {
     font-size: 40px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     width: auto;
     margin: 0;
+  }
+
+  .description__header:last-of-type {
+    padding-bottom: 96px;
+  }
+
+  .description__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
   }
 
   .description__list {
-    margin: 0;
-    margin-left: 40px;
-    width: 50%;
+    .resetList();
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-left: 44px;
+    flex-grow: 1;
+    flex-basis: 320px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   .description__list__item {
-    width: auto;
     text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .description__list__item-header {
+    padding-bottom: 20px;
+  }
+
+  .description__list__item-content {
+    margin: 0;
+    line-height: 24px;
   }
 
   .description__helloworld {
+    .resetList();
+    width: 268px;
     height: auto;
-    width: 270px;
-    margin-left: 20px;
-    margin-top: -70px;
-    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+    padding: 0;
+    margin: 0;
+    margin-top: -45px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .description__helloworld__item img {
+    margin-bottom: -70px;
+    width: 268px;
+    height: 547px;
+    padding: 0;
   }
 
   .description__effect {
+    display: block;
+    padding-bottom: 106px;
+  }
+
+  .description__effect__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
-    margin-top: 50px;
+    padding-top: 59px;
+    background-color: white;
   }
 
   .description__timer {
-    display: block;
-    margin-left: 21px;
+    min-width: 238px;
+    flex-basis: 238px;
+    height: 276px;
   }
 
   .description__britain {
-    width: 40%;
-    padding-top: 45px;
-    margin-left: 71px;
+    padding-top: 43px;
+    padding-left: 71px;
   }
 
   .description__britain-header {
     .setFont(black, 30px, @bold);
-    line-height: 36px;
+    line-height: 30px;
     margin: 0;
+    padding-bottom: 26px;
+
+    &--hidden-part {
+      display: inline;
+    }
   }
 
   .description__britain-content {
     .setFont(@dark-blue, 14px, @regular);
     line-height: 24px;
     margin: 0;
+    text-align: left;
+    padding-right: 5px;
+
+    &--hidden-part {
+      display: none;
+    }
   }
 
   .description__britain-link {
@@ -129,44 +216,125 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .description__list {
-    flex-direction: row;
-    padding-bottom: 400px;
-  }
-
-  .description__list__item {
-    flex-basis: 240px;
-    text-align: center;
+@media (min-width: 960px) {
+  .description {
+    background-color: @light-grey;
   }
 
   .description__header {
     margin: 0 auto;
+    background-color: white;
+  }
+
+  .description__header:last-of-type {
+    padding-bottom: 80px;
+  }
+
+  .description__head {
+    background-color: white;
+    position: relative;
+    padding-top: 51px;
+  }
+
+  .description__wrapper {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .description__helloworld {
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    margin-top: -80px;
+  }
+
+  .description__helloworld__item {
+    width: 300px;
+    margin: 0;
+    height: 382px;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .description__helloworld__item img {
+    width: 300px;
+    margin: 0;
+    height: 382px;
+  }
+
+  .description__list {
+    padding: 0;
+    width: 960px;
+    margin: 0 auto;
+    flex-direction: row;
+    padding-top: 60px;
+    justify-content: space-around;
+  }
+
+  .description__list__item {
+    min-width: 240px;
+    flex-basis: 243px;
+    text-align: center;
+  }
+
+  .description__list__item-header {
+    .setFont(black, 30px, @bold);
+  }
+
+  .description__list__item-content {
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 30px;
   }
 
   .description__effect {
-    margin: 0;
-    padding: 80px;
-    padding-top: 0;
+    display: block;
+    padding: 0;
+  }
+
+  .description__effect__wrapper {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    display: flex;
     background-color: @light-grey;
+    padding-bottom: 67px;
   }
 
   .description__timer {
-    width: 300px;
-    height: auto;
+    margin: 0;
+    min-width: 298px;
+    flex-basis: 298px;
+    height: 345px;
+    flex-grow: 1;
   }
 
   .description__britain {
-    width: 500px;
-    padding-right: 90px;
+    padding-left: 65px;
+    width: auto;
+    margin: 0;
   }
 
   .description__britain-header {
     padding-top: 50px;
     padding-bottom: 20px;
+    line-height: 30px;
   }
 
   .description__britain-content {
     padding-bottom: 20px;
+    line-height: 30px;
+    font-size: 18px;
+
+    &--hidden-part {
+      display: inline;
+    }
   }
 }

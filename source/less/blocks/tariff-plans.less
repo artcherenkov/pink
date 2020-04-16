@@ -1,7 +1,55 @@
-.tariff-plans__list {
-  .resetList();
+.tariff-plans__wrapper {
+  position: relative;
+  background-color: @light-grey;
+  //  height: 390px;
+  overflow: hidden;
 }
 
-.tariff-plans__wrapper {
-  background-color: @light-grey;
+.tariff-plans__list {
+  position: absolute;
+  .resetList();
+  padding-top: 66px;
+  left: -255px;
+  display: flex;
+}
+
+.tariff-plans__toggles {
+  padding-top: 350px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: 660px) {
+  .tariff-plans__list {
+    position: static;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 68px;
+  }
+
+  .tariff-plans__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .tariff-plans {
+    background-color: @light-grey;
+  }
+
+  .tariff-plans__wrapper {
+    margin: 0 auto;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tariff-plans__list {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 95px;
+  }
+
+  .tariff-plans__toggles {
+    display: none;
+  }
 }

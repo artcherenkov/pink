@@ -1,5 +1,19 @@
+.reviews {
+  width: 100%;
+}
+
+.reviews__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .reviews__list {
   .resetList();
+}
+
+.reviews__review {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__review__name {
@@ -9,10 +23,111 @@
   padding-top: 20px;
 }
 
+.reviews__review__caption {
+  display: none;
+}
+
 .reviews__review__text {
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.reviews__triangle {
+  width: 100%;
+  height: auto;
+  transform: rotate(180deg);
+  margin-bottom: -3px;
+}
+
+@media (min-width: 660px) {
+  .reviews__review__caption {
+    display: block;
+    margin: 0;
+    text-align: center;
+    .setFont(@dark-blue, 14px, @regular);
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .reviews__review {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__review__name {
+    .setFont(black, 20px, @bold);
+    line-height: 30px;
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+
+  .reviews__review__text {
+    .setFont(@dark-blue, 18px, @regular);
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews {
+    position: relative;
+  }
+
+  .reviews__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reviews__list {
+    padding-left: 127px;
+    padding-right: 127px;
+  }
+
+  .reviews__review__caption {
+    display: block;
+    margin: 0;
+    text-align: center;
+    .setFont(@dark-blue, 18px, @regular);
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .reviews__review {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .reviews::before {
+    width: 79px;
+    height: 63px;
+    top: 72px;
+    left: 50%;
+    content: "";
+    background: url("../../img/icon-quotes.svg") no-repeat;
+    position: absolute;
+    background-size: 79px 63px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__review__name {
+    .setFont(black, 24px, @bold);
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+  }
+
+  .reviews__review__text {
+    .setFont(@dark-blue, 18px, @regular);
+    line-height: 30px;
+    margin: 0;
+    opacity: 60%;
+    padding-top: 193px;
+  }
 }

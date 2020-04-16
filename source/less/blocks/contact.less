@@ -1,5 +1,6 @@
 .contact {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
+  flex-grow: 1;
 }
 
 .contact-type {
@@ -13,4 +14,44 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: 660px) {
+  .contact {
+    padding-bottom: 57px;
+  }
+
+  .contact-type {
+    font-size: 18px;
+    line-height: normal;
+    padding-bottom: 15px;
+  }
+
+  .contact-value {
+    width: 240px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .contact:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .contact-type {
+    padding-bottom: 35px;
+  }
+
+  .contact:nth-of-type(1) {
+    order: 1;
+  }
+
+  .contact:nth-of-type(2) {
+    order: 3;
+  }
+
+  .contact:nth-of-type(3) {
+    order: 2;
+  }
 }

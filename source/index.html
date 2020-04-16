@@ -2,48 +2,50 @@
 <html lang="ru">
 
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__head page-header__head--close">
-      <a class="page-header__logo page-header__logo--mobile" href="#">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <img class="page-header__toggle-image" src="img/icon-menu-cross.svg" alt="Приложение 'Pink'" width="24" height="23">
-      </button>
+    <div class="page-header__wrapper">
+      <div class="page-header__buttons">
+        <a class="page-header__logo" href="#">
+          <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <img src="img/icon-menu-cross.svg" alt="Приложение 'Pink'" width="24" height="23">
+        </button>
+      </div>
+      <nav class="page-header__main-nav">
+        <ul class="page-header__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">"Pink"</h1>
     <section class="app">
+      <div class="app__slogan">
+        <h2 class="app__slogan-text">Взгляните на жизнь иначе!</h2>
+      </div>
       <div class="app__wrapper">
-        <div class="app__slogan">
-          <h2 class="app__slogan-text">Взгляните на жизнь иначе!</h2>
-        </div>
         <a class="app__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
         <ul class="app__platforms-list">
           <li class="app__platforms-list__item platform">
@@ -64,12 +66,17 @@
         </ul>
         <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-
     </section>
-    <div class="main-wrapper">
-      <section class="description">
-      <h2 class="description__header">Устали от серости мегаполиса?</h2>
-      <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
+    <section class="description">
+      <div class="description__head">
+        <h2 class="description__header">Устали от серости мегаполиса?</h2>
+        <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
+        <!--        <img src="img/bg-triangle-white.svg" width="auto" height="auto" alt="">-->
+        <svg class="description__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+          <polygon fill="#f2f2f2" points="1200,0 0,0 0,94.074 " />
+        </svg>
+      </div>
+
       <div class="description__wrapper">
         <ul class="description__list">
           <li class="description__list__item">
@@ -85,156 +92,179 @@
             <p class="description__list__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="description__helloworld"></div>
-        <!--        <img class="description__helloworld" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="'Pink' - Всем привет!">-->
+        <ul class="description__helloworld">
+          <li class="description__helloworld__item description__helloworld__item--hidden">
+            <img src="img/iphone-screen-1-desktop@1x.png" width="186" height="382" alt="'Pink' - Всем привет!">
+          </li>
+          <li class="description__helloworld__item description__helloworld__item--hidden">
+            <img src="img/iphone-screen-2-desktop@1x.png" width="186" height="382" alt="'Pink' - Всем привет!">
+          </li>
+          <li class="description__helloworld__item">
+            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="'Pink' - Всем привет!">
+          </li>
+        </ul>
       </div>
       <div class="description__effect">
-        <img class="description__timer" src="img/icon-timer.png" width="238" height="276" alt="">
-        <div class="description__britain">
-          <h3 class="description__britain-header">Эффект на 24 часа!</h3>
-          <p class="description__britain-content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a class="description__britain-link" href="#">Узнать больше об исследовании</a>
+        <div class="description__effect__wrapper">
+          <img class="description__timer" src="img/icon-timer.png" width="238" height="276" alt="">
+          <div class="description__britain">
+            <h3 class="description__britain-header">Эффект<br class="description__britain-header--hidden-part">на 24 часа!</h3>
+            <p class="description__britain-content">Британские ученые провели исследования и доказали,<br class="description__britain-content--hidden-part"> что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="description__britain-link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о Pink</h2>
+      <div class="reviews__wrapper slider">
+        <ul class="reviews__list slider__list">
+          <li class="slider__list__item reviews__review">
+            <p class="reviews__review__caption">25 лет, водитель трамвая</p>
+            <h3 class="reviews__review__name">Николай Петров</h3>
+            <p class="reviews__review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="slider__list__item reviews__review visually-hidden">
+            <h3 class="reviews__review__name">Имя Фамилия</h3>
+            <p class="reviews__review__text">Текст отзыва</p>
+          </li>
+          <li class="slider__list__item reviews__review visually-hidden">
+            <h3 class="reviews__review__name">Имя Фамилия</h3>
+            <p class="reviews__review__text">Текст отзыва</p>
+          </li>
+        </ul>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+      <img class="reviews__triangle" src="img/bg-triangle-white.svg" width="auto" height="auto" alt="">
+    </section>
+    <section class="tariff-plans">
+      <h2 class="visually-hidden">Тарифные планы</h2>
+      <div class="tariff-plans__wrapper slider">
+        <ul class="tariff-plans__list">
+          <li class="tariff-plans__item tariff tariff--full">
+            <div class="tariff__caption">
+              <h3 class="tariff__name">Стандарт</h3>
+              <p class="tariff__cost">3,99 USD</p>
+            </div>
+            <ul class="tariff__row">
+              <li class="tariff__option">Розовый фильтр</li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__option">Смайлики</li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__option">Комментарии</li>
+            </ul>
+          </li>
+          <li class="tariff-plans__item tariff">
+            <div class="tariff__caption">
+              <h3 class="tariff__name">База</h3>
+              <p class="tariff__cost">1,99 USD</p>
+            </div>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Розовый фильтр</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-yes.svg" width="31" height="21" alt="да">
+              </li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Смайлики</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-no.svg" width="27" height="26" alt="нет">
+              </li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Комментарии</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-no.svg" width="27" height="26" alt="нет">
+              </li>
+            </ul>
+          </li>
+          <li class="tariff-plans__item tariff">
+            <div class="tariff__caption">
+              <h3 class="tariff__name">Стандарт</h3>
+              <p class="tariff__cost">3,99 USD</p>
+            </div>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Розовый фильтр</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-yes.svg" width="31" height="21" alt="да">
+              </li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Смайлики</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-yes.svg" width="31" height="21" alt="да">
+              </li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Комментарии</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-no.svg" width="27" height="26" alt="нет">
+              </li>
+            </ul>
+          </li>
+          <li class="tariff-plans__item tariff">
+            <div class="tariff__caption">
+              <h3 class="tariff__name">Анлим</h3>
+              <p class="tariff__cost">9,99 USD</p>
+            </div>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Розовый фильтр</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-yes.svg" width="31" height="21" alt="да">
+              </li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Смайлики</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-yes.svg" width="31" height="21" alt="да">
+              </li>
+            </ul>
+            <ul class="tariff__row">
+              <li class="tariff__cell tariff__option tariff__option--hidden">Комментарии</li>
+              <li class="tariff__cell tariff__value">
+                <img class="tariff__value-image" src="img/icon-yes.svg" width="31" height="21" alt="да">
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p class="tariff-plans__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="questions__wrapper">
+        <h2 class="questions__intro">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <ul class="question__contact-list">
+          <li class="question__contact-list__item contact">
+            <h3 class="contact-type">Звоните:</h3>
+            <a class="contact-value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="question__contact-list__item contact">
+            <h3 class="contact-type">Пишите:</h3>
+            <a class="contact-value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="question__contact-list__item contact">
+            <h3 class="contact-type">Приезжайте в гости:</h3>
+            <p class="contact-value">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+      <div class="question__map__wrapper">
+        <img class="question__triangle" src="img/bg-triangle-white-footer.svg" width="auto" height="auto" alt="">
+        <iframe class="question__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6415055bc0d677bbb6171c1049e8b8b84a19c1dae106631262aa528918c71af&amp;source=constructor" width="320" height="200" frameborder="0"></iframe>
       </div>
 
     </section>
-      <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о Pink</h2>
-        <div class="reviews__wrapper slider">
-          <ul class="reviews__list slider__list">
-            <li class="slider__list__item reviews__review">
-              <h3 class="reviews__review__name">Николай Петров</h3>
-              <p class="reviews__review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="slider__list__item reviews__review visually-hidden">
-              <h3 class="reviews__review__name">Имя Фамилия</h3>
-              <p class="reviews__review__text">Текст отзыва</p>
-            </li>
-            <li class="slider__list__item reviews__review visually-hidden">
-              <h3 class="reviews__review__name">Имя Фамилия</h3>
-              <p class="reviews__review__text">Текст отзыва</p>
-            </li>
-          </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="tariff-plans">
-        <h2 class="visually-hidden">Тарифные планы</h2>
-        <div class="tariff-plans__wrapper slider">
-          <ul class="tariff-plans__list">
-            <li class="tariff-plans__list-item tariff">
-              <table class="tariff__options">
-                <caption class="tariff__caption">
-                  <h3 class="tariff__name">Стандарт</h3>
-                  <p class="tariff__cost">3,99 USD</p>
-                </caption>
-                <tr class="haha">
-                  <td class="tariff__option">Розовый фильтр</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-yes.svg" alt="да">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tariff__option">Смайлики</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-yes.svg" alt="да">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tariff__option">Комментарии</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-no.svg" alt="нет">
-                  </td>
-                </tr>
-              </table>
-            </li>
-            <li class="tariff-plans__list-item tariff visually-hidden">
-              <table class="tariff__options">
-                <caption class="tariff__caption">
-                  <h3 class="tariff__name">Название</h3>
-                  <p class="tariff__cost">Цена</p>
-                </caption>
-                <tr>
-                  <td class="tariff__option">Опции</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-yes.svg" alt="да">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tariff__option">Опции</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-yes.svg" alt="да">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tariff__option">Опции</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-no.svg" alt="нет">
-                  </td>
-                </tr>
-              </table>
-            </li>
-            <li class="tariff-plans__list-item tariff visually-hidden">
-              <table class="tariff__options">
-                <caption class="tariff__caption">
-                  <h3 class="tariff__name">Название</h3>
-                  <p class="tariff__cost">Цена</p>
-                </caption>
-                <tr>
-                  <td class="tariff__option">Опции</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-yes.svg" alt="да">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tariff__option">Опции</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-yes.svg" alt="да">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tariff__option">Опции</td>
-                  <td class="tariff__option-value">
-                    <img class="tariff__option-value-image" src="img/icon-no.svg" alt="нет">
-                  </td>
-                </tr>
-              </table>
-            </li>
-          </ul>
-          <p class="tariff-plans__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="questions">
-        <div class="questions__wrapper">
-          <h2 class="questions__intro">Остались вопросы?<br>Свяжитесь с нами!</h2>
-          <ul class="question__contact-list">
-            <li class="question__contact-list__item contact">
-              <h3 class="contact-type">Звоните:</h3>
-              <a class="contact-value" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="question__contact-list__item contact">
-              <h3 class="contact-type">Пишите:</h3>
-              <a class="contact-value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="question__contact-list__item contact">
-              <h3 class="contact-type">Приезжайте в гости:</h3>
-              <p class="contact-value">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-          <iframe class="question__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6415055bc0d677bbb6171c1049e8b8b84a19c1dae106631262aa528918c71af&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
-        </div>
-      </section>
-    </div>
-
   </main>
 
   <footer class="page-footer page-footer--hidden">

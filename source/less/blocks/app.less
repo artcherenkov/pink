@@ -1,23 +1,27 @@
 .app {
+  min-width: 320px;
   background-color: @dark-blue;
-  width: 320px;
 }
 
-.app__hand {
-  padding: 0;
-  width: 320px;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
+.app__wrapper {
+  min-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .app__slogan {
-  margin: 0;
-  padding: 20px 45px 0 45px;
-  text-align: center;
-  .setFont(white, 24px, @light);
+  width: 100%;
+  background:
+    url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
+  background-size: auto, cover;
 }
 
-.app__image {
-  margin-top: 25px;
+.app__slogan-text {
+  margin: 0;
+  padding: 20px 45px 319px 45px;
+  text-align: center;
+  .setFont(white, 24px, @light);
 }
 
 .app__button {
@@ -34,7 +38,7 @@
 
 .app__platforms {
   width: 235px;
-  margin: 16px auto;
+  margin: 16px auto 0;
   padding-bottom: 28px;
   .setFont(white, 14px, @light);
   line-height: 1.71;
@@ -44,8 +48,144 @@
 .app__platforms-list {
   list-style: none;
   padding: 0;
-  margin: 32px 58px 0 57px;
+  margin: 16px auto;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+}
+
+@media (min-width: 660px) {
+  .app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:
+      url("../img/iphone-hand-tablet@1x.png") center 100% no-repeat,
+      url("../img/bg-back-tablet@1x.jpg") center no-repeat;
+    background-size: auto, cover;
+    align-content: flex-start;
+  }
+
+  .app__wrapper {
+    width: 340px;
+    margin: 0;
+  }
+
+  .app__slogan {
+    background: transparent;
+    width: 340px;
+    padding-top: 102px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+  }
+
+  .app__slogan-text {
+    padding: 0;
+    margin: 0 auto;
+    background: transparent;
+    font-size: 40px;
+  }
+
+  .app__button {
+    width: 300px;
+    margin: 0;
+  }
+
+  .app__platforms-list {
+    .resetList();
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+
+  .app__platforms {
+    width: auto;
+    .setFont(white, 18px, @light);
+    margin: 0;
+    padding-bottom: 115px;
+  }
+
+  .app__hand {
+    background: transparent;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  .app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:
+      url("../img/iphone-hand-desktop@1x.png") center 100% no-repeat,
+      url("../img/bg-back-desktop@1x.jpg") -690px 0 no-repeat;
+    background-size: auto, cover;
+  }
+
+  .app__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__slogan {
+    margin: 0 auto;
+    background: transparent;
+    width: 960px;
+    padding-top: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__slogan-text {
+    margin: 0;
+    width: 300px;
+    padding: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+    background: transparent;
+    font-size: 40px;
+  }
+
+  .app__button {
+    width: 300px;
+    margin: 0;
+  }
+
+  .app__platforms-list {
+    width: 300px;
+    .resetList();
+    padding-top: 67px;
+    padding-bottom: 61px;
+  }
+
+  .app__platforms {
+    width: 300px;
+    .setFont(white, 18px, @light);
+    margin: 0;
+    padding-bottom: 115px;
+  }
+}
+
+
+@media (min-width: 1800px) {
+  .app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:
+      url("../img/iphone-hand-desktop@1x.png") 60% 100% no-repeat,
+      url("../img/bg-back-desktop@1x.jpg") 0 0 no-repeat;
+    background-size: auto, cover;
+  }
 }

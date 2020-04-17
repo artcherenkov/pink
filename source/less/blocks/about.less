@@ -1,43 +1,235 @@
-.about__wrapper {
-  width: 320px;
+[class^="about"] {
   border: none;
+}
+
+.about__person {
+  padding: 0;
+  margin: 0;
+}
+
+.about__person-list {
+  .resetList();
+  display: flex;
+  flex-direction: column;
+}
+
+.about__person-list__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.about__person-list__item:last-of-type {
+  padding-bottom: 0;
+}
+
+.about__person-label {
+  padding-bottom: 15px;
+}
+
+.about__trip {
   margin: 0;
   padding: 0;
-  padding-left: 20px;
 }
 
-.about__list {
+.about__trip-header {
+  text-align: center;
+  .setFont(@pink, 14px, @regular);
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+
+.about__trip-list {
   .resetList();
+  display: flex;
+  flex-direction: column;
 }
 
-.about__trip-header,
-.about__app-header {
-  .setFont(@pink, 14px, @regular);
-  text-align: center;
-  background-color: @light-grey;
-  text-transform: uppercase;
-  padding: 40px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+.about__trip-list__item:not(:last-child) {
+  padding-bottom: 40px;
+}
+
+.about__contact {
   margin: 0;
+  padding: 0;
 }
 
-.about__trip,
+.about__contact-header {
+  display: none;
+}
+
+.about__contact-list {
+  .resetList();
+  padding-top: 42px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__contact-list__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.about__contact-list__item:last-of-type {
+  padding-bottom: 0;
+}
+
+.about__contact-label {
+  padding-bottom: 15px;
+}
+
 .about__app {
-  background-color: @light-grey;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.about__list__item {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-}
-
-.about__impression-label {
-  .setFont(@pink, 14px, @regular);
-  line-height: 30px;
-  text-transform: uppercase;
+.about__app-header {
   text-align: center;
+  .setFont(@pink, 14px, @regular);
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+
+.about__app-list {
+  .resetList();
+  display: flex;
+  flex-direction: column;
+}
+
+.about__app-list__item:not(:last-child) {
+  padding-bottom: 40px;
+}
+
+.about__impression {
+  margin: 0;
+  padding: 0;
+}
+
+.about__impression-block {
+  width: auto;
+  display: flex;
+}
+
+.about__impression-header {
+  text-align: center;
+  .setFont(@pink, 14px, @regular);
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.about__impression-input {
+  width: 100%;
+  padding: 20px;
+}
+
+
+@media (min-width: 660px) {
+  .about__trip,
+  .about__contact,
+  .about__app,
+  .about__impression {
+    border: 2px solid @grey;
+  }
+
+  .about__person-list__item {
+    flex-direction: row;
+    padding-bottom: 52px;
+  }
+
+  .about__person-list__item:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .about__person-input {
+    flex-grow: 1;
+  }
+
+  .about__app {
+    padding: 50px 0 54px 58px;
+  }
+
+  .about__app-header {
+    padding: 0 25px;
+  }
+
+  .about__contact {
+    padding: 0 58px 0 58px;
+  }
+
+  .about__contact-header {
+    display: block;
+    padding: 0 25px;
+    text-align: center;
+    .setFont(@pink, 14px, @regular);
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .about__contact-list {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  .about__contact-list__item {
+    flex-direction: column-reverse;
+  }
+
+  .about__contact-label.input__text-label {
+    padding: 20px;
+  }
+
+  .about__trip-header {
+    padding: 0 25px;
+  }
+
+  .about__trip {
+    padding: 52px 0 48px 58px;
+  }
+
+  .about__impression-header {
+    padding: 0 25px;
+  }
+
+  .about__impression {
+    padding: 45px 58px 50px 58px;
+  }
+}
+
+@media (min-width: 960px) {
+  .about__person {
+    padding-top: 9px;
+  }
+
+  .about__app {
+    height: 100%;
+  }
+
+  .about__contact-list {
+    flex-direction: row;
+  }
+
+  .about__contact-list__item {
+    flex-grow: 1;
+    padding-bottom: 0;
+  }
+
+  .about__contact-list__item:first-child {
+    padding-right: 70px;
+  }
+
+  /* временно задал фиксированную высоту, пока не стилизовал чекбоксы */
+  .about__trip-list {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .about__impression-input.input__textarea {
+    height: 125px;
+  }
 }

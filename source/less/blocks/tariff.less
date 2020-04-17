@@ -1,49 +1,112 @@
-.tariff__options {
-  margin: 0;
+.tariff {
   width: 276px;
-  border-collapse: collapse;
-  margin-left: 20px;
+  display: table;
   background-color: white;
-  margin-bottom: 30px;
+  border-collapse: collapse;
+  border: 2px solid @grey;
+  margin: 0;
+  margin-right: 2px;
 }
 
 .tariff__caption {
+  display: table-caption;
   background-color: @dark-blue;
-  border: 2px solid @dark-blue;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .tariff__name {
-  margin: 0;
   .setFont(white, 18px, @bold);
-  text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 5px;
+  padding: 0;
+  margin: 0;
 }
 
 .tariff__cost {
-  margin: 0;
-  .setFont(white, 24px, @light);
+  .setFont(white, 23px, @light);
   line-height: 30px;
+  padding: 0;
+  margin: 0;
 }
 
-.tariff__option,
-.tariff__option-value {
-  border: 2px solid @grey;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  .setFont(@dark-blue, 14px, @regular);
-  text-transform: uppercase;
+.tariff__row {
+  .resetList();
+  display: table-row;
+  border-bottom: 2px solid @grey;
+  line-height: 59px;
+  vertical-align: middle;
+}
+
+.tariff__cell {
+  display: table-cell;
 }
 
 .tariff__option {
-  border-right: 1px solid white;
+  .setFont(@dark-blue, 14px, @regular);
+  text-transform: uppercase;
+  padding: 0;
+  padding-left: 22px;
+  margin: 0;
 }
 
-.tariff__option-value {
-  border-left: 1px solid white;
+.tariff__value {
   text-align: right;
-  padding-right: 20px;
+  padding-right: 19px;
+}
+
+.tariff__value-image {
+  vertical-align: middle;
+}
+
+.tariff.tariff--full {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .tariff {
+    margin: 0;
+  }
+
+  .tariff:nth-of-type(3) {
+    border-left: none;
+    border-right: none;
+  }
+
+  .tariff:nth-of-type(2) .tariff__caption {
+    border-right: 2px solid @grey;
+  }
+
+  .tariff:nth-of-type(4) .tariff__caption {
+    border-left: 2px solid @grey;
+  }
+
+  .tariff.tariff--full {
+    display: table;
+    border-right: none;
+  }
+
+  .tariff__option {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .tariff.tariff--full .tariff__caption {
+    visibility: hidden;
+  }
+
+  .tariff__option--hidden {
+    display: none;
+  }
+
+  .tariff__value {
+    text-align: center;
+    padding: 0;
+    line-height: 45px;
+  }
+
+  .tariff__value-image {
+    vertical-align: middle;
+  }
 }

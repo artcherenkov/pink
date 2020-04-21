@@ -14,7 +14,10 @@
     <div class="page-header__wrapper">
       <div class="page-header__buttons">
         <a class="page-header__logo" href="#">
-          <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+          </picture>
         </a>
         <button class="page-header__toggle" type="button">
           <img src="img/icon-menu-cross.svg" alt="Приложение 'Pink'" width="24" height="23">
@@ -48,16 +51,20 @@
       <ul class="posts__list">
         <li class="posts__item posts__item--pano">
           <p class="posts__photo posts__photo--pano">
-            <img class="posts__photo-image posts__photo-image--pano" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Анна">
+            <picture>
+             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <img class="posts__photo-image posts__photo-image--pano" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Анна">
+            </picture>
           </p>
           <div class="posts__content posts__content--pano">
-            <p class="posts__author">
+            <p class="posts__author posts__author--pano">
               <strong class="posts__author-name">Анна</strong><span class="posts__author-time"> (5 минут назад)</span>
             </p>
-            <p class="posts__text">
+            <p class="posts__text posts__text--pano">
               Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <div class="posts__like">
+            <div class="posts__like posts__like--pano">
               <button type="button" class="posts__like__button">
                 <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
                   <g>
@@ -68,12 +75,17 @@
               <p class="posts__like-count">Нравится: 215</p>
             </div>
           </div>
+
           <h4 class="posts__photo--pano__label">Панорама дня</h4>
         </li>
         <ul class="posts__genlist">
           <li class="posts__item">
             <p class="posts__photo">
-              <img class="posts__photo-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Левон">
+              <picture>
+               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                <img class="posts__photo-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Левон">
+              </picture>
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -82,21 +94,27 @@
               <p class="posts__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <div class="posts__like like">
-                <button type="button" class="posts__like__button">
-                  <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                    <g>
-                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                    </g>
-                  </svg>
-                </button>
-                <p class="posts__like-count">Нравится: 356</p>
-              </div>
+
+            </div>
+            <div class="posts__like like">
+              <button type="button" class="posts__like__button">
+                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                  </g>
+                </svg>
+              </button>
+              <p class="posts__like-count">Нравится: 356</p>
             </div>
           </li>
           <li class="posts__item">
             <p class="posts__photo">
-              <img class="posts__photo-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Антон">
+              <picture>
+               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                <img class="posts__photo-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Антон">
+              </picture>
+
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -105,21 +123,27 @@
               <p class="posts__text">
                 Соседи будут рады!
               </p>
-              <div class="posts__like like">
-                <button type="button" class="posts__like__button">
-                  <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                    <g>
-                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                    </g>
-                  </svg>
-                </button>
-                <p class="posts__like-count">Нравится: 666</p>
-              </div>
+
+            </div>
+            <div class="posts__like like">
+              <button type="button" class="posts__like__button">
+                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                  </g>
+                </svg>
+              </button>
+              <p class="posts__like-count">Нравится: 666</p>
             </div>
           </li>
           <li class="posts__item">
             <p class="posts__photo">
-              <img class="posts__photo-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Борис">
+              <picture>
+               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                <img class="posts__photo-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Борис">
+              </picture>
+
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -128,21 +152,26 @@
               <p class="posts__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-              <div class="posts__like like">
-                <button type="button" class="posts__like__button">
-                  <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                    <g>
-                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                    </g>
-                  </svg>
-                </button>
-                <p class="posts__like-count">Нравится: 215</p>
-              </div>
+            </div>
+            <div class="posts__like like">
+              <button type="button" class="posts__like__button">
+                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                  </g>
+                </svg>
+              </button>
+              <p class="posts__like-count">Нравится: 215</p>
             </div>
           </li>
           <li class="posts__item">
             <p class="posts__photo">
-              <img class="posts__photo-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Сергей">
+              <picture>
+               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                <img class="posts__photo-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Сергей">
+              </picture>
+
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -151,21 +180,27 @@
               <p class="posts__text">
                 Самая кубанская в мире!
               </p>
-              <div class="posts__like like">
-                <button type="button" class="posts__like__button">
-                  <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                    <g>
-                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                    </g>
-                  </svg>
-                </button>
-                <p class="posts__like-count">Нравится: 4</p>
-              </div>
+
+            </div>
+            <div class="posts__like like">
+              <button type="button" class="posts__like__button">
+                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                  </g>
+                </svg>
+              </button>
+              <p class="posts__like-count">Нравится: 4</p>
             </div>
           </li>
           <li class="posts__item">
             <p class="posts__photo">
-              <img class="posts__photo-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Максим">
+              <picture>
+               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                <img class="posts__photo-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Максим">
+              </picture>
+
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -174,21 +209,29 @@
               <p class="posts__text">
                 Где снег-то?
               </p>
-              <div class="posts__like like">
-                <button type="button" class="posts__like__button">
-                  <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                    <g>
-                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                    </g>
-                  </svg>
-                </button>
-                <p class="posts__like-count">Нравится: 150</p>
-              </div>
+
+            </div>
+            <div class="posts__like like">
+              <button type="button" class="posts__like__button">
+                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                  </g>
+                </svg>
+              </button>
+              <p class="posts__like-count">Нравится: 150</p>
             </div>
           </li>
           <li class="posts__item">
             <p class="posts__photo">
-              <img class="posts__photo-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Надежда">
+              <picture>
+
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+
+                <img class="posts__photo-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Надежда">
+              </picture>
+
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -197,16 +240,17 @@
               <p class="posts__text">
                 Всем GM и взаимные лайки!
               </p>
-              <div class="posts__like like">
-                <button type="button" class="posts__like__button">
-                  <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                    <g>
-                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                    </g>
-                  </svg>
-                </button>
-                <p class="posts__like-count">Нравится: 2560</p>
-              </div>
+
+            </div>
+            <div class="posts__like like">
+              <button type="button" class="posts__like__button">
+                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                  </g>
+                </svg>
+              </button>
+              <p class="posts__like-count">Нравится: 2560</p>
             </div>
           </li>
         </ul>
@@ -218,7 +262,13 @@
       <p class="add-photo__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <div class="add-photo__wrapper">
         <div class="add-photo__photo">
-          <img class="add-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото на выгрузку">
+          <picture>
+           <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+
+            <img class="add-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото на выгрузку">
+          </picture>
+
         </div>
         <div class="add-photo__controls">
           <div class="add-photo__tools">
@@ -226,30 +276,30 @@
               <li class="add-photo__tools-list__item">
                 <button class="tool__button">
                   <svg class="tool__button-image tool__button-image--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z" />
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
-                </svg>
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                  </svg>
                 </button>
                 <input class="tool__control tool__control--current tool__control--cut" type="range" min="0" max="30">
               </li>
               <li class="add-photo__tools-list__item">
                 <button class="tool__button">
-                <svg class="tool__button-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z" />
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
-                  <rect y="40" width="48" height="3" />
-                </svg>
+                  <svg class="tool__button-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                    <rect y="40" width="48" height="3" />
+                  </svg>
 
-              </button>
+                </button>
                 <input class="tool__control tool__control--filter" type="range" min="0" max="30">
               </li>
               <li class="add-photo__tools-list__item">
-                <button class="tool__button">
-                <svg class="tool__button-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
-                </svg>
-              </button>
+                <button class="tool__button tool__button--contrast">
+                  <svg class="tool__button-image tool__button-image--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                  </svg>
+                </button>
                 <input class="tool__control tool__control--contrast" type="range" min="0" max="30">
               </li>
             </ul>
@@ -265,7 +315,11 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="'Pink' - логотип">
+      <picture>
+       <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="'Pink' - логотип">
+      </picture>
+
       <div class="page-footer__social">
         <a class="page-footer__social__item" href="https://twitter.com">
           <svg class="page-footer__social__item-image" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">

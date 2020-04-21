@@ -8,19 +8,27 @@
 .tariff-plans__list {
   position: absolute;
   .resetList();
-  padding-top: 66px;
+  padding-top: 65px;
   left: -255px;
   display: flex;
 }
 
 .tariff-plans__toggles {
-  padding-top: 350px;
-  padding-bottom: 45px;
+  padding-top: 387px;
+  padding-bottom: 10px;
+}
+
+.tariff-plans__toggles > .slider__toggle {
+  border-color: @light-grey;
+  &--active {
+    border-color: @dark-blue;
+  }
 }
 
 @media (min-width: 660px) {
   .tariff-plans__list {
     position: static;
+    padding-top: 36px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 68px;
@@ -32,6 +40,31 @@
 }
 
 @media (min-width: 960px) {
+  .tariff__name {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  .tariff__cost {
+    padding-top: 2px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tariff__cell {
+    line-height: 59px;
+  }
+
+  .tariff__caption {
+    padding-bottom: 17px;
+  }
+
+  .tariff__option {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 59px;
+  }
+
   .tariff-plans {
     background-color: @light-grey;
   }
@@ -39,6 +72,7 @@
   .tariff-plans__wrapper {
     margin: 0 auto;
     width: 960px;
+    padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -46,6 +80,7 @@
   .tariff-plans__list {
     padding-left: 0;
     padding-right: 0;
+
     padding-bottom: 95px;
   }
 

@@ -1,6 +1,11 @@
 .contact {
-  padding-bottom: 28px;
+  padding-bottom: 20px;
   flex-grow: 1;
+}
+
+.contact:nth-child(2) {
+  padding-left: 2px;
+  padding-bottom: 25px;
 }
 
 .contact-type {
@@ -9,22 +14,35 @@
 }
 
 .contact-value {
+  display: block;
   text-decoration: none;
+  line-height: normal;
   .setFont(@pink, 24px, @light);
   margin: 0;
+  padding-top: 2px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+
 @media (min-width: 660px) {
   .contact {
-    padding-bottom: 57px;
+    padding-bottom: 44px;
+  }
+
+  .contact:nth-child(1) {
+    margin-right: 7px;
+  }
+
+  .contact:nth-child(1) {
+    margin-right: 7px;
   }
 
   .contact-type {
     font-size: 18px;
     line-height: normal;
-    padding-bottom: 15px;
+    padding-right: 5px;
+    padding-bottom: 3px;
   }
 
   .contact-value {
@@ -40,18 +58,32 @@
 
 @media (min-width: 960px) {
   .contact-type {
-    padding-bottom: 35px;
+    padding-bottom: 23px;
   }
 
   .contact:nth-of-type(1) {
     order: 1;
   }
 
+  .contact:nth-of-type(1) .contact-value {
+    padding-right: 5px;
+  }
+
   .contact:nth-of-type(2) {
     order: 3;
   }
 
+  .contact:nth-of-type(2) .contact-type {
+    padding-left: 4px;
+    padding-right: 0;
+  }
+
   .contact:nth-of-type(3) {
     order: 2;
+  }
+
+  .contact:nth-of-type(3) .contact-value {
+    padding-right: 11px;
+    line-height: 30px;
   }
 }

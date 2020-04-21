@@ -18,8 +18,10 @@
 
 .tariff__name {
   .setFont(white, 18px, @bold);
+  text-transform: uppercase;
   line-height: 30px;
   padding: 0;
+  padding-top: 7px;
   margin: 0;
 }
 
@@ -27,6 +29,9 @@
   .setFont(white, 23px, @light);
   line-height: 30px;
   padding: 0;
+  padding-top: 2px;
+  padding-right: 1px;
+  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -46,7 +51,7 @@
   .setFont(@dark-blue, 14px, @regular);
   text-transform: uppercase;
   padding: 0;
-  padding-left: 22px;
+  padding-left: 18px;
   margin: 0;
 }
 
@@ -66,6 +71,25 @@
 @media (min-width: 660px) {
   .tariff {
     margin: 0;
+  }
+
+  .tariff__option {
+    padding-left: 14px;
+  }
+
+  .tariff__name {
+    line-height: 30px;
+    font-size: 16px;
+    padding-top: 2px;
+    padding-left: 2px;
+  }
+
+  .tariff__cost {
+    line-height: 25px;
+    padding-left: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    font-size: 18px;
   }
 
   .tariff:nth-of-type(3) {

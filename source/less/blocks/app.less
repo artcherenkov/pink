@@ -19,14 +19,14 @@
 
 .app__slogan-text {
   margin: 0;
-  padding: 20px 45px 319px 45px;
+  padding: 20px 45px 313px 45px;
   text-align: center;
+  line-height: 30px;
   .setFont(white, 24px, @light);
 }
 
 .app__button {
   display: block;
-  width: 275px;
   margin: 28px auto;
   text-align: center;
   text-decoration: none;
@@ -38,19 +38,19 @@
 
 .app__platforms {
   width: 235px;
-  margin: 16px auto 0;
+  margin: 23px auto 0;
   padding-bottom: 28px;
   .setFont(white, 14px, @light);
-  line-height: 1.71;
+  line-height: 24px;
   text-align: center;
 }
 
 .app__platforms-list {
   list-style: none;
-  padding: 0;
-  margin: 16px auto;
+  padding: 0 38px;
+  margin: 16px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -74,13 +74,14 @@
   .app__slogan {
     background: transparent;
     width: 340px;
-    padding-top: 102px;
+    padding-top: 93px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
   .app__slogan-text {
+    line-height: 47px;
     padding: 0;
     margin: 0 auto;
     background: transparent;
@@ -94,15 +95,16 @@
 
   .app__platforms-list {
     .resetList();
+    padding: 0 46px;
     padding-top: 46px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
   .app__platforms {
     width: auto;
     .setFont(white, 18px, @light);
     margin: 0;
-    padding-bottom: 115px;
+    padding-bottom: 112px;
   }
 
   .app__hand {
@@ -121,7 +123,7 @@
     display: flex;
     flex-direction: column;
     background:
-      url("../img/iphone-hand-desktop@1x.png") center 100% no-repeat,
+      url("../img/iphone-hand-desktop@1x.png") 97% 100% no-repeat,
       url("../img/bg-back-desktop@1x.jpg") -690px 0 no-repeat;
     background-size: auto, cover;
   }
@@ -139,10 +141,10 @@
     margin: 0 auto;
     background: transparent;
     width: 960px;
-    padding-top: 230px;
+    padding-top: 220px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 63px;
+    padding-bottom: 49px;
     display: flex;
     flex-direction: column;
   }
@@ -151,29 +153,33 @@
     margin: 0;
     width: 300px;
     padding: 0;
+    padd
     padding-right: 35px;
-    padding-left: 35px;
+    padding-left: 0;
     background: transparent;
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .app__button {
     width: 300px;
     margin: 0;
+    font-size: 21px;
   }
 
   .app__platforms-list {
     width: 300px;
     .resetList();
+    padding: 0 48px;
     padding-top: 67px;
-    padding-bottom: 61px;
+    padding-bottom: 52px;
   }
 
   .app__platforms {
     width: 300px;
     .setFont(white, 18px, @light);
     margin: 0;
-    padding-bottom: 115px;
+    padding-bottom: 121px;
   }
 }
 

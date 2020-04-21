@@ -1,12 +1,8 @@
-.input__text-label {
-  .setFont(@pink, 14px, @regular);
-  text-transform: uppercase;
-  padding-left: 20px;
-}
 
 .input__text {
   border: 2px solid @grey;
   padding: 20px;
+  padding-top: 19px;
   .setFont(@dark-blue, 18px, @regular);
 }
 
@@ -14,6 +10,98 @@
 .input__radio-label {
   .setFont(@dark-blue, 18px, @regular);
   padding-left: 10px;
+}
+
+.input__check {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + .input__check-label::after {
+    opacity: 1;
+  }
+
+  &:not(:checked) + .input__check-label::after {
+    opacity: 0;
+  }
+}
+
+.input__check-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 69px;
+  padding-bottom: 0;
+  line-height: 39px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 39px;
+    height: 39px;
+    background-size: 22px 16px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    background: url("../../img/check-yes.svg") center no-repeat;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 39px;
+    height: 39px;
+    background-size: 22px 16px;
+  }
+}
+
+.input__radio {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + .input__radio-label::after {
+    opacity: 1;
+  }
+
+  &:not(:checked) + .input__radio-label::after {
+    opacity: 0;
+  }
+}
+
+.input__radio-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 69px;
+  padding-bottom: 0;
+  line-height: 39px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 39px;
+    height: 39px;
+    background-size: 22px 16px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+  }
+
+  &::after {
+    background: url("../../img/radio-yes.svg") center no-repeat;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 39px;
+    height: 39px;
+    background-size: 22px 16px;
+  }
 }
 
 .input__textarea {
@@ -28,21 +116,18 @@
 
 
 @media (min-width: 660px) {
-  .input__text-label {
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 1em;
-    height: 1em;
-    padding: 0;
-    padding-right: 20px;
-  }
-
-  //  .input__text {
-  //    margin: 0;
-  //  }
 
   .input__textarea {
     flex-grow: 1;
     margin: 0;
   }
+
+  .input__radio-label {
+    padding-left: 59px;
+  }
+
+  .input__check-label {
+    padding-left: 59px;
+  }
+
 }

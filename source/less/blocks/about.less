@@ -133,18 +133,15 @@
   padding-top: 14px;
   padding-bottom: 122px;
   line-height: 30px;
-  //  padding-top: 19px;
 }
 
 @media (min-width: 660px) {
-
   .about__trip,
   .about__contact,
   .about__app,
   .about__impression {
     border: 2px solid @grey;
   }
-
 
   .about__person-list__item {
     flex-direction: row;
@@ -160,7 +157,6 @@
     padding-top: 25px;
     padding-right: 18px;
   }
-
 
   .about__person-input {
     flex-grow: 1;
@@ -194,10 +190,16 @@
 
   .about__contact-list__item {
     flex-direction: column-reverse;
-    padding-bottom: 37px;
+    padding-bottom: 36px;
   }
 
   .about__contact-list__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .about__contact-label {
+    padding-top: 17px;
+    padding-left: 20px;
     padding-bottom: 0;
   }
 
@@ -271,14 +273,14 @@
   .about__contact-label {
     padding-top: 17px;
     padding-left: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .about__trip {
     padding-bottom: 55px;
   }
 
-  /* временно задал фиксированную высоту, пока не стилизовал чекбоксы */
+  /* временно задал фиксированную высоту, пока не изменил порядок */
   .about__trip-list {
     padding-right: 2px;
     height: 121px;
@@ -289,11 +291,11 @@
   }
 
   .about__trip-list__item {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .about__trip-list__item:nth-child(2n) {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .about__impression {

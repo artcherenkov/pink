@@ -64,17 +64,33 @@
   vertical-align: middle;
 }
 
-.tariff.tariff--full {
+.tariff--full {
   display: none;
 }
 
 @media (min-width: 660px) {
   .tariff {
     margin: 0;
+
+    &--full {
+      display: table;
+      border-right: none;
+    }
+
+    &--full .tariff__caption {
+      visibility: hidden;
+    }
   }
 
   .tariff__option {
     padding-left: 14px;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 45px;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   .tariff__name {
@@ -103,25 +119,6 @@
 
   .tariff:nth-of-type(4) .tariff__caption {
     border-left: 2px solid @grey;
-  }
-
-  .tariff.tariff--full {
-    display: table;
-    border-right: none;
-  }
-
-  .tariff__option {
-    text-transform: none;
-    font-size: 14px;
-    line-height: 45px;
-  }
-
-  .tariff.tariff--full .tariff__caption {
-    visibility: hidden;
-  }
-
-  .tariff__option--hidden {
-    display: none;
   }
 
   .tariff__value {

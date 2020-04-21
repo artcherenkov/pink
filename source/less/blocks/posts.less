@@ -4,7 +4,7 @@
   .setFont(@dark-blue, 14px, @regular);
   text-align: center;
   line-height: 30px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .posts__list {
@@ -61,10 +61,11 @@
 }
 
 .posts__content {
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-top: -3px;
   max-width: 940px;
   flex-grow: 1;
+
   &--pano {
     background-color: @light-grey;
     margin-left: 20px;
@@ -103,6 +104,7 @@
   display: flex;
   align-content: flex-start;
   justify-content: flex-start;
+
   &--pano {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -187,6 +189,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+
     &--pano {
       background-color: white;
       margin: 0;
@@ -214,6 +217,7 @@
 
   .posts__content {
     padding-right: 30px;
+
     &--pano {
       display: flex;
       flex-direction: row;
@@ -226,6 +230,7 @@
   .posts__author {
     padding-top: 24px;
     padding-left: 27px;
+
     &--pano {
       order: 1;
     }
@@ -233,6 +238,7 @@
 
   .posts__text {
     padding-left: 27px;
+
     &--pano {
       order: 3;
       padding-bottom: 25px;
@@ -247,6 +253,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+
     &--pano {
       margin: 0;
       padding: 0;
@@ -284,6 +291,11 @@
     flex-wrap: wrap;
   }
 
+  .posts__photo--pano__label {
+    top: 54px;
+    right: 130px;
+  }
+
   .posts__genlist {
     width: 960px;
     padding-left: 10px;
@@ -304,15 +316,17 @@
   }
 
   .posts__text {
-    padding-bottom: 0px;
+    padding-bottom: 0;
+
     &--pano {
       padding-bottom: 23px;
     }
   }
 
   .posts__like {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 22px;
+
     &--pano {
       padding-top: 26px;
       padding-bottom: 0;
@@ -341,8 +355,9 @@
     height: 400px;
 
     &--pano {
-      margin: 0;
+      position: relative;
       width: 100%;
+      margin: 0 auto;
       max-width: 1200px;
       height: 506px;
     }

@@ -1,18 +1,20 @@
+.add-photo {
+  width: 100%;
+}
+
 .add-photo__slogan {
   margin: 0;
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
+  padding-top: 43px;
+  padding-bottom: 42px;
+  padding-left: 0;
   text-align: center;
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
 }
 
 .add-photo__wrapper {
-  background-color: @light-grey;
   padding-top: 20px;
-  width: 100%;
+  background-color: @light-grey;
   display: flex;
   flex-direction: column;
 }
@@ -28,9 +30,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 56px;
-  padding-right: 66px;
-  padding-bottom: 75px;
+  padding-top: 0;
+  padding-left: 55px;
+  padding-right: 65px;
+  padding-bottom: 70px;
+  position: relative;
 }
 
 .add-photo__tools {
@@ -39,15 +43,14 @@
 }
 
 .add-photo__controls {
-  padding-top: 40px;
-  padding-bottom: 34px;
+  padding-top: 37px;
+  padding-bottom: 39px;
 }
 
 .add-photo__buttons {
-  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  //  padding-bottom: 40px;
+  padding-top: 36px;
 }
 
 .add-photo__buttons-post,
@@ -61,7 +64,7 @@
   .setFont(@pink, 18px, @bold);
   border: 3px solid @pink;
   background-color: inherit;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .add-photo__buttons-cancel {
@@ -71,11 +74,13 @@
 }
 
 .tool__control {
-  width: 240px;
   position: absolute;
   visibility: hidden;
+  top: 0;
+  left: 0;
 
   &--current {
+    width: 240px;
     visibility: visible;
     top: 83px;
     left: 40px;
@@ -84,9 +89,15 @@
 
 @media (min-width: 660px) {
   .add-photo__wrapper {
-    padding: 59px 20px 54px 20px;
+    padding: 57px 20px 54px 20px;
     display: flex;
     flex-direction: row;
+  }
+
+  .add-photo__slogan {
+    padding-top: 45px;
+    padding-bottom: 69px;
+    font-size: 18px;
   }
 
   .add-photo__image {
@@ -101,7 +112,7 @@
 
   .add-photo__controls {
     padding: 0;
-    padding-left: 45px;
+    padding-left: 35px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -116,22 +127,32 @@
   .add-photo__buttons {
     flex-grow: 1;
     padding: 0;
+    padding-left: 12px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
+
 
   .add-photo__buttons-post,
   .add-photo__buttons-cancel {
     width: 260px;
   }
 
+  .add-photo__buttons-post {
+    margin-bottom: 20px;
+  }
+
+
   .add-photo__tools-list {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
+    padding-left: 11px;
+    padding-top: 8px;
   }
 
   .add-photo__tools-list__item {
@@ -140,21 +161,13 @@
     flex-direction: row;
     align-items: center;
     padding: 0;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 20%);
   }
 
-  .tool__button {
-    width: 48px;
-    height: 51px;
-  }
-
-  .tool__control {
-    width: 202px;
-    position: static;
-    visibility: visible;
-    vertical-align: middle;
+  .add-photo__tools-list__item:nth-of-type(3) {
+    padding-bottom: 24px;
   }
 }
 
@@ -166,31 +179,53 @@
   }
 
   .add-photo__slogan {
+    padding-top: 3px;
+    padding-bottom: 66px;
     font-size: 18px;
   }
 
   .add-photo__controls {
-    justify-content: space-between;
-    padding-left: 90px;
+    justify-content: flex-start;
+    padding-left: 77px;
   }
 
   .add-photo__wrapper {
-    padding: 57px 60px 57px 80px;
+    padding: 57px 60px 54px 80px;
+    margin-bottom: 30px;
   }
 
   .add-photo__tools {
     flex-grow: 0;
   }
 
+  .add-photo__tools-list {
+    padding: 0;
+    padding-left: 11px;
+    margin-top: -4px;
+  }
+
+
   .add-photo__tools-list__item {
-    padding-bottom: 15px;
+    padding-bottom: 11px;
     padding-right: 30px;
     margin-bottom: 15px;
     justify-content: space-between;
   }
 
+  .add-photo__tools-list__item:nth-of-type(2) {
+    margin-left: 3px;
+    padding-bottom: 9px;
+    margin-bottom: 11px;
+  }
+
+  .add-photo__tools-list__item:nth-of-type(3) {
+    margin-left: -6px;
+    padding-bottom: 10px;
+  }
+
   .add-photo__buttons {
     flex-grow: 0;
+    padding-top: 129px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -201,15 +236,7 @@
     margin: 0;
   }
 
-  .tool__button {
-    width: 44px;
-    height: 44px;
-  }
-
-  .tool__control {
-    width: 288px;
-    position: static;
-    visibility: visible;
-    vertical-align: middle;
+  .add-photo__buttons-post {
+    padding-right: 0;
   }
 }

@@ -16,15 +16,20 @@
 .about__person-list__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
+  padding-bottom: 24px;
 }
 
 .about__person-list__item:last-of-type {
   padding-bottom: 0;
 }
 
-.about__person-label {
-  padding-bottom: 15px;
+
+.about__person-label,
+.about__contact-label {
+  .setFont(@pink, 14px, @regular);
+  text-transform: uppercase;
+  padding-left: 22px;
+  padding-bottom: 12px;
 }
 
 .about__trip {
@@ -37,7 +42,8 @@
   .setFont(@pink, 14px, @regular);
   line-height: 18px;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  padding: 0 20px;
+  padding-bottom: 39px;
 }
 
 .about__trip-list {
@@ -47,7 +53,7 @@
 }
 
 .about__trip-list__item:not(:last-child) {
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 }
 
 .about__contact {
@@ -61,7 +67,7 @@
 
 .about__contact-list {
   .resetList();
-  padding-top: 42px;
+  padding-top: 39px;
   display: flex;
   flex-direction: column;
 }
@@ -69,7 +75,7 @@
 .about__contact-list__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
+  padding-bottom: 24px;
 }
 
 .about__contact-list__item:last-of-type {
@@ -77,7 +83,7 @@
 }
 
 .about__contact-label {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .about__app {
@@ -90,7 +96,7 @@
   .setFont(@pink, 14px, @regular);
   line-height: 18px;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .about__app-list {
@@ -100,7 +106,7 @@
 }
 
 .about__app-list__item:not(:last-child) {
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 
 .about__impression {
@@ -108,24 +114,26 @@
   padding: 0;
 }
 
-.about__impression-block {
-  width: auto;
-  display: flex;
-}
-
 .about__impression-header {
   text-align: center;
   .setFont(@pink, 14px, @regular);
   line-height: 18px;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+}
+
+.about__impression-block {
+  width: auto;
+  display: flex;
 }
 
 .about__impression-input {
   width: 100%;
-  padding: 20px;
+  padding: 18px;
+  padding-top: 14px;
+  padding-bottom: 122px;
+  line-height: 30px;
 }
-
 
 @media (min-width: 660px) {
   .about__trip,
@@ -144,12 +152,18 @@
     padding-bottom: 0;
   }
 
+  .about__person-label {
+    padding-left: 0;
+    padding-top: 25px;
+    padding-right: 18px;
+  }
+
   .about__person-input {
     flex-grow: 1;
   }
 
   .about__app {
-    padding: 50px 0 54px 58px;
+    padding: 44px 0 54px 58px;
   }
 
   .about__app-header {
@@ -162,7 +176,7 @@
 
   .about__contact-header {
     display: block;
-    padding: 0 25px;
+    padding: 0 30px;
     text-align: center;
     .setFont(@pink, 14px, @regular);
     line-height: 18px;
@@ -170,16 +184,23 @@
   }
 
   .about__contact-list {
-    padding-top: 45px;
-    padding-bottom: 30px;
+    padding-top: 37px;
+    padding-bottom: 34px;
   }
 
   .about__contact-list__item {
     flex-direction: column-reverse;
+    padding-bottom: 36px;
   }
 
-  .about__contact-label.input__text-label {
-    padding: 20px;
+  .about__contact-list__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .about__contact-label {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 0;
   }
 
   .about__trip-header {
@@ -187,7 +208,7 @@
   }
 
   .about__trip {
-    padding: 52px 0 48px 58px;
+    padding: 44px 0 48px 58px;
   }
 
   .about__impression-header {
@@ -195,7 +216,11 @@
   }
 
   .about__impression {
-    padding: 45px 58px 50px 58px;
+    padding: 37px 58px 50px 58px;
+  }
+
+  .about__impression-input {
+    padding-bottom: 115px;
   }
 }
 
@@ -204,11 +229,35 @@
     padding-top: 9px;
   }
 
+  .about__person-list__item {
+    padding-bottom: 53px;
+  }
+
+  .about__person-label {
+    padding-top: 26px;
+  }
+
   .about__app {
     height: 100%;
+    padding-left: 0;
+  }
+
+  .about__app-list {
+    padding-top: 2px;
+    padding-left: 74px;
+  }
+
+  .about__app-list__item:not(:last-child) {
+    padding-bottom: 35px;
+  }
+
+  .about__app-header {
+    padding-top: 1px;
   }
 
   .about__contact-list {
+    padding-top: 34px;
+    padding-bottom: 20px;
     flex-direction: row;
   }
 
@@ -221,15 +270,40 @@
     padding-right: 70px;
   }
 
-  /* временно задал фиксированную высоту, пока не стилизовал чекбоксы */
+  .about__contact-label {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  .about__trip {
+    padding-bottom: 55px;
+  }
+
+  /* временно задал фиксированную высоту, пока не изменил порядок */
   .about__trip-list {
-    height: 120px;
+    padding-right: 2px;
+    height: 121px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .about__impression-input.input__textarea {
-    height: 125px;
+  .about__trip-list__item {
+    padding-bottom: 0;
+  }
+
+  .about__trip-list__item:nth-child(2n) {
+    padding-bottom: 0;
+  }
+
+  .about__impression {
+    padding-top: 34px;
+    padding-bottom: 43px;
+  }
+
+  .about__impression-input {
+    padding-bottom: 50px;
   }
 }

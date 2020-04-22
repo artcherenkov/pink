@@ -14,7 +14,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__buttons">
         <a class="page-header__logo" href="#">
-          <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+          </picture>
         </a>
         <button class="page-header__toggle" type="button">
           <img src="img/icon-menu-cross.svg" alt="Приложение 'Pink'" width="24" height="23">
@@ -116,7 +120,7 @@
             <legend class="about__app-header">С каким приложением путешествовали?</legend>
             <ul class="about__app-list about__list">
               <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios">
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios" checked>
                 <label class="about__app-label input__radio-label" for="ios">Pink для iOS</label>
               </li>
               <li class="about__app-list__item input about__list__item">
@@ -134,7 +138,7 @@
           <fieldset class="about__impression">
             <legend class="about__impression-header">Опишите свои эмоции</legend>
             <div class="about__impression-block input">
-              <textarea class="about__impression-input input__textarea" name="impression" id="impression" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="about__impression-input input__textarea" name="impression" id="impression" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
         </div>
@@ -148,7 +152,10 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="'Pink' - логотип">
+      <picture>
+        <source source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="'Pink' - логотип">
+      </picture>
       <div class="page-footer__social">
         <a class="page-footer__social__item" href="https://twitter.com">
           <svg class="page-footer__social__item-image" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">

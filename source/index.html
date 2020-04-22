@@ -14,7 +14,12 @@
     <div class="page-header__wrapper">
       <div class="page-header__buttons">
         <a class="page-header__logo" href="#">
-          <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
+          </picture>
+
         </a>
         <button class="page-header__toggle" type="button">
           <img src="img/icon-menu-cross.svg" alt="Приложение 'Pink'" width="24" height="23">
@@ -71,7 +76,6 @@
       <div class="description__head">
         <h2 class="description__header">Устали от серости мегаполиса?</h2>
         <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
-        <!--        <img src="img/bg-triangle-white.svg" width="auto" height="auto" alt="">-->
         <svg class="description__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
           <polygon fill="#f2f2f2" points="1200,0 0,0 0,94.074 " />
         </svg>
@@ -97,10 +101,14 @@
             <img src="img/iphone-screen-1-desktop@1x.png" width="186" height="382" alt="'Pink' - Всем привет!">
           </li>
           <li class="description__helloworld__item description__helloworld__item--hidden">
-            <img src="img/iphone-screen-2-desktop@1x.png" width="186" height="382" alt="'Pink' - Всем привет!">
+            <img src="img/iphone-screen-2-desktop@1x.png" width="186" height="301" alt="'Pink' - Всем привет!">
           </li>
           <li class="description__helloworld__item">
-            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="'Pink' - Всем привет!">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="'Pink' - Всем привет!">
+            </picture>
+
           </li>
         </ul>
       </div>
@@ -108,7 +116,7 @@
         <div class="description__effect__wrapper">
           <img class="description__timer" src="img/icon-timer.png" width="238" height="276" alt="">
           <div class="description__britain">
-            <h3 class="description__britain-header">Эффект<br class="description__britain-header--hidden-part">на 24 часа!</h3>
+            <h3 class="description__britain-header">Эффект <br class="description__britain-header--hidden-part">на 24 часа!</h3>
             <p class="description__britain-content">Британские ученые провели исследования и доказали,<br class="description__britain-content--hidden-part"> что положительный эффект от использования приложения длится целые сутки!
             </p>
             <a class="description__britain-link" href="#">Узнать больше об исследовании</a>
@@ -135,9 +143,9 @@
           </li>
         </ul>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle slider__toggle--active" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
         </p>
       </div>
       <img class="reviews__triangle" src="img/bg-triangle-white.svg" width="auto" height="auto" alt="">
@@ -235,9 +243,9 @@
           </li>
         </ul>
         <p class="tariff-plans__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle slider__toggle--active" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
         </p>
       </div>
     </section>
@@ -269,28 +277,40 @@
 
   <footer class="page-footer page-footer--hidden">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="'Pink' - логотип">
-      <div class="page-footer__social">
-        <a class="page-footer__social__item" href="https://twitter.com">
-          <svg class="page-footer__social__item-image" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-            <g id="W6EeEF_1_">
-              <g>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+      <p class="page-footer__logo">
+        <picture>
+          <source source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="'Pink' - логотип">
+        </picture>
+
+      </p>
+      <ul class="page-footer__social">
+        <li class="page-footer__social__item">
+          <a class="page-footer__social__item-link" href="https://twitter.com">
+            <svg class="page-footer__social__item-image" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+                </g>
               </g>
-            </g>
-          </svg>
-        </a>
-        <a class="page-footer__social__item" href="https://facebook.com">
-          <svg class="page-footer__social__item-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
-          </svg>
-        </a>
-        <a class="page-footer__social__item" href="https://youtube.com">
-          <svg class="page-footer__social__item-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
-          </svg>
-        </a>
-      </div>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__social__item">
+          <a class="page-footer__social__item-link" href="https://facebook.com">
+            <svg class="page-footer__social__item-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__social__item">
+          <a class="page-footer__social__item-link" href="https://youtube.com">
+            <svg class="page-footer__social__item-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__copyright">
         <p class="page-footer__copyright__site-by">Разработано</p>
         <a class="page-footer__copyright__link" href="https://htmlacademy.ru">

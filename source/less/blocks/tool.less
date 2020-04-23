@@ -112,13 +112,18 @@
 }
 
 @media (min-width: 960px) {
+
+  .tool {
+    width: 410px;
+  }
+
   .tool__button {
     width: 48px;
     height: 48px;
 
     &--contrast {
       padding-left: 6px;
-      margin-right: 50px;
+      margin-right: 0;
       width: 48px;
       height: 48px;
     }
@@ -153,12 +158,17 @@
     left: 0;
     visibility: visible;
 
+    &--cut {
+      left: 2px;
+    }
+
     &--filter {
-      left: -2px;
+      left: -1px;
       top: -2px;
     }
 
     &--contrast {
+      left: 3px;
       top: -1px;
     }
 

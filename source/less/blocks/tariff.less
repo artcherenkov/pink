@@ -4,8 +4,33 @@
   background-color: white;
   border-collapse: collapse;
   border: 2px solid @grey;
+  border-bottom: none;
   margin: 0;
-  margin-right: 2px;
+  margin-right: 1px;
+  position: relative;
+
+  &:nth-child(3)::after {
+    content: "";
+    top: -2px;
+    left: -4px;
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    z-index: 0;
+    background: url("../img/bg-hit.svg");
+  }
+
+  &:nth-child(3)::before {
+    content: "Хит";
+    position: absolute;
+    font-size: 14px;
+    text-transform: uppercase;
+    top: 17px;
+    left: 5px;
+    z-index: 1;
+    color: white;
+    transform: rotate(-45deg);
+  }
 }
 
 .tariff__caption {
@@ -71,6 +96,7 @@
 @media (min-width: 660px) {
   .tariff {
     margin: 0;
+    overflow: hidden;
 
     &--full {
       display: table;
@@ -79,6 +105,30 @@
 
     &--full .tariff__caption {
       visibility: hidden;
+    }
+
+    &:nth-child(3)::after {
+      content: "";
+      top: -8px;
+      left: 0;
+      position: absolute;
+      width: 61px;
+      height: 67px;
+      z-index: 0;
+      background: url("../img/bg-hit.svg");
+      background-size: cover;
+    }
+
+    &:nth-child(3)::before {
+      content: "Хит";
+      position: absolute;
+      font-size: 14px;
+      text-transform: uppercase;
+      top: 10px;
+      left: 8px;
+      z-index: 1;
+      color: white;
+      transform: rotate(-45deg);
     }
   }
 
@@ -129,5 +179,33 @@
 
   .tariff__value-image {
     vertical-align: middle;
+  }
+}
+
+@media (min-width: 960px) {
+  .tariff {
+    &:nth-child(3)::after {
+      content: "";
+      top: -2px;
+      left: 0;
+      position: absolute;
+      width: 74px;
+      height: 73px;
+      z-index: 0;
+      background: url("../img/bg-hit.svg");
+      background-size: cover;
+    }
+
+    &:nth-child(3)::before {
+      content: "Хит";
+      position: absolute;
+      font-size: 14px;
+      text-transform: uppercase;
+      top: 16px;
+      left: 11px;
+      z-index: 1;
+      color: white;
+      transform: rotate(-45deg);
+    }
   }
 }

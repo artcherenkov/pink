@@ -191,6 +191,25 @@
   .about__contact-list__item {
     flex-direction: column-reverse;
     padding-bottom: 36px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 1px;
+      right: 1px;
+      background-color: @grey;
+    }
+
+    &:first-child::before {
+      background: @grey url("../img/icon-phone.svg") no-repeat center;
+    }
+
+    &:last-child::before {
+      background: @grey url("../img/icon-mail.svg") no-repeat center;
+    }
   }
 
   .about__contact-list__item:last-child {
@@ -264,6 +283,25 @@
   .about__contact-list__item {
     flex-grow: 1;
     padding-bottom: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 1px;
+      left: 314px;
+      background-color: @grey;
+    }
+
+    &:first-child::before {
+      background: @grey url("../img/icon-phone.svg") no-repeat center;
+    }
+
+    &:last-child::before {
+      background: @grey url("../img/icon-mail.svg") no-repeat center;
+    }
   }
 
   .about__contact-list__item:first-child {

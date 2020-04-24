@@ -20,7 +20,7 @@
 }
 
 .description__header:last-of-type {
-  padding-bottom: 41px;
+  padding-bottom: 68px;
 }
 
 .description__wrapper {
@@ -30,11 +30,12 @@
 }
 
 .description__triangle {
+  position: absolute;
   transform: rotate(180deg);
+  bottom: 3px;
   margin-bottom: -3px;
   width: 100%;
   height: auto;
-  position: static;
 }
 
 .description__list {
@@ -63,10 +64,14 @@
   margin: 14px 0 33px 0;
   .setFont(@dark-blue, 14px, @regular);
   line-height: 1.75;
+
+  &--br {
+    display: none;
+  }
 }
 
 .description__helloworld {
-  margin: 0;
+  margin: 0 auto;
   height: auto;
   width: 320px;
   display: flex;
@@ -94,7 +99,6 @@
     margin-bottom: -3px;
     width: 100%;
     height: auto;
-    position: static;
   }
 
   .description__header {
@@ -109,7 +113,7 @@
   }
 
   .description__header:last-of-type {
-    padding-bottom: 48px;
+    padding-bottom: 98px;
   }
 
   .description__wrapper {
@@ -236,13 +240,17 @@
 
   .description__header:last-of-type {
     padding: 0;
-    padding-bottom: 80px;
+    padding-bottom: 173px;
   }
 
   .description__head {
     background-color: white;
     position: relative;
     padding-top: 62px;
+  }
+
+  .description__triangle {
+    bottom: 0;
   }
 
   .description__wrapper {
@@ -287,19 +295,22 @@
 
   .description__list__item {
     text-align: center;
-    pading: 0;
     flex-grow: 1;
   }
 
   .description__list__item-header {
     .setFont(black, 30px, @bold);
-    padding: 0 45px 24px 22px;
+    padding: 0 30px 24px 3px;
   }
 
   .description__list__item-content {
     font-size: 18px;
     line-height: 30px;
     padding: 0 60px 0 34px;
+
+    &--br {
+      display: none;
+    }
   }
 
   .description__list__item:nth-child(2) .description__list__item-header {
@@ -312,7 +323,7 @@
 
 
   .description__list__item:nth-child(3) .description__list__item-header {
-    padding: 0 42px 24px 13px;
+    padding: 0 45px 24px 15px;
   }
 
   .description__list__item:nth-child(3) .description__list__item-content {
@@ -337,10 +348,12 @@
 
   .description__timer {
     margin: 0;
-    min-width: 298px;
-    flex-basis: 298px;
-    height: 345px;
     flex-grow: 1;
+    min-width: 298px;
+    max-width: 298px;
+    flex-basis: 298px;
+
+    height: 345px;
   }
 
   .description__britain {
@@ -368,6 +381,10 @@
 
     &--hidden-part {
       display: inline;
+    }
+
+    &--br {
+      display: none;
     }
   }
 

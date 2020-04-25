@@ -3,17 +3,19 @@
 }
 
 .tariff-plans__wrapper {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+
 }
 
 .tariff-plans__list {
   position: absolute;
   .resetList();
   padding-top: 65px;
-  left: -255px;
   display: flex;
 }
 
@@ -31,12 +33,25 @@
 }
 
 @media (min-width: 660px) {
-  .tariff-plans__list {
-    position: static;
+  .tariff {
+    width: 153px;
+  }
+
+  .tariff-plans__wrapper {
+    width: 100%;
     padding-top: 36px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 68px;
+    display: flex;
+  }
+
+  .tariff-plans__list {
+    width: auto;
+    margin: 0 auto;
+    position: static;
+    left: 0;
+    padding-top: 0px;
   }
 
   .tariff-plans__toggles {
@@ -45,6 +60,10 @@
 }
 
 @media (min-width: 960px) {
+  .tariff {
+    width: 233px
+  }
+
   .tariff__name {
     padding-top: 5px;
     font-size: 18px;

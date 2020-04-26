@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <svg style="display: none">
+<!--
+  <svg style="display:none">
     <symbol id="logo-pink_mobile" viewBox="0 0 75 22">
       <g>
         <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z" />
@@ -71,6 +60,11 @@
     <symbol id="icon_youtube" viewBox="0 0 15 14">
       <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
     </symbol>
+    <symbol id="icon-like" viewBox="522 473 14 12">
+      <g>
+        <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+      </g>
+    </symbol>
     <symbol id="footer-logo-pink" viewBox="0 0 147 40">
       <g>
         <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
@@ -109,228 +103,11 @@
         </g>
       </g>
     </symbol>
-    <symbol id="icon-burger" viewBox="0 0 50 24">
-      <g>
-        <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
-      </g>
-      <g>
-        <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
-      </g>
-    </symbol>
-    <symbol id="icon-cross" viewBox="0 0 24 24">
-      <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
-    </symbol>
-    <symbol id="reviews-left" viewBox="0 0 22 41">
-      <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
-    </symbol>
-    <symbol id="reviews-right" viewBox="0 0 22 41">
-      <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
-    </symbol>
-    <symbol id="icon-cut" viewBox="0 0 48 48">
-      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
-    </symbol>
-    <symbol id="icon-filter" viewBox="0 0 48 48">
-      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
-      <rect y="40" width="48" height="3" />
-    </symbol>
-    <symbol id="icon-contrast" viewBox="-35 -8 32 32">
-      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
-      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
-    </symbol>
   </svg>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__buttons">
-        <a class="page-header__logo" href="#" aria-label="Логотип. Перейти на главную">
-          <svg class="page-header__image page-header__image--mobile" width="75" height="22">
-            <use xlink:href="#logo-pink_mobile" />
-          </svg>
-          <svg class="page-header__image page-header__image--tablet" width="147" height="40">
-            <use xlink:href="#logo-pink_tablet" />
-          </svg>
-          <svg class="page-header__image page-header__image--desktop" width="147" height="40">
-            <use xlink:href="#logo-pink_desktop" />
-          </svg>
-        </a>
-        <button class="page-header__toggle" type="button" aria-label="Показать/скрыть меню">
-          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24" alt="Открыть меню">
-            <use xlink:href="#icon-burger" />
-          </svg>
-          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24" alt="Закрыть меню">
-            <use xlink:href="#icon-cross" />
-          </svg>
-        </button>
-      </div>
-      <nav class="page-header__main-nav page-header__main-nav--hidden">
-        <ul class="page-header__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-main">
-    <div class="page-main__slogan">
-      <h1 class="page-main__slogan-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
-    <section class="contest">
-      <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__intro contest__intro--extra"> Пожалуйста, заполните форму ниже:</span></p>
-      <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
-
-        <div class="contest__block contest__about">
-          <fieldset class="about__person">
-            <ul class="about__person-list about__list">
-              <li class="about__person-list__item input">
-                <label class="about__person-label input__text-label" for="surname">Фамилия:</label>
-                <input class="about__person-input input__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
-              </li>
-              <li class="about__person-list__item input">
-                <label class="about__person-label input__text-label" for="name">Имя:</label>
-                <input class="about__person-input input__text" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-              </li>
-              <li class="about__person-list__item input">
-                <label class="about__person-label input__text-label" for="third-name">Отчество:</label>
-                <input class="about__person-input input__text" type="text" id="third-name" placeholder="Ну и отчество тоже" name="third-name">
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="contest__block contest__trip">
-          <fieldset class="about__trip">
-            <legend class="about__trip-header">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="about__trip-list about__list">
-              <li class="about__trip-list__item about__list__item input">
-                <input class="about__trip-input input__check" id="selfie" name="selfie" type="checkbox" checked>
-                <label class="about__trip-label input__check-label" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li class="about__trip-list__item input about__list__item">
-                <input class="about__trip-input input__check" id="beach" name="beach" type="checkbox" checked>
-                <label class="about__trip-label input__check-label" for="beach">Обгорел на пляже</label>
-              </li>
-              <li class="about__trip-list__item input about__list__item">
-                <input class="about__trip-input input__check" id="Chuck" name="Chuck" type="checkbox">
-                <label class="about__trip-label input__check-label" for="Chuck">Видел Чака Норриса</label>
-              </li>
-              <li class="about__trip-list__item input about__list__item">
-                <input class="about__trip-input input__check" id="souvenir" name="souvenir" type="checkbox">
-                <label class="about__trip-label input__check-label" for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="about__trip-list__item input about__list__item">
-                <input class="about__trip-input input__check" id="tower" name="tower" type="checkbox" checked>
-                <label class="about__trip-label input__check-label" for="tower">Удержал башню</label>
-              </li>
-              <li class="about__trip-list__item input about__list__item">
-                <input class="about__trip-input input__check" id="hotel" name="hotel" type="checkbox">
-                <label class="about__trip-label input__check-label" for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="contest__block contest__contact">
-          <fieldset class="about__contact">
-            <legend class="about__contact-header">Контактная информация</legend>
-            <ul class="about__contact-list about__list">
-              <li class="about__contact-list__item input">
-                <label class="about__contact-label input__text-label" for="tel">Номер телефона</label>
-                <input class="about__contact-input input__text" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-              </li>
-              <li class="about__contact-list__item input">
-                <label class="about__contact-label input__text-label" for="email">Адрес почты</label>
-                <input class="about__contact-input input__text" type="email" id="email" name="email" placeholder="Введите почту *" required>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="contest__block contest__app">
-          <fieldset class="about__app">
-            <legend class="about__app-header">С каким приложением путешествовали?</legend>
-            <ul class="about__app-list about__list">
-              <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios" checked>
-                <label class="about__app-label input__radio-label" for="ios">Pink для iOS</label>
-              </li>
-              <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="android" id="android">
-                <label class="about__app-label input__radio-label" for="android">Pink на Android</label>
-              </li>
-              <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="windows phone" id="windows phone">
-                <label class="about__app-label input__radio-label" for="windows phone">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="contest__block contest__impression">
-          <fieldset class="about__impression">
-            <legend class="about__impression-header">Опишите свои эмоции</legend>
-            <div class="about__impression-block input">
-              <textarea class="about__impression-input input__textarea" name="impression" id="impression" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-          </fieldset>
-        </div>
-        <div class="contest__controls">
-          <button class="contest__submit" type="submit">Отправить форму</button>
-          <p class="contest__note"><span class="contest__note-redstar">*</span> — обязательные <span class="contest__note contest__note--extra">для заполнения</span> поля</p>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <p class="page-footer__logo">
-        <svg class="page-footer__logo-image" width="147" height="40">
-          <use xlink:href="#footer-logo-pink" />
-        </svg>
-        <svg class="page-footer__logo-image page-footer__logo-image--desktop" width="147" height="40">
-          <use xlink:href="#footer-logo-pink_desktop" />
-        </svg>
-      </p>
-      <ul class="page-footer__social">
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://twitter.com" aria-label="Перейти на страницу в Twitter">
-            <svg class="page-footer__social__item-image" width="17" height="15">
-              <use xlink:href="#icon_twitter" />
-            </svg>
-          </a>
-        </li>
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://facebook.com" aria-label="Перейти на страницу в Facebook">
-            <svg class="page-footer__social__item-image" width="10" height="19">
-              <use xlink:href="#icon_facebook" />
-            </svg>
-          </a>
-        </li>
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://youtube.com" aria-label="Перейти на Youtube-канал">
-            <svg class="page-footer__social__item-image" width="15" height="14">
-              <use xlink:href="#icon_youtube" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright__site-by">Разработано</p>
-        <a class="page-footer__copyright__link" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">
-          <svg class="page-footer__copyright__image" width="60" height="60">
-            <use xlink:href="#logo_htmlacademy" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="js/photo.js"></script>
-</body>
-
-</html>
+-->
+<svg style="display:none">
+  <symbol viewBox="0 0 16 16" id="icon-login">
+    <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+  </symbol>
+  <symbol viewBox="0 0 16 16" id="icon-comb"><g transform="matrix(0.159952, 0, 0, 0.159952, 0.365029, 0.172641)"><path d="M65 4.7L4.7 65c-3 3-3 7.8 0 10.8l6.1 6.1L14 85l11.9 11.9c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L18 83.3c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L23.3 78.1c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L28.5 72.9c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L33.8 67.6c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L39 62.4c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L44.3 57.1c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L49.5 51.9c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L54.8 46.6c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0L67.8 55c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L60 41.4c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L65.2 36.2c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L70.5 30.9c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0l10.7 10.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L75.7 25.7c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0L88.8 34c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L81 20.4c-.7-.7-.7-1.7 0-2.4s1.7-.7 2.4 0L94 28.7c.8.8 2.1.8 2.9 0 .8-.8.8-2.1 0-2.9L85 14l-3.2-3.2-6.1-6.1C72.8 1.8 68 1.8 65 4.7z"/></g></symbol>
+</svg>

@@ -36,11 +36,16 @@
 .reviews__review__text {
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
+  margin-top: 11px;
   text-align: center;
 }
 
 .reviews__toggles {
-  padding-bottom: 65px;
+  padding-bottom: 68px;
+}
+
+.reviews__buttons {
+  display: none;
 }
 
 .reviews__triangle {
@@ -98,9 +103,43 @@
   }
 
   .reviews__wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 95px;
+  }
+
+  .reviews__buttons {
+    display: block;
+    position: absolute;
+    top: 218px;
+    width: 22px;
+    height: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    opacity: 30%;
+    cursor: pointer;
+
+    &--right {
+      right: 10px;
+    }
+
+    &--left {
+      left: 10px;
+    }
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 10%;
+    }
+  }
+
+  .reviews__buttons svg {
+    width: 22px;
+    height: 41px;
   }
 
   .reviews__list {
@@ -109,27 +148,6 @@
     padding-left: 10px;
     padding-right: 10px;
     width: 960px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 22px;
-      height: 41px;
-      top: 50% + 3px;
-      background: url("../img/icon-review-arrow-left.svg") no-repeat;
-      opacity: 30%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 22px;
-      height: 41px;
-      top: 50% + 3px;
-      right: 10px;
-      background: url("../img/icon-review-arrow-right.svg") no-repeat;
-      opacity: 30%;
-    }
   }
 
   .reviews__review__caption {
@@ -143,7 +161,7 @@
   }
 
   .reviews__review {
-    padding: 0 100px;
+    padding: 0 120px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column-reverse;

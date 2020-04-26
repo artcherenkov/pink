@@ -1,21 +1,34 @@
 .page-header {
   min-width: 100%;
+  height: auto;
+  background-color: @opacity-menu-color;
+  position: absolute;
+
+  &--toggle-open {
+    position: static;
+    background-color: @dark-blue;
+  }
 }
 
 .page-header__wrapper {
-  min-width: 280px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: @dark-blue;
 }
 
 .page-header__main-nav {
+  background: transparent;
   min-width: 280px;
+  display: none;
+
+  &--toggle-open {
+    display: block;
+  }
 }
 
 .page-header__buttons {
-  padding: 20px 20px 23px 20px;
-  background-color: @dark-blue;
+  padding: 20px 20px 25px 20px;
+  background-color: transparent;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -27,14 +40,60 @@
   text-decoration: none;
   display: block;
   border: none;
-  background-color: @dark-blue;
+  background-color: transparent;
+
+  &:hover svg {
+    fill: @pink;
+  }
+
+  &:active svg {
+    fill: white;
+    opacity: 30%;
+  }
+}
+
+.page-header__image {
+  display: none;
+  fill: white;
+
+  &--mobile {
+    display: block;
+  }
+}
+
+.page-header__toggle svg {
+  fill: white;
+
+  &:first-child {
+    display: block;
+  }
+
+  &:last-child {
+    display: none;
+  }
 }
 
 .page-header__toggle {
-  width: 24px;
+  width: auto;
   padding: 0;
   background-color: transparent;
   border: none;
+
+  &--close svg:first-child {
+    display: none;
+  }
+
+  &--close svg:last-child {
+    display: block;
+  }
+
+  &:hover svg {
+    fill: @pink;
+  }
+
+  &:active svg {
+    opacity: 30%;
+  }
 }
 
 @media (min-width: 660px) {
@@ -48,11 +107,20 @@
     padding-bottom: 42px;
     align-items: flex-end;
   }
+
+  .page-header__image {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
 
 @media (min-width: 960px) {
   .page-header {
     position: absolute;
+    display: block;
     height: auto;
     width: 100%;
     background-color: @opacity-menu-color;
@@ -62,15 +130,18 @@
     background-color: transparent;
   }
 
-  .page-header__logo img {
-    width: 147px;
-    height: auto;
+  .page-header__image {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .page-header__wrapper {
     width: 960px;
     margin: 0 auto;
-    padding: 27px 10px 38px 10px;
+    padding: 23px 10px 38px 10px;
     flex-direction: row;
     align-items: center;
     background-color: transparent;
@@ -84,6 +155,7 @@
 
   .page-header__main-nav {
     flex-grow: 1;
+    display: block;
   }
 
   .page-header__toggle {

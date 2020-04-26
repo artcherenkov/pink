@@ -57,6 +57,20 @@
   text-transform: uppercase;
   border-radius: 4px;
   margin-bottom: 42px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @hover-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 30%);
+  }
+
+  &:disabled {
+    background-color: @grey;
+    border-color: @grey;
+  }
 }
 
 .contest__note {

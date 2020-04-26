@@ -123,13 +123,6 @@
           <svg class="page-header__image page-header__image--desktop" width="147" height="40">
             <use xlink:href="#logo-pink_desktop" />
           </svg>
-          <!--
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img src="img/logo-pink-white-mobile.svg" alt="Приложение 'Pink'" width="75" height="22">
-          </picture>
--->
         </a>
         <button class="page-header__toggle" type="button" aria-label="Показать/скрыть меню">
           <svg class="page-header__toggle-image page-header__toggle-image--open" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
@@ -175,7 +168,6 @@
     <section class="contest">
       <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__intro contest__intro--extra"> Пожалуйста, заполните форму ниже:</span></p>
       <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
-
         <div class="contest__block contest__about">
           <fieldset class="about__person">
             <ul class="about__person-list about__list">
@@ -272,6 +264,15 @@
           <p class="contest__note"><span class="contest__note-redstar">*</span> — обязательные <span class="contest__note contest__note--extra">для заполнения</span> поля</p>
         </div>
       </form>
+    </section>
+    <section class="popup popup--error">
+      <div class="popup__wrapper">
+        <h4 class="popup__header">Что-то пошло не так!</h4>
+        <p class="popup__content">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+        <div class="popup__button__wrapper">
+          <button type="button" class="popup__button">ОК</button>
+        </div>
+      </div>
     </section>
   </main>
 

@@ -57,6 +57,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 36px;
+
 }
 
 .add-photo__buttons-post,
@@ -64,19 +65,41 @@
   width: 280px;
   border-radius: 30px;
   line-height: 50px;
+  cursor: pointer;
 }
 
 .add-photo__buttons-post {
   .setFont(@pink, 18px, @bold);
   border: 3px solid @pink;
-  background-color: inherit;
+  background-color: #f2f2f2;
   margin-bottom: 8px;
+
+  &:hover {
+    color: white;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 30%);
+    background-color: @pink;
+  }
 }
 
 .add-photo__buttons-cancel {
+  background-color: #f2f2f2;
   .setFont(@dark-blue, 18px, @bold);
   border: 3px solid @dark-blue;
   opacity: 10%;
+
+  &:hover {
+    opacity: 30%;
+  }
+
+  &:active {
+    background-color: @dark-blue;
+    color: rgba(255, 255, 255, 30%);
+    opacity: 30%;
+  }
 }
 
 .tool__control {

@@ -18,7 +18,7 @@
     url("../img/bg-back-mobile@1x.jpg") 0 0px no-repeat;
   background-size: auto, cover;
   &--toggle-open {
-    padding-top: 0px;
+    padding-top: 3px;
     background:
     url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat,
     url("../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
@@ -27,10 +27,13 @@
 
 .app__slogan-text {
   margin: 0;
-  padding: 20px 45px 313px 45px;
+  padding: 9px 45px 313px 45px;
   text-align: center;
   line-height: 30px;
   .setFont(white, 24px, @light);
+  &--toggle-open {
+    padding-top: 20px;
+  }
 }
 
 .app__button {
@@ -101,10 +104,14 @@
   .app__slogan {
     background: transparent;
     width: 340px;
-    padding-top: 93px;
+    padding-top: 203px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 32px;
+    padding-bottom: 34px;
+
+    &--toggle-open {
+      padding-top: 93px;
+    }
   }
 
   .app__slogan-text {

@@ -8,8 +8,18 @@
 .tool__button-image {
   fill: @dark-blue;
   opacity: 30%;
+  cursor: pointer;
 
-  &--active {
+  &:not(&--current):hover {
+    opacity: 50%;
+  }
+
+  &:not(&--current):active {
+    opacity: 30%;
+  }
+
+  &--current {
+    cursor: default;
     fill: @pink;
     opacity: 100%;
   }
@@ -45,6 +55,10 @@
   border: 2px solid @pink;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background-color: @pink;
+  }
 }
 
 @media (min-width: 660px) {
@@ -77,6 +91,16 @@
     height: 25px;
     fill: @pink;
     opacity: 100%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 50%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+
 
     &--contrast {
       width: 16px;

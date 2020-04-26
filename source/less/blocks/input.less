@@ -5,6 +5,19 @@
   .setFont(@dark-blue, 18px, @regular);
 }
 
+.input__text,
+.input__textarea {
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:focus, &:active {
+    border: 2px solid @pink;
+  }
+}
+
+
 .input__check-label,
 .input__radio-label {
   .setFont(@dark-blue, 18px, @regular);
@@ -13,7 +26,7 @@
 
 .input__check {
   position: absolute;
-  left: -9999px;
+  visibility: hidden;
 
   &:checked + .input__check-label::after {
     opacity: 1;
@@ -42,6 +55,14 @@
     background-size: 22px 16px;
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
+  }
+
+  &:hover::before {
+    border: 2px solid @dark-blue;
+  }
+
+  &:active::before {
+    border: 2px solid @pink;
   }
 
   &::after {
@@ -88,6 +109,14 @@
     border: 2px solid #e5e5e5;
     border-radius: 50%;
     background-color: #ffffff;
+  }
+
+  &:hover::before {
+    border: 2px solid @dark-blue;
+  }
+
+  &:active::before {
+    border: 2px solid @pink;
   }
 
   &::after {

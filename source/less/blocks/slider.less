@@ -11,13 +11,30 @@
   height: 12px;
   padding: 0;
   border-radius: 50%;
-  background-color: @toggle-grey;
+  background-color: @dark-blue;
+  opacity: 30%;
   border: 3px solid white;
+  cursor: pointer;
 
-  &--active {
+  &:not(&--current):hover {
+    opacity: 60%;
+  }
+
+  &:not(&--current):active {
+    opacity: 10%;
+  }
+
+  &--current {
+    opacity: 100%;
     background-color: white;
+    cursor: default;
     border: 3px solid @dark-blue;
   }
+//
+//  &--current:hover {
+//    opacity: 100%;
+//  }
+
 }
 
 .slider__toggle:nth-child(2) {

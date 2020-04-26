@@ -60,16 +60,21 @@
     <symbol id="logo_htmlacademy" viewBox="0 0 60 60">
       <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
     </symbol>
-    <symbol id="icon_twitter" viewbox="0 0 17 15">
+    <symbol id="icon_twitter" viewBox="0 0 17 15">
       <g>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
       </g>
     </symbol>
-    <symbol id="icon_facebook" viewbox="0 0 10 19">
+    <symbol id="icon_facebook" viewBox="0 0 10 19">
       <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
     </symbol>
-    <symbol id="icon_youtube" viewbox="0 0 15 14">
+    <symbol id="icon_youtube" viewBox="0 0 15 14">
       <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+    </symbol>
+    <symbol id="icon-like" viewBox="522 473 14 12">
+      <g>
+        <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+      </g>
     </symbol>
     <symbol id="footer-logo-pink" viewBox="0 0 147 40">
       <g>
@@ -172,12 +177,11 @@
           <div class="posts__photo posts__photo--pano">
             <h4 class="posts__photo--pano__label">Панорама дня</h4>
             <picture>
-              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-              <img class="posts__photo-image posts__photo-image--pano" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Анна">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="posts__photo-image posts__photo-image--pano" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Анна">
             </picture>
           </div>
-
           <div class="posts__content posts__content--pano">
             <p class="posts__author posts__author--pano">
               <strong class="posts__author-name">Анна</strong><span class="posts__author-time"> (5 минут назад)</span>
@@ -187,10 +191,8 @@
             </p>
             <div class="posts__like posts__like--pano">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 215</p>
@@ -201,9 +203,9 @@
           <li class="posts__item">
             <p class="posts__photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img class="posts__photo-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Левон">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="posts__photo-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Левон">
               </picture>
             </p>
             <div class="posts__content">
@@ -217,10 +219,8 @@
             </div>
             <div class="posts__like like">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 356</p>
@@ -229,9 +229,9 @@
           <li class="posts__item">
             <p class="posts__photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img class="posts__photo-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Антон">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="posts__photo-image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Антон">
               </picture>
 
             </p>
@@ -246,10 +246,8 @@
             </div>
             <div class="posts__like like">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 666</p>
@@ -258,11 +256,10 @@
           <li class="posts__item">
             <p class="posts__photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img class="posts__photo-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Борис">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="posts__photo-image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Борис">
               </picture>
-
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -274,10 +271,8 @@
             </div>
             <div class="posts__like like">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 215</p>
@@ -286,9 +281,9 @@
           <li class="posts__item">
             <p class="posts__photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img class="posts__photo-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Сергей">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="posts__photo-image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Сергей">
               </picture>
 
             </p>
@@ -303,10 +298,8 @@
             </div>
             <div class="posts__like like">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 4</p>
@@ -315,11 +308,10 @@
           <li class="posts__item">
             <p class="posts__photo">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img class="posts__photo-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Максим">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="posts__photo-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Максим">
               </picture>
-
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -332,10 +324,8 @@
             </div>
             <div class="posts__like like">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 150</p>
@@ -344,13 +334,10 @@
           <li class="posts__item">
             <p class="posts__photo">
               <picture>
-
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-
-                <img class="posts__photo-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Надежда">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="posts__photo-image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Надежда">
               </picture>
-
             </p>
             <div class="posts__content">
               <p class="posts__author">
@@ -363,10 +350,8 @@
             </div>
             <div class="posts__like like">
               <button type="button" class="posts__like__button" aria-label="Поставить лайк">
-                <svg class="posts__like__button-image" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
+                <svg class="posts__like__button-image" width="14" height="12">
+                  <use xlink:href="#icon-like"/>
                 </svg>
               </button>
               <p class="posts__like-count">Нравится: 2560</p>
@@ -382,9 +367,9 @@
       <div class="add-photo__wrapper">
         <div class="add-photo__photo">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-            <img class="add-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото на выгрузку">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="add-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Фото на выгрузку">
           </picture>
         </div>
         <div class="add-photo__controls">

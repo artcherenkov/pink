@@ -296,7 +296,7 @@
     }
 
     &:first-child::before {
-      left: 312px;
+      left: 313px;
       background: @grey url("../img/icon-phone.svg") no-repeat center;
     }
 
@@ -316,25 +316,47 @@
   }
 
   .about__trip {
-    padding-bottom: 55px;
+    padding-bottom: 12px;
+    padding-right: 5px;
   }
 
-  /* временно задал фиксированную высоту, пока не изменил порядок */
   .about__trip-list {
-    padding-right: 2px;
-    height: 121px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .about__trip-list__item {
     padding-bottom: 0;
+    flex-grow: 0;
+    width: 30%;
   }
 
-  .about__trip-list__item:nth-child(2n) {
-    padding-bottom: 0;
+  .about__trip-list__item:nth-child(1) {
+    order: 1;
+  }
+
+  .about__trip-list__item:nth-child(2) {
+    order: 4;
+  }
+
+  .about__trip-list__item:nth-child(3) {
+    order: 2;
+    padding-left: 9px;
+  }
+
+  .about__trip-list__item:nth-child(4) {
+    order: 5;
+    padding-left: 9px;
+  }
+
+  .about__trip-list__item:nth-child(5) {
+    order: 3;
+  }
+
+  .about__trip-list__item:nth-child(6) {
+    order: 6;
   }
 
   .about__impression {

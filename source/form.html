@@ -187,7 +187,6 @@
     <section class="contest">
       <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__intro contest__intro--extra"> Пожалуйста, заполните форму ниже:</span></p>
       <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
-
         <div class="contest__block contest__about">
           <fieldset class="about__person">
             <ul class="about__person-list about__list">
@@ -284,6 +283,24 @@
           <p class="contest__note"><span class="contest__note-redstar">*</span> — обязательные <span class="contest__note contest__note--extra">для заполнения</span> поля</p>
         </div>
       </form>
+    </section>
+    <section class="popup popup--error">
+      <div class="popup__wrapper">
+        <h4 class="popup__header">Что-то пошло не так!</h4>
+        <p class="popup__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="popup__button__wrapper">
+          <button type="button" class="popup__button">ОК</button>
+        </div>
+      </div>
+    </section>
+    <section class="popup popup--success">
+      <div class="popup__wrapper">
+        <h4 class="popup__header popup__header--success">Ваша заявка отправлена</h4>
+        <p class="popup__content popup__content--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br class="popup__content--br"> оповестим вас.</p>
+        <div class="popup__button__wrapper popup__button__wrapper--success">
+          <button type="button" class="popup__button">Закрыть окно</button>
+        </div>
+      </div>
     </section>
   </main>
 

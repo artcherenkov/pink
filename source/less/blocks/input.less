@@ -1,7 +1,6 @@
 .input__text {
   border: 2px solid @grey;
-  padding: 20px;
-  padding-top: 19px;
+  padding: 19px 20px 20px;
   .setFont(@dark-blue, 18px, @regular);
 }
 
@@ -11,16 +10,15 @@
     border: 2px solid @dark-blue;
   }
 
-  &:focus,
-  &:active {
+  &:active,
+  &:focus {
     border: 2px solid @pink;
   }
 
   &--invalid {
-    border-color: red;
+    outline: 3px solid red;
   }
 }
-
 
 .input__check-label,
 .input__radio-label {
@@ -70,7 +68,7 @@
   }
 
   &::after {
-    background: url("../img/check-yes.svg") center no-repeat;
+    background: url("../img/icon-check-yes.svg") center no-repeat;
     content: "";
     position: absolute;
     left: 0;
@@ -124,7 +122,7 @@
   }
 
   &::after {
-    background: url("../img/radio-yes.svg") center no-repeat;
+    background: url("../img/icon-radio-yes.svg") center no-repeat;
     content: "";
     position: absolute;
     left: 0;

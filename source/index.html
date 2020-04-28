@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonumous">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -140,7 +141,8 @@
           <img class="description__timer" src="img/icon-timer.png" width="238" height="276" alt="Таймер">
           <div class="description__britain">
             <h3 class="description__britain-header">Эффект <br class="description__britain-header--hidden-part">на 24 часа!</h3>
-            <p class="description__britain-content">Британские ученые провели исследования и доказали,<br class="description__britain-content--hidden-part"> что положительный эффект<br class="description__britain-content--br"> от использования приложения длится<br class="description__britain-content--br">целые сутки!
+            <p class="description__britain-content">Британские ученые провели исследования и доказали,<br class="description__britain-content--hidden-part"> что положительный эффект<br class="description__britain-content--br"> от использования
+              приложения длится<br class="description__britain-content--br">целые сутки!
             </p>
             <a class="description__britain-link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -353,7 +355,22 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script>
+    var ph_toggle = document.querySelector(".page-header__toggle");
+    var main_nav = document.querySelector(".page-header__main-nav");
+    var ph = document.querySelector(".page-header");
+    var slogan = document.querySelector(".app__slogan");
+    var slogan_text = document.querySelector(".app__slogan-text");
+
+    ph_toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+      ph_toggle.classList.toggle("page-header__toggle--close");
+      main_nav.classList.toggle("page-header__main-nav--toggle-open");
+      ph.classList.toggle("page-header--toggle-open");
+      slogan.classList.toggle("app__slogan--toggle-open");
+      slogan_text.classList.toggle("app__slogan-text--toggle-open");
+    });
+  </script>
 </body>
 
 </html>

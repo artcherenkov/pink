@@ -22,13 +22,13 @@
 }
 
 .page-main__slogan-text {
+  line-height: 30px;
   width: 230px;
   margin: 0 auto;
-  .setFont(white, 24px, @light);
-  text-align: center;
-  line-height: 30px;
   padding-top: 95px;
   padding-bottom: 51px;
+  text-align: center;
+  .setFont(white, 24px, @light);
 
   &--photo {
     padding-bottom: 80px;
@@ -41,28 +41,26 @@
 
 @media (min-width: 660px) {
   .page-main__slogan {
+    min-width: 660px;
     margin: 0;
     padding: 0;
-    min-width: 660px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    background-size: cover;
+    background: url("../img/bg-back-tablet@1x.jpg") 52% no-repeat;
+    background-size: 200%;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__slogan {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
-      background-size: cover;
+      background: url("../img/bg-back-tablet@2x.jpg") 52% no-repeat;
+      background-size: 200%;
     }
   }
 
   .page-main__slogan-text {
-    width: 600px;
-    padding: 0;
-    .setFont(white, 50px, @light);
     line-height: 60px;
+    width: 600px;
+    padding: 180px 0 81px;
     text-align: center;
-    padding-top: 180px;
-    padding-bottom: 81px;
+    .setFont(white, 50px, @light);
 
     &--photo {
       padding-top: 180px;
@@ -84,7 +82,7 @@
   .page-main__slogan {
     margin: 0;
     padding: 0;
-    background: url("../img/bg-back-desktop@1x.jpg") 50% 0% no-repeat;
+    background: url("../img/bg-back-desktop@1x.jpg") 50% 0 no-repeat;
     background-size: 200%;
   }
 
@@ -96,11 +94,11 @@
   }
 
   .page-main__slogan-text {
-    width: 960px;
     line-height: 60px;
-    .setFont(white, 50px, @light);
+    width: 960px;
     padding-top: 173px;
     padding-bottom: 100px;
+    .setFont(white, 50px, @light);
 
     &--photo {
       width: 370px;

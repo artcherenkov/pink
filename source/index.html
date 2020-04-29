@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonumous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
 </head>
 
@@ -29,10 +29,12 @@
           </svg>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Показать/скрыть меню">
-          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24" alt="Открыть меню">
+          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24"
+            aria-label="Открыть меню">
             <use xlink:href="#icon-menu-burger"></use>
           </svg>
-          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24" alt="Закрыть меню">
+          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24"
+            aria-label="Закрыть меню">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -49,7 +51,7 @@
             <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="">HTML Academy</a>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -65,73 +67,85 @@
       <div class="app__wrapper">
         <a class="app__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
         <ul class="app__platforms-list">
-          <li class="app__platforms-list__item platform">
-            <a class="platform__link" href="https://apps.apple.com/ru/genre/ios/id36" aria-label="Скачать для Apple">
-              <img class="platform__image" src="img/logo-apple.svg" alt="Apple">
+          <li class="app__platform">
+            <a class="app__link" href="https://apps.apple.com/ru/genre/ios/id36" aria-label="Скачать для Apple">
+              <img src="img/logo-apple.svg" alt="Apple">
             </a>
           </li>
-          <li class="app__platforms-list__item platform">
-            <a class="platform__link" href="https://play.google.com/store/apps?hl=ru" aria-label="Скачать для Android">
-              <img class="platform__image" src="img/logo-android.svg" alt="Android">
+          <li class="app__platform">
+            <a class="app__link" href="https://play.google.com/store/apps?hl=ru" aria-label="Скачать для Android">
+              <img src="img/logo-android.svg" alt="Android">
             </a>
           </li>
-          <li class="app__platforms-list__item platform">
-            <a class="platform__link" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Скачать для Windows">
-              <img class="platform__image" src="img/logo-microsoft.svg" alt="Windows">
+          <li class="app__platform">
+            <a class="app__link" href="https://www.microsoft.com/ru-ru/store/apps/windows"
+              aria-label="Скачать для Windows">
+              <img src="img/logo-microsoft.svg" alt="Windows">
             </a>
           </li>
         </ul>
-        <p class="app__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="app__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
     <section class="description">
-      <div class="description__head">
+      <div class="description__title">
         <h2 class="description__header">Устали от серости мегаполиса?</h2>
         <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
-        <svg class="description__triangle" width="1200px" height="94" viewBox="0 0 1200 94">
+        <svg class="description__triangle" width="1200px" height="94" viewbox="0 0 1200 94">
           <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
         </svg>
       </div>
 
       <div class="description__wrapper">
         <ul class="description__list">
-          <li class="description__list__item">
-            <h3 class="description__list__item-header">Поднимает настроение</h3>
-            <p class="description__list__item-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <li class="description__item">
+            <h3 class="description__item-header">Поднимает настроение</h3>
+            <p class="description__item-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
           </li>
-          <li class="description__list__item">
-            <h3 class="description__list__item-header">Меняет мир вокруг</h3>
-            <p class="description__list__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="description__list__item-content--br"> усилить эффект</p>
+          <li class="description__item">
+            <h3 class="description__item-header">Меняет мир вокруг</h3>
+            <p class="description__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить&nbsp;эффект</p>
           </li>
-          <li class="description__list__item">
-            <h3 class="description__list__item-header">Заводит новых друзей</h3>
-            <p class="description__list__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="description__item">
+            <h3 class="description__item-header">Заводит новых друзей</h3>
+            <p class="description__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых</p>
           </li>
         </ul>
         <ul class="description__helloworld">
           <li class="description__helloworld__item description__helloworld__item--hidden">
             <picture>
-              <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
 
-              <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="186" height="382" alt="'Pink' - Всем привет!">
+              <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="186"
+                height="382" alt="'Pink' - Всем привет!">
             </picture>
           </li>
           <li class="description__helloworld__item description__helloworld__item--hidden">
             <picture>
-              <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
 
-              <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="186" height="301" alt="'Pink' - Всем привет!">
+              <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="186"
+                height="301" alt="'Pink' - Всем привет!">
             </picture>
 
           </li>
           <li class="description__helloworld__item">
             <picture>
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
 
-              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-              <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="'Pink' - Всем привет!">
+              <source media="(min-width: 960px)"
+                srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157"
+                height="320" alt="'Pink' - Всем привет!">
             </picture>
           </li>
         </ul>
@@ -140,9 +154,9 @@
         <div class="description__effect__wrapper">
           <img class="description__timer" src="img/icon-timer.png" width="238" height="276" alt="Таймер">
           <div class="description__britain">
-            <h3 class="description__britain-header">Эффект <br class="description__britain-header--hidden-part">на 24 часа!</h3>
-            <p class="description__britain-content">Британские ученые провели исследования и доказали,<br class="description__britain-content--hidden-part"> что положительный эффект<br class="description__britain-content--br"> от использования
-              приложения длится<br class="description__britain-content--br">целые сутки!
+            <h3 class="description__britain-header">Эффект на&nbsp;24 часа!</h3>
+            <p class="description__britain-content">Британские ученые провели исследования и доказали,
+              что&#160;положительный эффект от&#160;использования приложения длится целые&#160;сутки!
             </p>
             <a class="description__britain-link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -152,31 +166,34 @@
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы о Pink</h2>
       <div class="reviews__wrapper slider">
-        <ul class="reviews__list slider__list">
-          <li class="slider__list__item reviews__review">
-            <p class="reviews__review__caption">25 лет, водитель трамвая</p>
-            <h3 class="reviews__review__name">Николай Петров</h3>
-            <p class="reviews__review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <p class="reviews__caption">25 лет, водитель трамвая</p>
+            <h3 class="reviews__name">Николай Петров</h3>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
-          <li class="slider__list__item reviews__review visually-hidden">
-            <h3 class="reviews__review__name">Имя Фамилия</h3>
-            <p class="reviews__review__text">Текст отзыва</p>
+          <li class="reviews__item visually-hidden">
+            <p class="reviews__caption">возраст, деятельность</p>
+            <h3 class="reviews__name">Имя Фамилия</h3>
+            <p class="reviews__text">Текст отзыва</p>
           </li>
-          <li class="slider__list__item reviews__review visually-hidden">
-            <h3 class="reviews__review__name">Имя Фамилия</h3>
-            <p class="reviews__review__text">Текст отзыва</p>
+          <li class="reviews__item visually-hidden">
+            <p class="reviews__caption">возраст, деятельность</p>
+            <h3 class="reviews__name">Имя Фамилия</h3>
+            <p class="reviews__text">Текст отзыва</p>
           </li>
-          <button type="button" class="reviews__buttons reviews__buttons--left" aria-label="Предыдущий отзыв">
-            <svg width="22" height="41">
-              <use xlink:href="#icon-review-arrow-left"></use>
-            </svg>
-          </button>
-          <button type="button" class="reviews__buttons reviews__buttons--right" aria-label="Следующий отзыв">
-            <svg width="22px" height="41px">
-              <use xlink:href="#icon-review-arrow-right"></use>
-            </svg>
-          </button>
         </ul>
+        <button type="button" class="reviews__buttons reviews__buttons--left" aria-label="Предыдущий отзыв">
+          <svg width="22" height="41">
+            <use xlink:href="#icon-review-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="reviews__buttons reviews__buttons--right" aria-label="Следующий отзыв">
+          <svg width="22px" height="41px">
+            <use xlink:href="#icon-review-arrow-right"></use>
+          </svg>
+        </button>
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button"></button>
           <button class="slider__toggle" type="button"></button>
@@ -289,24 +306,27 @@
     <section class="questions">
       <div class="questions__wrapper">
         <h2 class="questions__intro">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <ul class="question__contact-list">
-          <li class="question__contact-list__item contact">
-            <h3 class="contact-type">Звоните:</h3>
-            <a class="contact-value" href="tel:+78125556666" aria-label="Позвонить">+7 (812) 555-66-66</a>
+        <ul class="questions__contact-list">
+          <li class="questions__item">
+            <h3 class="questions__item-type">Звоните:</h3>
+            <a class="questions__item-value" href="tel:+78125556666" aria-label="Позвонить">+7 (812) 555-66-66</a>
           </li>
-          <li class="question__contact-list__item contact">
-            <h3 class="contact-type">Пишите:</h3>
-            <a class="contact-value" href="mailto:mail@htmlacademy.ru" aria-label="Написать на почту">mail@htmlacademy.ru</a>
+          <li class="questions__item">
+            <h3 class="questions__item-type">Пишите:</h3>
+            <a class="questions__item-value" href="mailto:mail@htmlacademy.ru"
+              aria-label="Написать на почту">mail@htmlacademy.ru</a>
           </li>
-          <li class="question__contact-list__item contact">
-            <h3 class="contact-type">Приезжайте в гости:</h3>
-            <p class="contact-value">ул. Большая Конюшенная, 19/8</p>
+          <li class="questions__item">
+            <h3 class="questions__item-type">Приезжайте в гости:</h3>
+            <p class="questions__item-value">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
-      <div class="question__map__wrapper">
-        <img class="question__triangle" src="img/bg-triangle-white-footer.svg" width="auto" height="auto" alt="">
-        <iframe class="question__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6415055bc0d677bbb6171c1049e8b8b84a19c1dae106631262aa528918c71af&amp;source=constructor" width="320" height="200" frameborder="0"></iframe>
+      <div class="questions__map__wrapper">
+        <img class="questions__triangle" src="img/bg-triangle-white-footer.svg" alt="">
+        <iframe class="questions__map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6415055bc0d677bbb6171c1049e8b8b84a19c1dae106631262aa528918c71af&amp;source=constructor"
+          width="320" height="200"></iframe>
       </div>
 
     </section>
@@ -323,32 +343,32 @@
         </svg>
       </p>
       <ul class="page-footer__social">
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://twitter.com" aria-label="Перейти на страницу в Twitter">
-            <svg class="page-footer__social__item-image" width="17" height="15">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://twitter.com" aria-label="Перейти на страницу в Twitter">
+            <svg class="page-footer__social-image" width="17" height="15">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://facebook.com" aria-label="Перейти на страницу в Facebook">
-            <svg class="page-footer__social__item-image" width="10" height="19">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://facebook.com" aria-label="Перейти на страницу в Facebook">
+            <svg class="page-footer__social-image" width="10" height="19">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://youtube.com" aria-label="Перейти на Youtube-канал">
-            <svg class="page-footer__social__item-image" width="15" height="14">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://youtube.com" aria-label="Перейти на Youtube-канал">
+            <svg class="page-footer__social-image" width="15" height="14">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <p class="page-footer__copyright__site-by">Разработано</p>
-        <a class="page-footer__copyright__link" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">
-          <svg class="page-footer__copyright__image" width="60" height="60">
+        <p class="page-footer__site-by">Разработано</p>
+        <a class="page-footer__link" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">
+          <svg class="page-footer__copyright-image" width="60" height="60">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
@@ -362,7 +382,7 @@
     var slogan = document.querySelector(".app__slogan");
     var slogan_text = document.querySelector(".app__slogan-text");
 
-    ph_toggle.addEventListener("click", function(e) {
+    ph_toggle.addEventListener("click", function (e) {
       e.preventDefault();
       ph_toggle.classList.toggle("page-header__toggle--close");
       main_nav.classList.toggle("page-header__main-nav--toggle-open");
@@ -370,6 +390,7 @@
       slogan.classList.toggle("app__slogan--toggle-open");
       slogan_text.classList.toggle("app__slogan-text--toggle-open");
     });
+
   </script>
 </body>
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonumous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
 </head>
 
@@ -29,10 +29,10 @@
           </svg>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Показать/скрыть меню">
-          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24" alt="Открыть меню">
+          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24" aria-label="Открыть меню">
             <use xlink:href="#icon-menu-burger"></use>
           </svg>
-          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24" alt="Закрыть меню">
+          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24" aria-label="Закрыть меню">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -62,6 +62,7 @@
       <h1 class="page-main__slogan-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="contest">
+      <h2 class="visually-hidden">Заполните форму</h2>
       <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__intro contest__intro--extra"> Пожалуйста, заполните форму ниже:</span></p>
       <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
         <div class="contest__block contest__about">
@@ -141,8 +142,8 @@
                 <label class="about__app-label input__radio-label" for="android">Pink на Android</label>
               </li>
               <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="windows phone" id="windows phone">
-                <label class="about__app-label input__radio-label" for="windows phone">Windows Phone</label>
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="windows_phone" id="windows_phone">
+                <label class="about__app-label input__radio-label" for="windows_phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -151,6 +152,7 @@
           <fieldset class="about__impression">
             <legend class="about__impression-header">Опишите свои эмоции</legend>
             <div class="about__impression-block input">
+              <label for="impression" class="about__impression-label input__textarea-label visually-hidden">Эмоции</label>
               <textarea class="about__impression-input input__textarea" name="impression" id="impression" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>

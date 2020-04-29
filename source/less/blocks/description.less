@@ -4,9 +4,13 @@
   padding-bottom: 0;
 }
 
-.description__head {
+.description__title {
   padding-top: 43px;
   position: relative;
+}
+
+.description__br {
+  display: none;
 }
 
 .description__header {
@@ -15,7 +19,7 @@
   text-align: center;
   background-color: white;
   margin: 0;
-  line-height: auto;
+  line-height: normal;
   padding-bottom: 32px;
 }
 
@@ -47,19 +51,19 @@
   padding-right: 20px;
 }
 
-.description__list__item {
+.description__item {
   text-align: center;
   min-width: 280px;
   margin: 0 auto;
 }
 
-.description__list__item-header {
+.description__item-header {
   margin: 0;
   padding: 0;
   .setFont(black, 18px, @bold);
 }
 
-.description__list__item-content {
+.description__item-content {
   padding: 0;
   margin: 14px 0 33px 0;
   .setFont(@dark-blue, 14px, @regular);
@@ -91,7 +95,7 @@
 }
 
 @media (min-width: 660px) {
-  .description__head {
+  .description__title {
     position: relative;
   }
 
@@ -138,17 +142,17 @@
     justify-content: space-between;
   }
 
-  .description__list__item {
+  .description__item {
     text-align: left;
     padding: 0;
     margin: 0;
   }
 
-  .description__list__item-header {
+  .description__item-header {
     padding-bottom: 14px;
   }
 
-  .description__list__item-content {
+  .description__item-content {
     margin: 0;
     line-height: 24px;
 
@@ -201,9 +205,10 @@
 
   .description__britain-header {
     .setFont(black, 30px, @bold);
-    line-height: 30px;
+    line-height: 36px;
     margin: 0;
     padding-bottom: 15px;
+    padding-right: 120px;
 
     &--hidden-part {
       display: inline;
@@ -215,7 +220,7 @@
     line-height: 24px;
     margin: 0;
     text-align: left;
-    padding-right: 5px;
+    padding-right: 15px;
     padding-bottom: 10px;
 
     &--hidden-part {
@@ -227,6 +232,17 @@
     .setFont(@pink, 14px, @regular);
     line-height: 24px;
     margin: 0;
+  }
+
+  .description__br {
+
+    &--tablet {
+      display: inline;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 }
 
@@ -247,7 +263,7 @@
     padding-bottom: 173px;
   }
 
-  .description__head {
+  .description__title {
     background-color: white;
     position: relative;
     padding-top: 62px;
@@ -297,17 +313,17 @@
     justify-content: space-between;
   }
 
-  .description__list__item {
+  .description__item {
     text-align: center;
     flex-grow: 1;
   }
 
-  .description__list__item-header {
+  .description__item-header {
     .setFont(black, 30px, @bold);
     padding: 0 30px 24px 3px;
   }
 
-  .description__list__item-content {
+  .description__item-content {
     font-size: 18px;
     line-height: 30px;
     padding: 0 60px 0 34px;
@@ -317,20 +333,20 @@
     }
   }
 
-  .description__list__item:nth-child(2) .description__list__item-header {
+  .description__item:nth-child(2) .description__item-header {
     padding: 0 62px 24px 5px;
   }
 
-  .description__list__item:nth-child(2) .description__list__item-content {
+  .description__item:nth-child(2) .description__item-content {
     padding: 0 74px 0 19px;
   }
 
 
-  .description__list__item:nth-child(3) .description__list__item-header {
+  .description__item:nth-child(3) .description__item-header {
     padding: 0 45px 24px 15px;
   }
 
-  .description__list__item:nth-child(3) .description__list__item-content {
+  .description__item:nth-child(3) .description__item-content {
     padding: 0 42px 0 13px;
   }
 
@@ -382,13 +398,16 @@
     padding-bottom: 35px;
     line-height: 30px;
     font-size: 18px;
+  }
 
-    &--hidden-part {
-      display: inline;
+  .description__br {
+
+    &--tablet {
+      display: none;
     }
 
-    &--br {
-      display: none;
+    &--desktop {
+      display: inline;
     }
   }
 

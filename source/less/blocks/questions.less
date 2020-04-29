@@ -12,7 +12,7 @@
   line-height: 30px;
 }
 
-.question__contact-list {
+.questions__contact-list {
   .resetList();
   text-align: center;
   padding-bottom: 15px;
@@ -22,7 +22,7 @@
   flex-wrap: wrap;
 }
 
-.question__map__wrapper {
+.questions__map__wrapper {
   width: 100%;
   position: relative;
   background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-mobile@1x.png") center bottom;
@@ -30,17 +30,18 @@
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .question__map__wrapper {
+  .questions__map__wrapper {
     background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-mobile@2x.jpg") center bottom;
     background-size: auto, cover;
   }
 }
 
-.question__map {
+.questions__map {
+  border: none;
   width: 100%;
 }
 
-.question__triangle {
+.questions__triangle {
   top: -1px;
   position: absolute;
   width: 100%;
@@ -58,7 +59,7 @@
     line-height: 48px;
   }
 
-  .question__contact-list {
+  .questions__contact-list {
     padding-top: 11px;
     padding-left: 2px;
     padding-bottom: 22px;
@@ -67,20 +68,20 @@
     flex-wrap: wrap;
   }
 
-  .question__map__wrapper {
+  .questions__map__wrapper {
     position: relative;
     background: url("../img/icon-map-marker.svg") center 59% no-repeat, url("../img/bg-map-tablet@1x.jpg") center 72%;
     background-size: auto, cover;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .question__map__wrapper {
+    .questions__map__wrapper {
       background: url("../img/icon-map-marker.svg") center 59% no-repeat, url("../img/bg-map-tablet@2x.jpg") center 72%;
       background-size: auto, cover;
     }
   }
 
-  .question__map {
+  .questions__map {
     height: 375px;
   }
 }
@@ -97,30 +98,30 @@
     font-size: 50px;
   }
 
-  .question__map {
+  .questions__map {
     height: 505px;
   }
 
-  .question__contact-list {
+  .questions__contact-list {
     padding-top: 21px;
     margin: 0 -15px;
     padding-bottom: 0;
   }
 
-  .question__map__wrapper {
+  .questions__map__wrapper {
     position: relative;
     background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-desktop@1x.jpg") 0 59% no-repeat;
     background-size: auto, cover;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .question__map__wrapper {
+    .questions__map__wrapper {
       background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-desktop@2x.jpg") 0 59% no-repeat;
       background-size: auto, cover;
     }
   }
 
-  .question__triangle {
+  .questions__triangle {
     top: -1px;
     position: absolute;
     width: 100%;

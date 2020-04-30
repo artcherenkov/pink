@@ -3,10 +3,36 @@
   height: auto;
   background-color: @opacity-menu-color;
   position: absolute;
+  display: block;
+}
 
-  &--toggle-open {
-    position: static;
-    background-color: @dark-blue;
+// По умолчанию меню открыто. Если подключен js, нужно, чтобы меню автоматически закрылось.
+
+.page-header__list {
+  flex-basis: 280px;
+  .resetList();
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__item a {
+  display: block;
+  text-decoration: none;
+  background-color: @dark-blue;
+  .setFont(white, 18px, @bold);
+  border-bottom: 1px solid black;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
+  padding-top: 3px;
+  line-height: 60px;
+  text-align: center;
+
+  &[href]:hover {
+    color: @pink;
+  }
+
+  &[href]:active {
+    color: rgba(@pink-rgb, 0.3);
   }
 }
 
@@ -20,10 +46,6 @@
   background: transparent;
   min-width: 280px;
   display: none;
-
-  &--toggle-open {
-    display: block;
-  }
 }
 
 .page-header__buttons {
@@ -48,7 +70,7 @@
 
   &:active svg {
     fill: white;
-    opacity: 30%;
+    opacity: 0.3;
   }
 }
 
@@ -59,6 +81,13 @@
   &--mobile {
     display: block;
   }
+}
+
+.page-header__toggle {
+  width: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .page-header__toggle svg {
@@ -73,30 +102,47 @@
   }
 }
 
-.page-header__toggle {
-  width: auto;
-  padding: 0;
-  background-color: transparent;
-  border: none;
+.page-header.menu-open--default {
+  position: static;
+  background-color: @dark-blue;
+}
 
-  &--close svg:first-child {
+.page-header__main-nav.menu-open--default {
+  display: block;
+}
+
+.page-header__toggle.menu-open--default svg {
+  &:first-child {
     display: none;
   }
 
-  &--close svg:last-child {
-    display: block;
+  &:last-child {
+    display: none;
+    background-color: @dark-blue;
   }
+}
 
-  &:hover svg {
-    fill: @pink;
-  }
+.page-header.menu-open {
+  position: absolute;
+  background-color: @dark-blue;
+}
 
-  &:active svg {
-    opacity: 30%;
+.page-header__main-nav.menu-open {
+  display: block;
+}
+
+.page-header__toggle.menu-open svg {
+  display: block;
+  &:first-child {
+    display: none;
   }
 }
 
 @media (min-width: 660px) {
+  .page-header__main-nav {
+    min-width: 660px;
+  }
+
   .page-header__logo img {
     width: 147px;
     height: 40px;
@@ -118,12 +164,47 @@
 }
 
 @media (min-width: 960px) {
-  .page-header {
+  .page-header__toggle.menu-open--default svg {
+    &:first-child {
+      display: none;
+    }
+  
+    &:last-child {
+      display: none;
+      background-color: @dark-blue;
+    }
+  }
+  
+  .page-header__toggle.menu-open svg {
+    display: block;
+    &:first-child {
+      display: none;
+    }
+  }
+
+  .page-header,
+  .page-header.menu-open--default {
     position: absolute;
     display: block;
     height: auto;
     width: 100%;
     background-color: @opacity-menu-color;
+  }
+
+  .page-header__main-nav,  
+  .page-header__main-nav.menu-open,
+  .page-header__main-nav.menu-open--default {
+    min-width: 620px;
+    display: block;
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
   .page-header__logo {
@@ -147,15 +228,29 @@
     background-color: transparent;
   }
 
-  .page-header__buttons {
+  .page-header__item a {
+    height: auto;
+    line-height: normal;
     background-color: transparent;
-    padding: 0;
-    padding-right: 172px;
+    .setFont(white, 18px, @regular);
+    text-align: center;
+    text-transform: none;
+    padding-bottom: 9px;
+    border: none;
+    box-shadow: none;
   }
 
-  .page-header__main-nav {
-    flex-grow: 1;
-    display: block;
+  .page-header__item {
+    &--current a {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .page-header__buttons {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0;
+    padding-right: 172px;
   }
 
   .page-header__toggle {

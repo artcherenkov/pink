@@ -111,13 +111,14 @@
   .reviews__buttons {
     display: block;
     position: absolute;
+    fill: rgba(@dark-blue-rgb, 0.3);
     top: 218px;
     width: 22px;
     height: auto;
     padding: 0;
     border: none;
     background-color: transparent;
-    opacity: 30%;
+    // opacity: 30%;
     cursor: pointer;
 
     &--right {
@@ -129,11 +130,11 @@
     }
 
     &:hover {
-      opacity: 60%;
+      fill: rgba(@dark-blue-rgb, 0.6);
     }
 
     &:active {
-      opacity: 10%;
+      fill: rgba(@dark-blue-rgb, 0.1);
     }
   }
 
@@ -142,12 +143,17 @@
     height: 41px;
   }
 
-  .reviews__list {
+  .reviews__list-wrapper {
+    width: 960px;
     margin: 0 auto;
+    position: relative;
+  }
+
+  .reviews__list {
     padding-top: 0;
     padding-left: 10px;
     padding-right: 10px;
-    width: 960px;
+    
   }
 
   .reviews__caption {
@@ -195,7 +201,7 @@
     .setFont(@dark-blue, 18px, @regular);
     line-height: 30px;
     margin: 0;
-    opacity: 60%;
+    color: rgba(@dark-blue-rgb, 0.6);
     padding-top: 188px;
   }
 }

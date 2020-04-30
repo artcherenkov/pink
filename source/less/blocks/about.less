@@ -2,6 +2,13 @@
   border: none;
 }
 
+.about__trip-header,
+.about__contact-header,
+.about__app-header,
+.about__impression-header {
+  margin: 0 auto;
+}
+
 .about__person {
   padding: 0;
   margin: 0;
@@ -82,6 +89,10 @@
   padding-bottom: 0;
 }
 
+.about__contact-input {
+  width: 100%;
+}
+
 .about__contact-label {
   padding-bottom: 12px;
 }
@@ -136,11 +147,16 @@
 }
 
 @media (min-width: 660px) {
+
   .about__trip,
   .about__contact,
   .about__app,
   .about__impression {
     border: 2px solid @grey;
+  }
+
+  .about__list {
+    padding-left: 58px;
   }
 
   .about__person-list__item {
@@ -163,7 +179,7 @@
   }
 
   .about__app {
-    padding: 44px 0 54px 58px;
+    padding: 44px 0 54px 0;
   }
 
   .about__app-header {
@@ -171,7 +187,7 @@
   }
 
   .about__contact {
-    padding: 0 58px 0 58px;
+    padding: 0 0 0 0;
   }
 
   .about__contact-header {
@@ -186,34 +202,38 @@
   .about__contact-list {
     padding-top: 37px;
     padding-bottom: 34px;
+    padding-right: 58px;
+    padding-left: 58px;
   }
 
   .about__contact-list__item {
     flex-direction: column-reverse;
     padding-bottom: 36px;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 1px;
-      right: 1px;
-      background-color: @grey;
-    }
-
-    &:first-child::before {
-      background: @grey url("../img/icon-phone.svg") no-repeat center;
-    }
-
-    &:last-child::before {
-      background: @grey url("../img/icon-mail.svg") no-repeat center;
-    }
   }
 
   .about__contact-list__item:last-child {
     padding-bottom: 0;
+  }
+
+  .about__input-wrapper {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 59px;
+      top: 2px;
+      right: 1px;
+      background-color: @grey;
+    }
+
+    &--tel::before {
+      background: @grey url("../img/icon-phone.svg") no-repeat center;
+    }
+
+    &--mail::before {
+      background: @grey url("../img/icon-mail.svg") no-repeat center;
+    }
   }
 
   .about__contact-label {
@@ -227,7 +247,7 @@
   }
 
   .about__trip {
-    padding: 44px 0 48px 58px;
+    padding: 44px 0 48px 0;
   }
 
   .about__impression-header {
@@ -235,7 +255,12 @@
   }
 
   .about__impression {
-    padding: 37px 58px 50px 58px;
+    padding: 37px 0 50px 0;
+  }
+
+  .about__impression-block {
+    padding-left: 58px;
+    padding-right: 58px;
   }
 
   .about__impression-input {
@@ -283,24 +308,29 @@
   .about__contact-list__item {
     flex-grow: 1;
     padding-bottom: 0;
+  }
+
+  .about__input-wrapper {
     position: relative;
+    height: 64px;
+    padding-bottom: 1px;
 
     &::before {
       content: "";
       position: absolute;
       width: 60px;
-      height: 59px;
+      height: 60px;
       top: 2px;
-      left: 313px;
+      right: 2px;
+      border-left: none;
       background-color: @grey;
     }
 
-    &:first-child::before {
-      left: 313px;
+    &--tel::before {
       background: @grey url("../img/icon-phone.svg") no-repeat center;
     }
 
-    &:last-child::before {
+    &--mail::before {
       background: @grey url("../img/icon-mail.svg") no-repeat center;
     }
   }

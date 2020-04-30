@@ -1,22 +1,26 @@
 .input__text {
   border: 2px solid @grey;
-  padding: 19px 20px 20px;
+  
+  padding: 0px 20px;
+  height: 64px;
+  line-height: 30px;
   .setFont(@dark-blue, 18px, @regular);
 }
 
 .input__text,
 .input__textarea {
-  &:hover {
+  &:hover  {
     border: 2px solid @dark-blue;
   }
 
   &:active,
   &:focus {
+    outline: 2px solid @pink;
     border: 2px solid @pink;
   }
 
   &--invalid {
-    outline: 3px solid red;
+    border: 3px solid red;
   }
 }
 
@@ -136,6 +140,7 @@
 .input__textarea {
   border: 2px solid @grey;
   .setFont(@dark-blue, 18px, @regular);
+  font-family: "Open Sans", sans-serif;
 }
 
 .input__text::placeholder,

@@ -14,7 +14,7 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header menu-open">
+  <header class="page-header menu-open--default">
     <div class="page-header__wrapper">
       <div class="page-header__buttons">
         <a class="page-header__logo" href="#" aria-label="Логотип. Перейти на главную">
@@ -28,7 +28,7 @@
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
-        <button class="page-header__toggle menu-open" type="button" aria-label="Показать/скрыть меню">
+        <button class="page-header__toggle menu-open--default" type="button" aria-label="Показать/скрыть меню">
           <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24"
             aria-label="Открыть меню">
             <use xlink:href="#icon-menu-burger"></use>
@@ -39,7 +39,7 @@
           </svg>
         </button>
       </div>
-      <nav class="page-header__main-nav page-header__main-nav--hidden menu-open">
+      <nav class="page-header__main-nav page-header__main-nav--hidden menu-open--default">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a href="index.html">Главная</a>
@@ -60,8 +60,8 @@
 
   <main class="page-main">
 
-    <div class="page-main__slogan menu-open">
-      <h1 class="page-main__slogan-text menu-open">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-main__slogan menu-open--default">
+      <h1 class="page-main__slogan-text menu-open--default">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="contest">
       <h2 class="visually-hidden">Заполните форму</h2>
@@ -74,12 +74,12 @@
               <li class="about__person-list__item input">
                 <label class="about__person-label input__text-label" for="surname">Фамилия:</label>
                 <input class="about__person-input input__text" type="text" id="surname" name="surname"
-                  placeholder="Укажите фамилию *">
+                  placeholder="Укажите фамилию *" required>
               </li>
               <li class="about__person-list__item input">
                 <label class="about__person-label input__text-label" for="name">Имя:</label>
                 <input class="about__person-input input__text" type="text" id="name" name="name"
-                  placeholder="Введите ваше имя *">
+                  placeholder="Введите ваше имя *" required>
               </li>
               <li class="about__person-list__item input">
                 <label class="about__person-label input__text-label" for="third-name">Отчество:</label>
@@ -135,7 +135,7 @@
                 <label class="about__contact-label input__text-label" for="email">Адрес почты</label>
                 <div class="about__input-wrapper about__input-wrapper--mail">
                   <input class="about__contact-input input__text" type="email" id="email" name="email"
-                    placeholder="Введите почту *">
+                    placeholder="Введите почту *" required>
                 </div>
               </li>
             </ul>
@@ -201,7 +201,7 @@
     </section>
   </main>
 
-  <footer class="page-footer page-footer--hidden">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__logo">
         <svg class="page-footer__logo-image" width="147" height="40">
@@ -259,7 +259,6 @@
 
     DOM.forEach(element => {
         element.classList.remove("menu-open--default");
-        element.classList.remove("menu-open");
       });
 
     toggle.addEventListener("click", function (e) {

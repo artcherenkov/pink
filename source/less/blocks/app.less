@@ -13,9 +13,9 @@
 .app__slogan {
   padding-top: 80px;
   width: 100%;
-  background:
+  background: 
     url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+    @dark-blue url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
   background-size: 258px auto, cover;
 }
 
@@ -23,7 +23,7 @@
   padding-top: 3px;
   background:
     url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
+    @dark-blue url("../img/bg-back-mobile@1x.jpg") 0 -65px no-repeat;
 }
 
 @media (min-resolution: 144dpi),
@@ -31,14 +31,14 @@
   .app__slogan {
     background:
       url("../img/iphone-hand-mobile@2x.png") 0% 100% no-repeat,
-      url("../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
+      @dark-blue url("../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
     background-size: 258px auto, cover;
   }
 
   .app__slogan.menu-open--default {
     background:
       url("../img/iphone-hand-mobile@2x.png") 0% 100% no-repeat,
-      url("../img/bg-back-mobile@2x.jpg") 0 -65px no-repeat;
+      @dark-blue url("../img/bg-back-mobile@2x.jpg") 0 -65px no-repeat;
   }
 }
 
@@ -274,7 +274,8 @@
     flex-direction: column;
   }
 
-  .app__slogan-text {
+  .app__slogan-text,
+  .app__slogan-text.menu-open--default{
     margin: 0;
     width: 300px;
     padding: 0;

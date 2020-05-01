@@ -11,7 +11,15 @@ var fname = document.querySelector("[name=name]");
 var fsurname = document.querySelector("[name=surname]");
 var femail = document.querySelector("[name=email]");
 
+
 var required = [fname, fsurname, femail];
+
+required.forEach(el => 
+  el.removeAttribute("required")
+);
+
+console.log(required);
+
 var isError = false;
 
 form.addEventListener("submit", function(e) {

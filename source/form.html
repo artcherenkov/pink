@@ -250,16 +250,16 @@
   <script>
     var toggle = document.querySelector(".page-header__toggle");
     var DOM = [
-      toggle, 
-      document.querySelector(".page-header__main-nav"), 
-      document.querySelector(".page-header"), 
+      toggle,
+      document.querySelector(".page-header__main-nav"),
+      document.querySelector(".page-header"),
       document.querySelector(".page-main__slogan"),
       document.querySelector(".page-main__slogan-text")
     ];
 
     DOM.forEach(element => {
-        element.classList.remove("menu-open--default");
-      });
+      element.classList.remove("menu-open--default");
+    });
 
     toggle.addEventListener("click", function (e) {
       e.preventDefault();
@@ -267,6 +267,7 @@
         element.classList.toggle("menu-open");
       });
     });
+
   </script>
   <script src="js/popup.js"></script>
 </body>

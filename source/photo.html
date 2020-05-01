@@ -387,8 +387,10 @@
             </ul>
           </div>
           <div class="add-photo__buttons">
-            <button class="add-photo__button add-photo__button--post" type="submit" aria-label="Выложить фото">Запостить</button>
-            <button class="add-photo__button add-photo__button--cancel" type="reset" aria-label="Сбросить параметры">Отмена</button>
+            <button class="add-photo__button add-photo__button--post" type="submit"
+              aria-label="Выложить фото">Запостить</button>
+            <button class="add-photo__button add-photo__button--cancel" type="reset"
+              aria-label="Сбросить параметры">Отмена</button>
           </div>
         </div>
       </div>
@@ -408,21 +410,24 @@
       </p>
       <ul class="page-footer__social">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com" aria-label="Перейти на страницу в Twitter">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com"
+            aria-label="Перейти на страницу в Twitter">
             <svg class="page-footer__social-image" width="17" height="15">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--facebook" href="https://facebook.com" aria-label="Перейти на страницу в Facebook">
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="https://facebook.com"
+            aria-label="Перейти на страницу в Facebook">
             <svg class="page-footer__social-image" width="10" height="19">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--youtube" href="https://youtube.com" aria-label="Перейти на Youtube-канал">
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="https://youtube.com"
+            aria-label="Перейти на Youtube-канал">
             <svg class="page-footer__social-image" width="15" height="14">
               <use xlink:href="#icon-youtube"></use>
             </svg>
@@ -443,16 +448,16 @@
   <script>
     var toggle = document.querySelector(".page-header__toggle");
     var DOM = [
-      toggle, 
-      document.querySelector(".page-header__main-nav"), 
-      document.querySelector(".page-header"), 
+      toggle,
+      document.querySelector(".page-header__main-nav"),
+      document.querySelector(".page-header"),
       document.querySelector(".page-main__slogan"),
       document.querySelector(".page-main__slogan-text")
     ];
 
     DOM.forEach(element => {
-        element.classList.remove("menu-open--default");
-      });
+      element.classList.remove("menu-open--default");
+    });
 
     toggle.addEventListener("click", function (e) {
       e.preventDefault();
@@ -460,6 +465,7 @@
         element.classList.toggle("menu-open");
       });
     });
+
   </script>
 </body>
 

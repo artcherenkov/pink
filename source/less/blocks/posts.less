@@ -134,7 +134,7 @@
   letter-spacing: 0.15px;
 }
 
-.posts__photo--pano__label {
+.posts__photo-label {
   width: 140px;
   margin: 0;
   padding: 0;
@@ -175,7 +175,7 @@
 
   .posts__item {
     width: 300px;
-    height: 455px;
+    min-height: 455px;
     overflow: hidden;
     background-color: @light-grey;
     display: flex;
@@ -185,7 +185,7 @@
     margin-bottom: 20px;
 
     &--pano {
-      min-height: 509px;
+      min-height: 0;
       background-color: white;
       margin: 0;
       width: 100%;
@@ -199,14 +199,14 @@
     height: auto;
 
     &--pano {
-      min-height: 509px;
+      min-height: 0;
       width: 100%;
       height: auto;
-      max-height: 509px;
+      // max-height: 509px;
     }
   }
 
-  .posts__photo--pano__label {
+  .posts__photo-label {
     top: 58px;
   }
 
@@ -287,7 +287,7 @@
     flex-wrap: wrap;
   }
 
-  .posts__photo--pano__label {
+  .posts__photo-label {
     top: 54px;
     right: 130px;
   }
@@ -330,7 +330,7 @@
   }
 
   .posts__item {
-    height: 555px;
+    min-height: 555px;
     background-color: @light-grey;
     display: flex;
     flex-direction: column;
@@ -353,7 +353,7 @@
     &--pano {
       position: relative;
       margin: 0 auto;
-      max-width: 1200px;
+      // max-width: 1200px;
 
       width: 100%;
       height: auto;
@@ -365,9 +365,9 @@
 
     &--pano {
       margin: 0;
-      max-width: 1200px;
+      // max-width: 1200px;
       min-height: 0;
-      max-height: 509px;
+      // max-height: 509px;
       width: 100%;
       height: auto;
     }

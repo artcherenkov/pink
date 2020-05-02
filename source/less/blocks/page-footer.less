@@ -18,6 +18,7 @@
 
 .page-footer__logo {
   cursor: pointer;
+  overflow: scroll;
 
   &:hover svg {
     fill: @pink;
@@ -36,10 +37,12 @@
 
 .page-footer__social {
   .resetList();
+  width: 190px;
   padding: 0;
   display: flex;
   padding-top: 20px;
   padding-bottom: 10px;
+  overflow: scroll;
 }
 
 .page-footer__social-item:nth-child(2) {

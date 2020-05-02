@@ -63,9 +63,9 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">"Pink"</h1>
-    <section class="app menu-open--default">
-      <div class="app__slogan menu-open--default">
-        <h2 class="app__slogan-text menu-open--default">Взгляните на жизнь иначе!</h2>
+    <section class="app menu-open menu-open--default">
+      <div class="app__slogan menu-open menu-open--default">
+        <h2 class="app__slogan-text menu-open menu-open--default">Взгляните на жизнь иначе!</h2>
       </div>
       <div class="app__wrapper">
         <a class="app__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
@@ -95,29 +95,24 @@
         <h2 class="description__header">Устали от серости мегаполиса?</h2>
         <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
       </div>
-      <div class="description__triangle-wrapper">
-        <svg class="description__triangle" width="1200px" height="94" viewbox="0 0 1200 94">
-          <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
-        </svg>
-      </div>
-
-
       <div class="description__wrapper">
+        <div class="description__triangle-wrapper">
+          <svg class="description__triangle" width="1200px" height="94" viewbox="0 0 1200 94">
+            <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
+          </svg>
+        </div>
         <ul class="description__list">
           <li class="description__item">
             <h3 class="description__item-header">Поднимает настроение</h3>
-            <p class="description__item-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
+            <p class="description__item-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="description__item">
             <h3 class="description__item-header">Меняет мир вокруг</h3>
-            <p class="description__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить&nbsp;эффект</p>
+            <p class="description__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="description__item">
             <h3 class="description__item-header">Заводит новых друзей</h3>
-            <p class="description__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых</p>
+            <p class="description__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
         <ul class="description__helloworld">
@@ -205,19 +200,22 @@
             </svg>
           </button>
         </div>
-
-
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button"></button>
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle" type="button"></button>
         </p>
       </div>
-        <svg class="reviews__triangle" width="1200" height="94" viewbox="0 0 1200 94">
-          <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
-        </svg>
+      <!-- <svg class="reviews__triangle" width="1200" height="94" viewbox="0 0 1200 94">
+        <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
+      </svg> -->
     </section>
     <section class="tariff-plans">
+      <div class="description__triangle-wrapper">
+        <svg class="description__triangle" width="1200px" height="94" viewbox="0 0 1200 94">
+          <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
+        </svg>
+      </div>
       <h2 class="visually-hidden">Тарифные планы</h2>
       <div class="tariff-plans__wrapper slider">
         <ul class="tariff-plans__list">
@@ -383,7 +381,8 @@
       </ul>
       <div class="page-footer__copyright">
         <p class="page-footer__site-by">Разработано</p>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Перейти на сайт HTML Academy">
           <svg class="page-footer__copyright-image" width="60" height="60">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>

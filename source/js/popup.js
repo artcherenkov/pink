@@ -14,8 +14,9 @@ var femail = document.querySelector("[name=email]");
 
 var required = [fname, fsurname, femail];
 
-required.forEach(el =>
-  el.removeAttribute("required")
+[].forEach.call(required, function (el) {
+    el.removeAttribute("required")
+  }
 );
 
 console.log(required);
@@ -25,7 +26,7 @@ var isError = false;
 form.addEventListener("submit", function (e) {
   isError = false
   e.preventDefault();
-  required.forEach(function (item) {
+  [].forEach.call(required, function (item) {
     item.classList.remove("input__text--invalid");
     if (!item.value) {
       isError = true;

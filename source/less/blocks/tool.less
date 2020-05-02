@@ -26,9 +26,17 @@
 }
 
 .tool__control {
-  display: block;
-  height: 15px;
-  background-color: white;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+
+  &--current {
+    width: 240px;
+    visibility: visible;
+    top: 83px;
+    left: 40px;
+  }
 }
 
 .tool__range {

@@ -7,14 +7,17 @@
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
+  <script src="js/picturefill.js"></script>
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header menu-open--default">
+  <header class="page-header menu-open menu-open--default">
     <div class="page-header__wrapper">
       <div class="page-header__buttons">
         <a class="page-header__logo" href="#" aria-label="Логотип. Перейти на главную">
@@ -28,7 +31,8 @@
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
-        <button class="page-header__toggle menu-open--default" type="button" aria-label="Показать/скрыть меню">
+        <button class="page-header__toggle menu-open menu-open--default" type="button"
+          aria-label="Показать/скрыть меню">
           <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24"
             aria-label="Открыть меню">
             <use xlink:href="#icon-menu-burger"></use>
@@ -39,7 +43,7 @@
           </svg>
         </button>
       </div>
-      <nav class="page-header__main-nav page-header__main-nav--hidden menu-open--default">
+      <nav class="page-header__main-nav page-header__main-nav--hidden menu-open menu-open--default">
         <ul class="page-header__list">
           <li class="page-header__item page-header__item--current">
             <a>Главная</a>
@@ -91,10 +95,13 @@
       <div class="description__title">
         <h2 class="description__header">Устали от серости мегаполиса?</h2>
         <h2 class="description__header">Нам есть, что вам<br>предложить!</h2>
+      </div>
+      <div class="description__triangle-wrapper">
         <svg class="description__triangle" width="1200px" height="94" viewbox="0 0 1200 94">
           <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
         </svg>
       </div>
+
 
       <div class="description__wrapper">
         <ul class="description__list">
@@ -138,12 +145,15 @@
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
                 srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
               <source type="image/webp"
                 srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
-
               <source media="(min-width: 960px)"
                 srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157"
                 height="320" alt="'Pink' - Всем привет!">
             </picture>
@@ -204,9 +214,9 @@
           <button class="slider__toggle" type="button"></button>
         </p>
       </div>
-      <svg class="reviews__triangle" width="1200" height="94" viewbox="0 0 1200 94">
-        <polygon fill="#f2f2f2" points="1200,0 0,0 0,94.074 "></polygon>
-      </svg>
+        <svg class="reviews__triangle" width="1200" height="94" viewbox="0 0 1200 94">
+          <polygon fill="#f2f2f2" points="1200,0 0,0 0,94"></polygon>
+        </svg>
     </section>
     <section class="tariff-plans">
       <h2 class="visually-hidden">Тарифные планы</h2>
@@ -382,30 +392,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    var toggle = document.querySelector(".page-header__toggle");
-    var DOM = [
-      toggle,
-      document.querySelector(".page-header__main-nav"),
-      document.querySelector(".page-header"),
-      document.querySelector(".app"),
-      document.querySelector(".app__slogan"),
-      document.querySelector(".app__slogan-text")
-    ];
-
-    DOM.forEach(element => {
-      element.classList.remove("menu-open--default");
-      element.classList.remove("menu-open");
-    });
-
-    toggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      DOM.forEach(element => {
-        element.classList.toggle("menu-open");
-      });
-    });
-
-  </script>
+  <script src="js/menu-index.js"></script>
 </body>
 
 </html>

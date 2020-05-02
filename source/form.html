@@ -6,14 +6,18 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
+  <script src="js/picturefill.js"></script>
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header">
+  <header class="page-header menu-open menu-open--default">
     <div class="page-header__wrapper">
       <div class="page-header__buttons">
         <a class="page-header__logo" href="#" aria-label="Логотип. Перейти на главную">
@@ -27,27 +31,29 @@
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
-        <button class="page-header__toggle" type="button" aria-label="Показать/скрыть меню">
-          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24" alt="Открыть меню">
+        <button class="page-header__toggle menu-open menu-open--default" type="button" aria-label="Показать/скрыть меню">
+          <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="24"
+            aria-label="Открыть меню">
             <use xlink:href="#icon-menu-burger"></use>
           </svg>
-          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24" alt="Закрыть меню">
+          <svg class="page-header__toggle-image page-header__toggle-image--close" width="24" height="24"
+            aria-label="Закрыть меню">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
       </div>
-      <nav class="page-header__main-nav page-header__main-nav--hidden">
-        <ul class="page-header__list site-list">
-          <li class="site-list__item">
+      <nav class="page-header__main-nav page-header__main-nav--hidden menu-open menu-open--default">
+        <ul class="page-header__list">
+          <li class="page-header__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="page-header__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item site-list__item--current">
+          <li class="page-header__item page-header__item--current">
             <a>Конкурс</a>
           </li>
-          <li class="site-list__item">
+          <li class="page-header__item">
             <a href="">HTML Academy</a>
           </li>
         </ul>
@@ -57,26 +63,31 @@
 
   <main class="page-main">
 
-    <div class="page-main__slogan">
-      <h1 class="page-main__slogan-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-main__slogan menu-open menu-open--default">
+      <h1 class="page-main__slogan-text menu-open menu-open--default">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="contest">
-      <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__intro contest__intro--extra"> Пожалуйста, заполните форму ниже:</span></p>
+      <h2 class="visually-hidden">Заполните форму</h2>
+      <p class="contest__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту!<span class="contest__intro contest__intro--extra"> Пожалуйста, заполните форму ниже:</span></p>
       <form class="contest__form about" method="post" action="https://echo.htmlacademy.ru">
         <div class="contest__block contest__about">
           <fieldset class="about__person">
             <ul class="about__person-list about__list">
               <li class="about__person-list__item input">
                 <label class="about__person-label input__text-label" for="surname">Фамилия:</label>
-                <input class="about__person-input input__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
+                <input class="about__person-input input__text" type="text" id="surname" name="surname"
+                  placeholder="Укажите фамилию *" required>
               </li>
               <li class="about__person-list__item input">
                 <label class="about__person-label input__text-label" for="name">Имя:</label>
-                <input class="about__person-input input__text" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+                <input class="about__person-input input__text" type="text" id="name" name="name"
+                  placeholder="Введите ваше имя *" required>
               </li>
               <li class="about__person-list__item input">
                 <label class="about__person-label input__text-label" for="third-name">Отчество:</label>
-                <input class="about__person-input input__text" type="text" id="third-name" placeholder="Ну и отчество тоже" name="third-name">
+                <input class="about__person-input input__text" type="text" id="third-name"
+                  placeholder="Ну и отчество тоже" name="third-name">
               </li>
             </ul>
           </fieldset>
@@ -85,27 +96,27 @@
           <fieldset class="about__trip">
             <legend class="about__trip-header">Ваши безбашенные достижения в путешествии</legend>
             <ul class="about__trip-list about__list">
-              <li class="about__trip-list__item about__list__item input">
+              <li class="about__trip-list__item input">
                 <input class="about__trip-input input__check" id="selfie" name="selfie" type="checkbox" checked="">
                 <label class="about__trip-label input__check-label" for="selfie">Сделал селфи с акулой</label>
               </li>
-              <li class="about__trip-list__item input about__list__item">
+              <li class="about__trip-list__item input">
                 <input class="about__trip-input input__check" id="beach" name="beach" type="checkbox" checked="">
                 <label class="about__trip-label input__check-label" for="beach">Обгорел на пляже</label>
               </li>
-              <li class="about__trip-list__item input about__list__item">
+              <li class="about__trip-list__item input">
                 <input class="about__trip-input input__check" id="Chuck" name="Chuck" type="checkbox">
                 <label class="about__trip-label input__check-label" for="Chuck">Видел Чака Норриса</label>
               </li>
-              <li class="about__trip-list__item input about__list__item">
+              <li class="about__trip-list__item input">
                 <input class="about__trip-input input__check" id="souvenir" name="souvenir" type="checkbox">
                 <label class="about__trip-label input__check-label" for="souvenir">Накупил сувениров</label>
               </li>
-              <li class="about__trip-list__item input about__list__item">
+              <li class="about__trip-list__item input">
                 <input class="about__trip-input input__check" id="tower" name="tower" type="checkbox" checked="">
                 <label class="about__trip-label input__check-label" for="tower">Удержал башню</label>
               </li>
-              <li class="about__trip-list__item input about__list__item">
+              <li class="about__trip-list__item input">
                 <input class="about__trip-input input__check" id="hotel" name="hotel" type="checkbox">
                 <label class="about__trip-label input__check-label" for="hotel">Разгромил отель</label>
               </li>
@@ -118,11 +129,17 @@
             <ul class="about__contact-list about__list">
               <li class="about__contact-list__item input">
                 <label class="about__contact-label input__text-label" for="tel">Номер телефона</label>
-                <input class="about__contact-input input__text" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                <div class="about__input-wrapper about__input-wrapper--tel">
+                  <input class="about__contact-input input__text" type="tel" id="tel" name="tel"
+                    placeholder="Номер, пожалуйста">
+                </div>
               </li>
               <li class="about__contact-list__item input">
                 <label class="about__contact-label input__text-label" for="email">Адрес почты</label>
-                <input class="about__contact-input input__text" type="email" id="email" name="email" placeholder="Введите почту *">
+                <div class="about__input-wrapper about__input-wrapper--mail">
+                  <input class="about__contact-input input__text" type="email" id="email" name="email"
+                    placeholder="Введите почту *" required>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -131,17 +148,19 @@
           <fieldset class="about__app">
             <legend class="about__app-header">С каким приложением путешествовали?</legend>
             <ul class="about__app-list about__list">
-              <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios" checked="">
+              <li class="about__app-list__item input">
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="ios" id="ios"
+                  checked="">
                 <label class="about__app-label input__radio-label" for="ios">Pink для iOS</label>
               </li>
-              <li class="about__app-list__item input about__list__item">
+              <li class="about__app-list__item input">
                 <input class="about__app-input input__radio" name="which-app" type="radio" value="android" id="android">
                 <label class="about__app-label input__radio-label" for="android">Pink на Android</label>
               </li>
-              <li class="about__app-list__item input about__list__item">
-                <input class="about__app-input input__radio" name="which-app" type="radio" value="windows phone" id="windows phone">
-                <label class="about__app-label input__radio-label" for="windows phone">Windows Phone</label>
+              <li class="about__app-list__item input">
+                <input class="about__app-input input__radio" name="which-app" type="radio" value="windows_phone"
+                  id="windows_phone">
+                <label class="about__app-label input__radio-label" for="windows_phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -150,13 +169,17 @@
           <fieldset class="about__impression">
             <legend class="about__impression-header">Опишите свои эмоции</legend>
             <div class="about__impression-block input">
-              <textarea class="about__impression-input input__textarea" name="impression" id="impression" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <label for="impression"
+                class="about__impression-label input__textarea-label visually-hidden">Эмоции</label>
+              <textarea class="about__impression-input input__textarea" name="impression" id="impression"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
         </div>
         <div class="contest__controls">
           <button class="contest__submit" type="submit">Отправить форму</button>
-          <p class="contest__note"><span class="contest__note-redstar">*</span> — обязательные <span class="contest__note contest__note--extra">для заполнения</span> поля</p>
+          <p class="contest__note"><span class="contest__note-redstar">*</span> — обязательные <span
+              class="contest__note contest__note--extra">для заполнения</span> поля</p>
         </div>
       </form>
     </section>
@@ -172,7 +195,8 @@
     <section class="popup popup--success visually-hidden">
       <div class="popup__wrapper">
         <h4 class="popup__header popup__header--success">Ваша заявка отправлена</h4>
-        <p class="popup__content popup__content--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br class="popup__content--br"> оповестим вас.</p>
+        <p class="popup__content popup__content--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В
+          ближайшее время мы рассмотрим ее и<br class="popup__content--br"> оповестим вас.</p>
         <div class="popup__button__wrapper popup__button__wrapper--success">
           <button type="button" class="popup__button popup__button--success">Закрыть окно</button>
         </div>
@@ -191,39 +215,42 @@
         </svg>
       </p>
       <ul class="page-footer__social">
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://twitter.com" aria-label="Перейти на страницу в Twitter">
-            <svg class="page-footer__social__item-image" width="17" height="15">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com"
+            aria-label="Перейти на страницу в Twitter">
+            <svg class="page-footer__social-image" width="17" height="15">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://facebook.com" aria-label="Перейти на страницу в Facebook">
-            <svg class="page-footer__social__item-image" width="10" height="19">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="https://facebook.com"
+            aria-label="Перейти на страницу в Facebook">
+            <svg class="page-footer__social-image" width="10" height="19">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="page-footer__social__item">
-          <a class="page-footer__social__item-link" href="https://youtube.com" aria-label="Перейти на Youtube-канал">
-            <svg class="page-footer__social__item-image" width="15" height="14">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="https://youtube.com"
+            aria-label="Перейти на Youtube-канал">
+            <svg class="page-footer__social-image" width="15" height="14">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <p class="page-footer__copyright__site-by">Разработано</p>
-        <a class="page-footer__copyright__link" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">
-          <svg class="page-footer__copyright__image" width="60" height="60">
+        <p class="page-footer__site-by">Разработано</p>
+        <a class="page-footer__link" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">
+          <svg class="page-footer__copyright-image" width="60" height="60">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/photo.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/popup.js"></script>
 </body>
 

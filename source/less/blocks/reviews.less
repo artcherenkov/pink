@@ -16,12 +16,12 @@
   position: relative;
 }
 
-.reviews__review {
+.reviews__item {
   display: flex;
   flex-direction: column;
 }
 
-.reviews__review__name {
+.reviews__name {
   margin: 0;
   .setFont(black, 18px, @bold);
   line-height: 30px;
@@ -29,14 +29,14 @@
   padding-top: 20px;
 }
 
-.reviews__review__caption {
+.reviews__caption {
   display: none;
 }
 
-.reviews__review__text {
+.reviews__text {
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
-  margin-top: 11px;
+  margin-top: 13px;
   text-align: center;
 }
 
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: 660px) {
-  .reviews__review__caption {
+  .reviews__caption {
     display: block;
     margin: 0;
     text-align: center;
@@ -71,12 +71,12 @@
     margin-bottom: 17px;
   }
 
-  .reviews__review {
+  .reviews__item {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .reviews__review__name {
+  .reviews__name {
     .setFont(black, 20px, @bold);
     line-height: 30px;
     margin: 0;
@@ -84,7 +84,7 @@
     padding-bottom: 2px;
   }
 
-  .reviews__review__text {
+  .reviews__text {
     .setFont(@dark-blue, 18px, @regular);
     line-height: 30px;
     margin: 0;
@@ -102,22 +102,30 @@
     position: relative;
   }
 
+  .reviews__triangle {
+    position: static;
+    margin-bottom: -5px;
+    width: 100%;
+    height: auto;
+  }
+
   .reviews__wrapper {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 95px;
+    // padding-bottom: 75px;
   }
 
   .reviews__buttons {
     display: block;
     position: absolute;
+    fill: rgba(@dark-blue-rgb, 0.3);
     top: 218px;
     width: 22px;
     height: auto;
     padding: 0;
     border: none;
     background-color: transparent;
-    opacity: 30%;
+    // opacity: 30%;
     cursor: pointer;
 
     &--right {
@@ -129,11 +137,11 @@
     }
 
     &:hover {
-      opacity: 60%;
+      fill: rgba(@dark-blue-rgb, 0.6);
     }
 
     &:active {
-      opacity: 10%;
+      fill: rgba(@dark-blue-rgb, 0.1);
     }
   }
 
@@ -142,15 +150,20 @@
     height: 41px;
   }
 
-  .reviews__list {
-    margin: 0 auto;
-    padding-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+  .reviews__list-wrapper {
     width: 960px;
+    margin: 0 auto;
+    position: relative;
   }
 
-  .reviews__review__caption {
+  .reviews__list {
+    padding-top: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reviews__caption {
     display: block;
     margin: 0;
     text-align: center;
@@ -160,7 +173,7 @@
     padding-top: 2px;
   }
 
-  .reviews__review {
+  .reviews__item {
     padding: 0 120px;
     padding-bottom: 20px;
     display: flex;
@@ -183,7 +196,7 @@
     display: none;
   }
 
-  .reviews__review__name {
+  .reviews__name {
     .setFont(black, 24px, @bold);
     line-height: 30px;
     margin: 0;
@@ -191,11 +204,11 @@
     padding-top: 36px;
   }
 
-  .reviews__review__text {
+  .reviews__text {
     .setFont(@dark-blue, 18px, @regular);
     line-height: 30px;
     margin: 0;
-    opacity: 60%;
+    color: rgba(@dark-blue-rgb, 0.6);
     padding-top: 188px;
   }
 }

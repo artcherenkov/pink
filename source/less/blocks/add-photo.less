@@ -4,9 +4,10 @@
 
 .add-photo__slogan {
   margin: 0;
+  padding: 0 20px;
+  padding-left: 17px;
   padding-top: 43px;
   padding-bottom: 42px;
-  padding-left: 0;
   text-align: center;
   .setFont(@dark-blue, 14px, @regular);
   line-height: 30px;
@@ -33,7 +34,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 0 65px 70px 55px;
+  padding: 0 65px 66px 55px;
   position: relative;
   margin: 0 auto;
 }
@@ -52,73 +53,65 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 36px;
+  padding-top: 37px;
 }
 
-.add-photo__buttons-cancel,
-.add-photo__buttons-post {
+.add-photo__button {
   width: 280px;
   border-radius: 30px;
   line-height: 50px;
   cursor: pointer;
-}
 
-.add-photo__buttons-post {
-  .setFont(@pink, 18px, @bold);
-  border: 3px solid @pink;
-  background-color: #f2f2f2;
-  margin-bottom: 8px;
+  &--post {
+    .setFont(@pink, 18px, @bold);
+    border: 3px solid @pink;
+    background-color: #f2f2f2;
+    margin-bottom: 8px;
+  }
 
-  &:hover {
+  &--post:hover {
     color: white;
     background-color: @pink;
   }
 
-  &:active {
-    color: rgba(255, 255, 255, 30%);
+  &--post:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: @pink;
   }
-}
 
-.add-photo__buttons-cancel {
-  background-color: #f2f2f2;
-  .setFont(@dark-blue, 18px, @bold);
-  border: 3px solid @dark-blue;
-  opacity: 10%;
-
-  &:hover {
-    opacity: 30%;
+  &--cancel {
+    background-color: #f2f2f2;
+    .setFont(@dark-blue, 18px, @bold);
+    border: 3px solid @dark-blue;
+    opacity: 0.1;
   }
 
-  &:active {
+  &--cancel:hover {
+    opacity: 0.3;
+  }
+
+  &--cancel:active {
     background-color: @dark-blue;
-    color: rgba(255, 255, 255, 30%);
-    opacity: 30%;
-  }
-}
-
-.tool__control {
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-
-  &--current {
-    width: 240px;
-    visibility: visible;
-    top: 83px;
-    left: 40px;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
   }
 }
 
 @media (min-width: 660px) {
+  .add-photo {
+    background-color: @light-grey;
+  }
+
   .add-photo__wrapper {
-    padding: 57px 20px 54px;
+    width: 660px;
+    margin: 0 auto;
+    padding: 56px 20px 48px;
     display: flex;
     flex-direction: row;
   }
 
   .add-photo__slogan {
+    background-color: white;
     padding-top: 45px;
     padding-bottom: 69px;
     font-size: 18px;
@@ -151,19 +144,23 @@
     margin: 0 auto;
     width: 260px;
     flex-grow: 1;
-    padding: 40px 0 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 6px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
-  .add-photo__buttons-cancel,
-  .add-photo__buttons-post {
+  .add-photo__button {
     width: 260px;
-  }
+    line-height: 45px;
+    padding-right: 14px;
+    font-family: "Open Sans", sans-serif;
 
-  .add-photo__buttons-post {
-    margin-bottom: 20px;
+    &--post {
+      margin-bottom: 0;
+    }
   }
 
   .add-photo__tools-list {
@@ -174,7 +171,7 @@
     padding: 8px 0 0 11px;
   }
 
-  .add-photo__tools-list__item {
+  .add-photo__item {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -184,7 +181,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 20%);
   }
 
-  .add-photo__tools-list__item:nth-of-type(3) {
+  .add-photo__item:nth-of-type(3) {
     padding-bottom: 24px;
   }
 }
@@ -194,6 +191,7 @@
     width: 960px;
     margin: 0 auto;
     padding: 0 10px;
+    background-color: white;
   }
 
   .add-photo__slogan {
@@ -208,6 +206,7 @@
   }
 
   .add-photo__wrapper {
+    width: auto;
     padding: 57px 60px 54px 80px;
     margin-bottom: 30px;
   }
@@ -221,7 +220,7 @@
     margin-top: -4px;
   }
 
-  .add-photo__tools-list__item {
+  .add-photo__item {
     margin-left: -3px;
     padding-bottom: 11px;
     padding-right: 30px;
@@ -229,13 +228,13 @@
     justify-content: space-between;
   }
 
-  .add-photo__tools-list__item:nth-of-type(2) {
+  .add-photo__item:nth-of-type(2) {
     margin-left: 3px;
     padding-bottom: 9px;
     margin-bottom: 11px;
   }
 
-  .add-photo__tools-list__item:nth-of-type(3) {
+  .add-photo__item:nth-of-type(3) {
     margin-left: -6px;
     padding-bottom: 10px;
   }
@@ -244,18 +243,18 @@
     width: 410px;
     margin-left: 12px;
     flex-grow: 0;
-    padding-top: 129px;
+    padding-top: 132px;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .add-photo__buttons-cancel,
-  .add-photo__buttons-post {
+  .add-photo__button {
     width: 183px;
     margin: 0;
+    padding-right: 0;
   }
 
-  .add-photo__buttons-post {
+  .add-photo__post {
     padding-right: 0;
   }
 }

@@ -1,21 +1,21 @@
 .page-main__slogan {
   min-width: 320px;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background: @dark-blue url("../img/bg-back-mobile@1x.jpg") 0 0% no-repeat;
   background-size: cover;
+}
 
-  &--toggle-open {
-    background: url("../img/bg-back-mobile@1x.jpg") 0 23% no-repeat;
-    background-size: cover;
-  }
+.page-main__slogan.menu-open--default {
+  background: @dark-blue url("../img/bg-back-mobile@1x.jpg") 0 23% no-repeat;
+  background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-main__slogan {
-    background: url("../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
+    background: @dark-blue url("../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
     background-size: cover;
 
-    &--toggle-open {
-      background: url("../img/bg-back-mobile@1x.jpg") 0 23% no-repeat;
+    .page-main__slogan.menu-open--default {
+      background: @dark-blue url("../img/bg-back-mobile@2x.jpg") 0 23% no-repeat;
       background-size: cover;
     }
   }
@@ -25,7 +25,7 @@
   line-height: 30px;
   width: 230px;
   margin: 0 auto;
-  padding-top: 95px;
+  padding-top: 96px;
   padding-bottom: 51px;
   text-align: center;
   .setFont(white, 24px, @light);
@@ -33,10 +33,10 @@
   &--photo {
     padding-bottom: 80px;
   }
+}
 
-  &--toggle-open {
-    padding-top: 29px;
-  }
+.page-main__slogan-text.menu-open--default {
+  padding-top: 29px;
 }
 
 @media (min-width: 660px) {
@@ -44,14 +44,24 @@
     min-width: 660px;
     margin: 0;
     padding: 0;
-    background: url("../img/bg-back-tablet@1x.jpg") 52% no-repeat;
-    background-size: 200%;
+    background: @dark-blue url("../img/bg-back-tablet@1x.jpg") 50% 5% no-repeat;
+    background-size: 210%;
+  }
+
+  .page-main__slogan.menu-open--default {
+    background: @dark-blue url("../img/bg-back-tablet@1x.jpg") 50% 28% no-repeat;
+    background-size: 180%;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__slogan {
-      background: url("../img/bg-back-tablet@2x.jpg") 52% no-repeat;
-      background-size: 200%;
+      background: @dark-blue url("../img/bg-back-tablet@2x.jpg") 50% 5% no-repeat;
+      background-size: 210%;
+    }
+
+    .page-main__slogan.menu-open--default {
+      background: @dark-blue url("../img/bg-back-tablet@2x.jpg") 50% 28% no-repeat;
+      background-size: 180%;
     }
   }
 
@@ -71,6 +81,10 @@
       padding-top: 71px;
     }
   }
+
+  .page-main__slogan-text.menu-open--default {
+    padding-top: 70px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -79,20 +93,23 @@
     margin: 0 auto;
   }
 
-  .page-main__slogan {
+  .page-main__slogan,
+  .page-main__slogan.menu-open--default {
     margin: 0;
     padding: 0;
-    background: url("../img/bg-back-desktop@1x.jpg") 50% 0 no-repeat;
-    background-size: 200%;
+    background: @dark-blue url("../img/bg-back-desktop@1x.jpg") 50% 0 no-repeat;
+    background-size: 212%;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__slogan.menu-open--default,
     .page-main__slogan {
-      background: url("../img/bg-back-desktop@2x.jpg") 50% 0 no-repeat;
-      background-size: 200%;
+      background: @dark-blue url("../img/bg-back-desktop@2x.jpg") 50% 0% no-repeat;
+      background-size: 212%;
     }
   }
 
+  .menu-open--default.page-main__slogan-text,
   .page-main__slogan-text {
     line-height: 60px;
     width: 960px;

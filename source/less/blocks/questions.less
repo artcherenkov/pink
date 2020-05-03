@@ -58,7 +58,7 @@
   }
 }
 
-.questions__map__wrapper {
+.questions__map-wrapper {
   width: 100%;
   position: relative;
   background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-mobile@1x.png") center bottom;
@@ -66,7 +66,7 @@
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .questions__map__wrapper {
+  .questions__map-wrapper {
     background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-mobile@2x.jpg") center bottom;
     background-size: auto, cover;
   }
@@ -130,14 +130,14 @@
     flex-wrap: wrap;
   }
 
-  .questions__map__wrapper {
+  .questions__map-wrapper {
     position: relative;
     background: url("../img/icon-map-marker.svg") center 59% no-repeat, url("../img/bg-map-tablet@1x.jpg") center 72%;
     background-size: auto, cover;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .questions__map__wrapper {
+    .questions__map-wrapper {
       background: url("../img/icon-map-marker.svg") center 59% no-repeat, url("../img/bg-map-tablet@2x.jpg") center 72%;
       background-size: auto, cover;
     }
@@ -168,6 +168,18 @@
     order: 1;
   }
 
+  .questions__item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .questions__item:nth-of-type(3) {
+    order: 2;
+  }
+
+  .questions__item:nth-of-type(3) .questions__item-type {
+    padding-bottom: 20px;
+  }
+
   .questions__item:nth-of-type(1) .questions__item-value {
     padding-right: 5px;
   }
@@ -182,14 +194,16 @@
     padding-bottom: 0;
   }
 
-  .questions__map__wrapper {
+
+
+  .questions__map-wrapper {
     position: relative;
     background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-desktop@1x.jpg") 0 59% no-repeat;
     background-size: auto, 100%;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .questions__map__wrapper {
+    .questions__map-wrapper {
       background: url("../img/icon-map-marker.svg") center 56% no-repeat, url("../img/bg-map-desktop@2x.jpg") 0 59% no-repeat;
       background-size: auto, cover;
     }

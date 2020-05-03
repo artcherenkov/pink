@@ -18,7 +18,8 @@
 
 .page-footer__logo {
   cursor: pointer;
-  overflow: scroll;
+  max-width: 148px;
+  overflow: visible;
 
   &:hover svg {
     fill: @pink;
@@ -37,12 +38,13 @@
 
 .page-footer__social {
   .resetList();
-  width: 190px;
+  max-width: 190px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 10px;
-  overflow: scroll;
+  // overflow: scroll;
 }
 
 .page-footer__social-item:nth-child(2) {
@@ -80,7 +82,9 @@
 
 .page-footer__copyright {
   padding-top: 23px;
+  max-width: 130px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -88,7 +92,6 @@
   .setFont(@dark-blue, 14px, @regular);
   line-height: 34px;
   margin: 0;
-  // margin-left: -2px;
   padding-left: 2px;
   padding-right: 12px;
 }
@@ -199,6 +202,7 @@
   }
 
   .page-footer__copyright {
+    max-width: 155px;
     padding-bottom: 3px;
   }
 

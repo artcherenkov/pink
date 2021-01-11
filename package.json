@@ -1,8 +1,8 @@
 {
-  "name": "pink-19",
-  "version": "17.0.0",
+  "name": "pink",
+  "version": "0.0.1",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "E-commerce Pink",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

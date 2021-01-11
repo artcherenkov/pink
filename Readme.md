@@ -1,60 +1,33 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# E-commerce website `Pink`
 
-* Студент: [Артём Черенков](https://up.htmlacademy.ru/adaptive/19/user/1322377).
-* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
+Design provided with PSD.
 
----
+[Published site](https://artcherenkov-portfolio.github.io/pink/).
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+'Pink' is a responsive website, coded in vanilla HTML, Less and JS and then built with Gulp. There are mobile, tablet and desktop versions, styled with flexboxes.
 
-Полезный файл:
+This project has given a lot of attention to optimization and accessibility. Done:
+- [x] Images optimizations: svg sprite, compressed .png and .jpg, .webp format if supported (fallback to png or jpg).
+- [x] Adaptive and retina images for displays with high resolution.
+- [x] Minified code (html, css and js).
+- [x] Perfect pixel.
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+Navigation with 'tab' button is fully available.
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+----
 
----
+# Сайт интернет-магазина `Pink`
 
-### Памятка
+Дизайн был предоставлен в PSD формате.
+[Опубликованный сайт](https://artcherenkov-portfolio.github.io/pink/).
 
-#### 1. Зарегистрируйтесь на Гитхабе
+'Pink' – адаптивный сайт, созданный при помощи ванильного HTML и JS, а также препроцессора Less. Собран с помощью Gulp. Доступно 3 версии: мобильная, планшетная и десктопная, сетка выполнена при помощи флексбоксов.
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+В проекте было уделено много внимания оптимизации и доступности. Сделано: 
 
-#### 2. Создайте форк
+- [x] Оптимизация изображений: svg-спрайт, сжатие .png и .jpg, использование формата .webp, если поддерживается браузером.
+- [x] Адаптивная и ретиновая графика для дисплеев с высокой плотностью пикселей.
+- [x] Минификация кода (html, css and js).
+- [x] Perfect pixel.
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1322377-pink-19) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808087-2505a400-a190-11e9-8caa-2e7584c702cc.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808090-259e3a80-a190-11e9-8a64-c58d94803b73.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1322377-pink-19.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1322377-pink-19
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1322377-pink-19/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1322377-pink-19?type=dev
+Полностью поддерживается навигация при помощи 'tab'.
